@@ -1,0 +1,6 @@
+*.pyc
+analysis/
+output/
+pre_output/
+csv/
+old_csv/
