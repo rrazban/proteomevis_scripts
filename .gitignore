@@ -1,6 +1,13 @@
 *.pyc
+0-identify_structure/1-get_pdb/*/
+0-identify_structure/2-get_pdb_chain/*/
+2-make_image/pdb_image/*
+db.sqlite3
+pymol/
 analysis/
-output/
-pre_output/
-csv/
-old_csv/
+raw_*
+Sopko_2006/
+Sina_2003_original.txt
+PaxDb.txt
+1-protein_property/evolutionary_rate/ecoli/gn2name.tsv
+1-protein_property/evolutionary_rate/ecoli/info.txt

@@ -1,0 +1,3 @@
+id,name,has_localization,has_function,has_mutant_data
+0,yeast,1,1,1
+1,ecoli,0,0,1
