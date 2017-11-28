@@ -12,9 +12,9 @@ run.py is executed within an organism's dir
 ex) in 0-identify_structure/0-identify_pdb/yeast/, enter ../run.py
 
 PDB files and structure images are omited because of memory
-considerations  
+considerations   
 PDB files
  - 0-identify_structure/1-get_pdb/  
- - 0-identify_structure/2-get_pdb_chain/  
+ - 0-identify_structure/2-get_pdb_chain/
 PDB image
  - 2-make_image/pdb_image/
