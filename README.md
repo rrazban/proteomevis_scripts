@@ -6,15 +6,13 @@ order in which executables (run.py) should be run to
 is indicated by the 0, 1, or 2 label at the start of 
 the directory name
  - if no number is present, executables (called run.py) can
-be run in any order
+	be run in any order
 
 run.py is executed within an organism's dir  
 ex) in 0-identify_structure/0-identify_pdb/yeast/, enter ../run.py
 
 PDB files and structure images are omited because of memory
 considerations   
-PDB files
  - 0-identify_structure/1-get_pdb/  
  - 0-identify_structure/2-get_pdb_chain/  
-PDB image
  - 2-make_image/pdb_image/
