@@ -15,6 +15,6 @@ PDB files and structure images are omited because of memory
 considerations   
 PDB files
  - 0-identify_structure/1-get_pdb/  
- - 0-identify_structure/2-get_pdb_chain/
+ - 0-identify_structure/2-get_pdb_chain/  
 PDB image
  - 2-make_image/pdb_image/
