@@ -73,4 +73,4 @@ if __name__ == "__main__":
 	filename = 'seq2struc'
 	writeout(['pdb', 'uniprot', 'oln', 'length'], collections.OrderedDict(sorted(d.items())), filename=filename, date_bool=True)
 	update_bool = database_update_needed(filename)
-	if update_bool: print 'keep current seq2struc.txt as old_seq2struc.txt for efficient running of extra tm.sid jobs'
+	if update_bool: print 'keep old_seq2struc.txt for efficient running of extra tm.sid jobs'

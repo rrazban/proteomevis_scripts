@@ -6,6 +6,7 @@ sys.path.append('../../../utlts/')
 from read_in_file import read_in
 from parse_data import organism, organism_list
 from protein_property import database
+from output import today, database_update_needed
 
 
 def rewrite(d_ref, organism, one_organism_bool):
@@ -15,7 +16,7 @@ def rewrite(d_ref, organism, one_organism_bool):
 		d_ref1 = d_ref['yeast']
 		d_ref2 = d_ref['ecoli']
 
-	with open('new_PDB.txt', 'w') as wfile:
+	with open('PDB_{0}.txt'.format(today), 'w') as wfile:
 		with open('PDB.txt', 'r') as rfile:
 			labels = next(rfile)
 			label_list = labels.split()
@@ -46,20 +47,14 @@ def reference():
 		d_ref[organism] = read_in('pdb', 'uniprot', organism=organism)
 	return d_ref
 
-
-if __name__ == "__main__":
-	raw_d = read_in(*database(organism, 'tm'))	#make a list
-
-	d = {}
-	d[organism] = parse(raw_d)
-	find_duplicates(d[organism])
-
-	d_ref = reference() 
+def check(d_ref, d):
+	need_extra_pairs_bool = False
 	if organism in organism_list:
 		num = len(d_ref[organism])-1
 		for pdb,pdb_list in d[organism].iteritems():
 			if len(pdb_list)!=num:
 				print "{0} has {1} pairs. Should be {2}".format(pdb, len(pdb_list), num)
+				need_extra_pairs_bool = True 
 	else:
 		for pdb,pdb_list in d[organism].iteritems():
 			if pdb in d_ref['yeast']:
@@ -69,8 +64,25 @@ if __name__ == "__main__":
 				
 			if len(pdb_list)!=num:
 				print "{0} has {1} pairs. Should be {2}".format(pdb, len(pdb_list), num)
-	print 'Careful, does not catch if identity is correct, just total number'			
+				need_extra_pairs_bool = True 
+	return need_extra_pairs_bool
+
+
+if __name__ == "__main__":
+	d_ref = reference() 
 	rewrite(d_ref, organism, organism in organism_list)
-	print 'if TM/SIDs missing: 1) run ../setup_extra 2) ../run -e'
-	print '3) manually copy output.txt contents and paste into new_PDB.txt'
-	print '4) mv new_PDB.txt PDB.txt'
+	database_update_needed("PDB")
+
+	raw_d = read_in(*database(organism, 'tm'))
+
+	d = {}
+	d[organism] = parse(raw_d)
+	find_duplicates(d[organism])
+	if check(d_ref, d):
+		print "To obtain missing pairs by running jobs for only those that are missing:"
+		print '1) run ../setup_extra' 
+		print '2) ../run -e'
+		print '2a) if in yeast_ecoli directory, ../run -E'
+		print '3) manually copy output.txt contents and paste at the end of PDB.txt'
+	else:
+		print 'PDB file looks good!'

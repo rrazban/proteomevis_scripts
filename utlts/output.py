@@ -45,8 +45,10 @@ def database_update_needed(filename):
 	if same_file:
 		print "no update needed"
 		subprocess.call(['rm', '{0}_{1}.txt'.format(filename, today)])
-		return False
 	else:
-		print "database update needed"
-		print "manually change name 'filename-date' -> 'filename'"
-		return True
+		print "updating {0}".format(filename)
+		print "'filename' -> 'old_filename'"
+		subprocess.call(['mv', '{0}.txt'.format(filename), 'old_{0}.txt'.format(filename)])
+		print "'filename-date' -> 'filename'"
+		subprocess.call(['mv', '{0}_{1}.txt'.format(filename, today), '{0}.txt'.format(filename)])
+	return not same_file
