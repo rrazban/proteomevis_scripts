@@ -5,9 +5,9 @@
 import sys, os
 import matplotlib.pyplot as plt
 
-sys.path.append('../../utlts/')
+sys.path.append('../utlts/')
 from read_in_file import read_in
-from parse_data import organism_list 
+from parse_data import organism_list, int2organism
 from protein_property import database
 
 
@@ -26,7 +26,7 @@ def merge(d1, d2, data_ppi):
 
 def read_in_ppi_partners():	
 	data = []
-	with open("../../1-protein_property/ppi_partner/{0}/ppi_partners.txt".format(organism), "r") as rfile:
+	with open("../1-property_proteomevis/ppi_partner/{0}/ppi_partners.txt".format(organism), "r") as rfile:
 		label_list = next(rfile).split('\t')
 		label_list = [x.rstrip() for x in label_list]
 		for line in rfile:
@@ -46,12 +46,13 @@ def plotout(data_list, color, d_label):
 	ax.set_xlim([0,1])
 	ax.set_ylim([0,1])
 	ax.set_aspect('auto')
-	plt.savefig('species.{0}.png'.format(int(d_label[organism])), transparent="True")
+	plt.savefig('species.{0}.png'.format(int(d_label[organism])), transparent="True", dpi=350)
 #	plt.show()
 
 
 if __name__ == "__main__":
-	d_label = read_in('name', 'id', filename='../../2-make_database/csv/proteomevis_species.csv')
+	d_org = int2organism() 
+	d_label = {org:i for i,org in d_org.iteritems()} 
 	protein_property_list = ['sid', 'tm']
 	for organism in organism_list:
 		predata_list = []

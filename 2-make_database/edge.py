@@ -13,7 +13,7 @@ from protein_property import database
 def read_in_ppi_partners():
 	d = initialize_dict("dict")
 	for organism in organism_list:
-		with open("../1-protein_property/ppi_partner/{0}/ppi_partners.txt".format(organism), "r") as rfile:
+		with open("../1-property_proteomevis/ppi_partner/{0}/ppi_partners.txt".format(organism), "r") as rfile:
 			label_list = next(rfile).split('\t')
 			label_list = [x.rstrip() for x in label_list]
 			for line in rfile:
