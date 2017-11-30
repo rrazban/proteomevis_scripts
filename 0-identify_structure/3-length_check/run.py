@@ -30,7 +30,7 @@ def get_length(d, d_len):
 
 def get_info(d_ref):
 	url = 'http://www.uniprot.org/uniprot/'
-	batch_size = 350		#491 is limit
+	batch_size = 100# 350		#491 is limit
 	batch = len(d_ref)/batch_size
 	
 	uniprot_list = d_ref.values()
@@ -61,7 +61,7 @@ def prepare_writeout(d_ref, d_output):
 	d = {} 
 	d_ref2 = read_in('pdb', 'oln', 'pre_seq2struc')
 	for pdb, length in d_output.iteritems():
-		d[pdb] = [d_ref[pdb], d_ref2[pdb], length]
+		d[d_ref[pdb]] = [pdb, d_ref2[pdb], length]
 	return d
 
 
