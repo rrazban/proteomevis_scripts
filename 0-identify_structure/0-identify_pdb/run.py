@@ -65,6 +65,8 @@ def get_best_pdb_chain(d_info, d_uni):
 	g_coverage=0	#g=degeneracy
 	g_resolution=0
 	for uniprot, info_list in d_info.iteritems():
+		if uniprot=='P0CX34':
+			print info_list
 		coverage_list = get_coverage(info_list)
 		max_coverage_list = [i for i, coverage in enumerate(coverage_list) if coverage == max(coverage_list)]	#account for ties
 		if len(max_coverage_list)>1:
@@ -87,7 +89,7 @@ def add_ensembl(d):
 	d_ref = read_in('Entry', 'Gene names  (ordered locus )', filename='proteome')		
 	new_d = {}
 	for pdb, uniprot in d.iteritems():
-		new_d[pdb] = [uniprot, d_ref[uniprot]]
+		new_d[uniprot] = [pdb, d_ref[uniprot]]
 	return new_d
 	
 
@@ -108,6 +110,6 @@ if __name__ == '__main__':
 
 	d_uni_list = add_ensembl(d_uni_pdb)
 	filename='pre_seq2struc'
-	writeout(['pdb', 'uniprot', 'oln'], collections.OrderedDict(sorted(d_uni_list.items())), filename=filename, date_bool=True)
+	writeout(['uniprot', 'pdb', 'oln'], collections.OrderedDict(sorted(d_uni_list.items())), filename=filename, date_bool=True)
 
 	database_update_needed(filename=filename)

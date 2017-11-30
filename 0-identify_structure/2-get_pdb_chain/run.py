@@ -16,7 +16,7 @@ def untar():
 		item = '-pdb-bundle.tar'
 		mapping_file = filename[:-len(item)] + '-chain-id-mapping.txt' 
 		if not os.path.exists(mapping_file):	#do not  decompress if already done
-		        subprocess.call(["tar", "-xvf", filename, "-C", DIR])
+		        subprocess.call(["tar", "-xvf", filename, "-C", DIR])	#alternatively, could just remove .tar file
 
 def save_pdb_chain_file(pdb_file, want_chain_list, translate):
 	pre_chain_list = list(pdb_file.get_chains())
