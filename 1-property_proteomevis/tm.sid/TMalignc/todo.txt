@@ -1,0 +1,3 @@
+make it such that it runs based on basename of directory, no need to manually input
+
+also need to consider subsets of new data
