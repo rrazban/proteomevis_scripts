@@ -1,11 +1,18 @@
 #!/usr/bin/python
+
+help_msg = "PDB complex file to PDB chains' files"
+
 import os, sys, subprocess, glob
 from Bio.PDB import PDBParser, PDBIO
 from collections import defaultdict
 
-sys.path.append('../../../utlts/')
+CWD = os.getcwd()
+UTLTS_DIR = CWD[:CWD.index('proteomevis_scripts')]+'/proteomevis_scripts/utlts'
+sys.path.append(UTLTS_DIR)
+from parse_user_input import help_message
 from read_in_file import read_in
 from parse_data import organism
+from output import print_next_step
 
 
 DIR = '../../1-get_pdb/{0}'.format(organism) 
@@ -56,8 +63,8 @@ def get_pdb_pdb_chain(d_input):
 	return d
 
 
-
 if __name__ == "__main__":
+	help_message(help_msg)
 	untar()	
 	d_input = read_in('pdb', 'uniprot', filename='pre_seq2struc')
 	d = get_pdb_pdb_chain(d_input)
@@ -73,3 +80,4 @@ if __name__ == "__main__":
 				translate_chain = read_in_mapping(pdb, s)
 				pdb_file = PDBParser().get_structure(pdb, sub_file)
 				chain_list = save_pdb_chain_file(pdb_file, chain_list, translate_chain)
+	print_next_step()

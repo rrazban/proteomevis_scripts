@@ -79,10 +79,10 @@ if __name__ == "__main__":
 	d[organism] = parse(raw_d)
 	find_duplicates(d[organism])
 	if check(d_ref, d):
-		print "To obtain missing pairs by running jobs for only those that are missing:"
-		print '1) run ../pre_run_extra' 
+		print "\nTo obtain missing pairs:"
+		print '1) ../pre_run_extra.py to generate extra.txt' 
 		print '2) ../run -e'
-		print '2a) if in yeast_ecoli directory, ../run -E'
+		print '2a) if in yeast_ecoli directory, also ../run -E'
 		print '3) manually copy output.txt contents and paste at the end of PDB.txt'
 	else:
 		print 'PDB file looks good!'

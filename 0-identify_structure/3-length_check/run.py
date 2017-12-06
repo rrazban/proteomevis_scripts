@@ -1,18 +1,19 @@
 #!/usr/bin/python
 
-#selection criterion 2: remove all those identified in pre_seq2struc whose length is less than
-#			80% of UniProt chain length 
+help_msg = 'remove pre_seq2struc proteins whose PDB length is 0.8 times less than reported UniProt chain length' #(selection criterion 2) 
 
-import sys, os, collections
+import sys, os
 from Bio.PDB import PDBParser
 from Bio import PDB                                                       
 import urllib, urllib2
 
-sys.path.append('../../../utlts/')
+CWD = os.getcwd()
+UTLTS_DIR = CWD[:CWD.index('proteomevis_scripts')]+'/proteomevis_scripts/utlts'
+sys.path.append(UTLTS_DIR)
+from parse_user_input import help_message
 from read_in_file import read_in, set_up_read_in
 from parse_data import organism
 from output import writeout, database_update_needed
-
 
 def get_length(d, d_len):
 	d_output = {}	
@@ -28,7 +29,7 @@ def get_length(d, d_len):
 				d_output[name] = length
 	return d_output
 
-def get_info(d_ref):
+def get_info(d_ref, args):
 	url = 'http://www.uniprot.org/uniprot/'
 	batch_size = 100# 350		#491 is limit
 	batch = len(d_ref)/batch_size
@@ -47,10 +48,12 @@ def get_info(d_ref):
 			word_list = [word.strip() for word in word_list]
 			uniprot = word_list[label_list.index('Entry')]
 			if len(word_list)==1:	#does not capture UniProt peptide case
-				print 'No chain found: {0}'.format(word_list)
+				if args.verbose:
+					print 'No chain found: {0}. Structure is discarded'.format(word_list)
 				length = 1000000000
 			elif word_list[label_list.index('Chain')+1]=='?':
-				print 'No starting residue for chain: {0}'.format(word_list)
+				if args.verbose:
+					print 'No starting residue for chain: {0}'.format(word_list)
 				length = int(word_list[label_list.index('Chain')+2])
 			else:	
 				length = int(word_list[label_list.index('Chain')+2])-int(word_list[label_list.index('Chain')+1])+1
@@ -66,11 +69,12 @@ def prepare_writeout(d_ref, d_output):
 
 
 if __name__ == "__main__":
+	args = help_message(help_msg, bool_add_verbose=True)
 	d_ref = read_in('pdb', 'uniprot', 'pre_seq2struc')
-	d_len = get_info(d_ref) 
+	d_len = get_info(d_ref, args) 
 	d_output = get_length(d_ref, d_len)
 	d = prepare_writeout(d_ref, d_output)
 	filename = 'seq2struc'
-	writeout(['uniprot', 'pdb', 'oln', 'length'], collections.OrderedDict(sorted(d.items())), filename=filename, date_bool=True)
+	writeout(['uniprot', 'pdb', 'oln', 'length'], d, filename=filename, date_bool=True)
 	update_bool = database_update_needed(filename)
 	if update_bool: print 'keep old_seq2struc.txt for efficient running of extra tm.sid jobs'

@@ -2066,6 +2066,8 @@ int output_results(char *xname,
 		j_old=m2[k]+1;
 	}
 
+	return seq_id;	//hack, early return statement cuz RMR only interested in seq_id
+
 	//tail
 	for(i=i_old; i<x_len; i++)
 	{
@@ -2089,10 +2091,6 @@ int output_results(char *xname,
     seqM[kk]='\0';
 	
 
-//	seq_id=seq_id/( n_ali8+0.00000001); //what did by TMalign, but not reasonable, it should be n_ali8    
-//	seq_id=2.0*seq_id/(x_len+y_len); 
-//edit here
-	return seq_id;
 
 
  

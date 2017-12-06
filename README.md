@@ -1,20 +1,15 @@
-scripts used to generate the csv files making up the 
-ProteomeVis web app (github.com/rrazban/proteomevis/make_database)
+# ProteomeVis data curation
 
-
-order in which executables (run.py) should be run 
-is indicated by the 0, 1, or 2 label at the start 
-of the directory name. Updates ProteomeVis when new 
-PDB structures are found for Uniprot sequences
- - if no number is present, executables (called run.py) can
-	be run in any order
-
-update property_proteome/ when proteome is updated
+To update the database, run executables (run.py) as 
+indicated by the 0, 1, 2, or 3 label at the start 
+of the directory name. No number within subdirectory 
+indicates that it can be updated in any order. 
 
 run.py is executed within an organism's dir  
-ex) in 0-identify_structure/0-identify_pdb/yeast/, enter ../run.py
+ex) enter `../run.py` in `proteomevis_scripts/0-identify_structure/0-identify_pdb/yeast/` 
 
-PDB files and structure images are omited because of memory
- - 0-identify_structure/1-get_pdb/  
- - 0-identify_structure/2-get_pdb_chain/  
- - 2-make_image/pdb_image/
+PDB files, structure images, and the database are 
+omitted because of memory. Affected directories:
+ - `0-identify_structure/1-get_pdb/'organism'/`
+ - `0-identify_structure/2-get_pdb_chain/'organism'/`  
+ - `2-proteomevis_backend/*/`

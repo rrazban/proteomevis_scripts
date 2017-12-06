@@ -95,41 +95,21 @@ void print_help(char *arg)
 		 << " *          0.5 < TM-score < 1.00, in about the same fold                                          *" << endl
 		 << " * Reference: Y Zhang and J Skolnick, Nucl Acids Res 33, 2302-9 (2005)                             *" << endl
 		 << " * Please email your comments and suggestions to Yang Zhang (zhng@umich.edu)                       *" << endl
-		 << " ** Modified by Rostam Razban for high-throughput jobs			                       *" << endl
-		 << " ** automatically accesses pdb files for respective organism in proteomevis_scripts repository             *" << endl
+		 << " ** Modified by Rostam Razban (10/2017) for high-throughput jobs                                   *" << endl
+		 << " ** automatically accesses pdb files for respective organism in proteomevis_scripts repository     *" << endl
+		 << " ** for unadultered version, download from Yang Zhang Group Website                                *" << endl
 		 << " ***************************************************************************************************" << endl;	
 	cout << endl
-		 << " Usage: " << arg << " [Options]" << endl << endl
+		 << " Usage: ." << arg << " [Options] (run in valid organism directory)" << endl << endl
 		 << " Options:" << endl
-		 << "       -u    TM-score normalized by user assigned length" << endl
-		 << "             warning: it should be >= minimum length of the two structures" << endl
-		 << "             otherwise, TM-score may be >1" << endl << endl
-		 << "       -a    TM-score normalized by the average length of two structures" << endl 
-		 << "             T or F, (default F)" << endl << endl
-		 << "       -i    Ask TM-align to start with an alignment,specified in fasta file 'align.txt'" << endl << endl
-		 << "       -I    Ask TM-align to stick the alignment to 'align.txt'" << endl << endl
-		 << "       -m    Output TM-align rotation matrix:" << endl << endl
-		 << "       -d    TM-score scaled by an assigned d0, e.g. 5 Angstroms" << endl << endl
-		 << "       -o    output the superposition to TM.sup, TM.sup_all and TM.sup_atm" << endl
-		 << "             >TMalign chain1 chain2 -o TM.sup" << endl
-		 << "             To view superimposed C-alpha traces of aligned regions by rasmol:" << endl
-		 << "             >rasmol -script TM.sup" << endl
-		 << "             To view superimposed C-alpha traces of all regions:" << endl
-		 << "             >rasmol -script TM.sup_all" << endl << endl
-		 << "             To view superimposed full-atom structures of aligned regions:" << endl
-		 << "             >rasmol -script TM.sup_atm" << endl << endl
-		 << "             To view superimposed full-atom structures of all regions:" << endl
-		 << "             >rasmol -script TM.sup_all_atm" << endl << endl
-		 << "             To view superimposed full-atom structures of all regions with ligands:" << endl
-		 << "             >rasmol -script TM.sup_all_atm_lig" << endl << endl
-		 << "       -v    print the version of TM-align" << endl << endl
 		 << "       -h    print this help" << endl << endl
-		 << "       -e    only run for extra pdb files in extra.txt (generate extra.txt file by running setup_extra_file.py)" << endl << endl
-		 << "       -E    only run for extra pdb files for yeast_ecoli (need to still run -e as well)" << endl << endl
+		 << "       --all    run all pdb files in 0-identify_structure/3-length_check/'organism'/seq2struc.txt" << endl << endl
+		 << "       --extra    only run for extra pdb files in extra.txt (generate extra.txt file by running setup_extra_file.py)" << endl << endl
+		 << "       --EXTRA    only run for extra pdb files for yeast_ecoli (need to still run -e as well)" << endl << endl
 		 << "       (Options -u, -a, -d -o won't change the final structure alignment)" << endl << endl
 		 << " Example usages:" << endl
-		 << "        "<< arg << "(runs for all pdb files in 0-identify_structure/3-length_check/seq2struc.txt)" << endl
-		 << "        "<< arg <<" -e" << "(runs only for extra pdb files from old to current seq2struc.txt)" << endl;
+		 << "        "<< arg <<" --all" << endl
+		 << "        "<< arg <<" --extra" << endl;
        
   exit(EXIT_SUCCESS);
 
@@ -225,7 +205,7 @@ vector<string> get_pdb_chain_list(string xread_pdb)
 		{
 //			std::cout << "Word: " << word << std::endl;
 //			std::cout << count << std::endl;
-			if (count==0){	//asumme pdb is the 2nd element //todo: have it read first line and find where pdb is
+			if (count==1){	//asumme pdb is the 2nd element //todo: have it read first line and find where pdb is
 				pdb_chain_list.push_back(word);
 				break;	
 			}
@@ -243,7 +223,7 @@ int main(int argc, char *argv[])
 
     if (argc < 2) 
     {
-//        print_help(argv[0]);        
+        print_help(argv[0]);        
     } 
 	
 	
@@ -310,14 +290,14 @@ int main(int argc, char *argv[])
 		{
 			strcpy(fname_lign, argv[i + 1]);      I_opt = true; i++;
 		}
-		else if ( !strcmp(argv[i],"-e") || !strcmp(argv[i],"-E")) 
+		else if ( !strcmp(argv[i],"--extra") || !strcmp(argv[i],"--EXTRA")) 
 		{
 			extra_opt = true; 
 			if (!strcmp(argv[i],"-E")){
 				extra_ecoli = true;	
 			} 
 		}
-		else{}
+		else{}	
 	}
 	
 	std::string cwd = getcwd(NULL, 0);	//organism determined from the directory in which the program is called
@@ -356,7 +336,10 @@ int main(int argc, char *argv[])
 			pre_xname = dir_pdb + "yeast/";	
 			pre_yname = dir_pdb + "ecoli/";
 		}
-	else {}
+	else {
+		cout << "Make sure to run in valid organism directory" << endl;
+		print_help(argv[0]);    			
+	}
 
 	if(!B_opt || !A_opt)
 	{
@@ -500,7 +483,7 @@ int main(int argc, char *argv[])
 
 	ofstream outfile("output.txt");
 	outfile << "pdb1\tpdb2\tTM\tSID\tTM1\tTM2\tsid\tnal\n";
-	for( int a = 568; a < xpdb_chain_list.size(); a = a + 1 ) {
+	for( int a = 0; a < xpdb_chain_list.size(); a = a + 1 ) {
 		strcpy(xname, pre_xname.c_str());
 		strcat (xname, xpdb_chain_list[a].c_str());
 		strcat (xname, ".pdb");
@@ -977,7 +960,6 @@ int main(int argc, char *argv[])
 		TM_0=TM5;
 	}
 
-   
 	int seq_id = output_results(xname, yname, xlen, ylen, t0, u0, TM1, TM2, rmsd0, d0_out, m1, m2, n_ali8, n_ali, TM_0, Lnorm_0, d0_0, fname_matrix);	//this is a hack. no longer need full output fxn
 	outfile << xpdb_chain_list[a] << "\t" << ypdb_chain_list[b] << "\t"; 
 	outfile << std::setprecision(4) << TM3 << "\t" << (float)seq_id/(float)n_ali8 << "\t" << TM1 << "\t" << TM2 << "\t" << seq_id << "\t" << n_ali8 << "\n";

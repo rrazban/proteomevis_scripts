@@ -1,14 +1,19 @@
 #!/usr/bin/python
+
+help_msg = 'calculate contact density from PDB structure file'
+
 import os, sys
 from Bio.PDB import NeighborSearch, PDBParser, Atom, Residue
 from Bio import PDB
 
-sys.path.append('../../../utlts/')
-from parse_user_input import false_or_true
+CWD = os.getcwd()
+UTLTS_DIR = CWD[:CWD.index('proteomevis_scripts')]+'/proteomevis_scripts/utlts'
+sys.path.append(UTLTS_DIR)
+from parse_user_input import help_message, false_or_true
 from read_in_file import read_in
 from parse_data import organism
 from protein_property import database
-from output import writeout 
+from output import writeout, print_next_step
 
 
 def get_contacts(d_ref, method):
@@ -53,6 +58,7 @@ def get_contact_density(d_contact, d_len):
 
 
 if __name__ == "__main__":
+	help_message(help_msg)
 	extra = ''
 	if false_or_true("Relax selection criterion 2"):
 		extra += 'pre_output'
@@ -68,3 +74,4 @@ if __name__ == "__main__":
 	if method:
 		filename+='_shakh'
 	writeout(['oln', 'contact_density'], d_cd, filename = '{0}{1}'.format(filename, extra))
+	print_next_step()
