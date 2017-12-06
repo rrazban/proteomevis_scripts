@@ -1,4 +1,4 @@
-# ProteomeVis data curation
+# [ProteomeVis](https://github.com/rrazban/proteomevis) data curation
 
 To update the database, run executables (run.py) as 
 indicated by the 0, 1, 2, or 3 label at the start 
