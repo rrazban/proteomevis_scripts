@@ -105,7 +105,7 @@ void print_help(char *arg)
 		 << "       -h    print this help" << endl << endl
 		 << "       --all    run all pdb files in 0-identify_structure/3-length_check/'organism'/seq2struc.txt" << endl << endl
 		 << "       --extra    only run for extra pdb files in extra.txt (generate extra.txt file by running setup_extra_file.py)" << endl << endl
-		 << "       --EXTRA    only run for extra pdb files for yeast_ecoli (need to still run -e as well)" << endl << endl
+		 << "       --EXTRA    only run for extra pdb files for yeast_ecoli (need to still run --extra as well)" << endl << endl
 		 << "       (Options -u, -a, -d -o won't change the final structure alignment)" << endl << endl
 		 << " Example usages:" << endl
 		 << "        "<< arg <<" --all" << endl
