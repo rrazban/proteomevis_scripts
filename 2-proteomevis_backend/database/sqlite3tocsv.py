@@ -14,7 +14,7 @@ from output import print_next_step
 
 
 def sqlite3tocsv():
-	column_list = ['proteomevis_species', 'proteomevis_chain', 'proteomevis_domain', 'proteomevis_edge']
+	column_list = ['proteomevis_species', 'proteomevis_chain', 'proteomevis_inspect', 'proteomevis_edge']
 
 	with sqlite3.connect("db.sqlite3") as connection:
 		for column in column_list:

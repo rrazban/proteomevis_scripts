@@ -32,10 +32,11 @@ def get_pdb_label(pdb):
 	return [pdb1, pdb2, pdb3]
 
 def writeout_sql(d_org, d_index, d_val, zero_list):
+	table_name = 'proteomevis_chain'
 	conn = sqlite3.connect('db.sqlite3')
 	c = conn.cursor()
-	c.execute('DROP TABLE proteomevis_chain')
-	c.execute('CREATE TABLE proteomevis_chain(id,chain_id,species,pdb,domain,chain,length,abundance,evorate,conden,ppi,dostox,dN,dS,mutant,other_id,uniprot)')
+	c.execute('DROP TABLE IF EXISTS {0}'.format(table_name))
+	c.execute('CREATE TABLE {0}(id,chain_id,species,pdb,domain,chain,length,abundance,evorate,conden,ppi,dostox)'.format(table_name))
 
 	count=0
 	for o in range(len(d_org)):
@@ -63,11 +64,10 @@ def writeout_sql(d_org, d_index, d_val, zero_list):
 				else:
 					line_list.append(zero_list[pp])
 					
-			line_list.extend(["","",0,"",""])
-			c.execute("INSERT INTO proteomevis_chain VALUES {0}".format(tuple(line_list))) #i am unable to pass NULL through python list
+			c.execute("INSERT INTO {0} VALUES {1}".format(table_name, tuple(line_list))) #i am unable to pass NULL through python list
 
 	for column in ['abundance', 'dostox', 'evorate']:
-		c.execute("UPDATE proteomevis_chain SET {0}=null where {0}=''".format(column))	
+		c.execute("UPDATE {0} SET {1}=null where {1}=''".format(table_name, column))	
 
 	conn.commit()
 	conn.close()

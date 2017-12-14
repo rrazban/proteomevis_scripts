@@ -31,10 +31,11 @@ def read_in_ppi_partners():
 	return d	
 
 def writeout_sql(d_org, d_index, d_ppi, d_val):
+	table_name = 'proteomevis_edge'
 	conn = sqlite3.connect('db.sqlite3')
 	c = conn.cursor()
-	c.execute('DROP TABLE proteomevis_edge')
-	c.execute('CREATE TABLE proteomevis_edge(id,sourceID,species,targetID,tm,sid,ppi,mutant)')
+	c.execute('DROP TABLE IF EXISTS {0}'.format(table_name))
+	c.execute('CREATE TABLE {0}(id,species,sourceID,targetID,tm,sid,ppi)'.format(table_name))
 
 	count=0
 	for o in range(len(d_org)):
@@ -53,8 +54,8 @@ def writeout_sql(d_org, d_index, d_ppi, d_val):
 				pdb_pair = pdb1 +','+ pdb2
 				if pdb_pair not in d_val[organism][0]:
 					pdb_pair = pdb2 +','+ pdb1
-				line_list = [count, p1, o, p2, float(d_val[organism][0][pdb_pair]), float(d_val[organism][1][pdb_pair]), ppi_bool, 0]
-				c.execute("INSERT INTO proteomevis_edge VALUES {0}".format(tuple(line_list))) 
+				line_list = [count, o, p1, p2, float(d_val[organism][0][pdb_pair]), float(d_val[organism][1][pdb_pair]), ppi_bool]
+				c.execute("INSERT INTO {0} VALUES {1}".format(table_name, tuple(line_list))) 
 				count+=1
 	conn.commit()
 	conn.close()

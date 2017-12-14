@@ -16,14 +16,15 @@ from output import print_next_step
 def printout_sql():
 	d_org = int2organism()
 
+	table_name = 'proteomevis_species'
 	conn = sqlite3.connect('db.sqlite3')
 	c = conn.cursor()
-	c.execute('DROP TABLE proteomevis_species')
-	c.execute('CREATE TABLE proteomevis_species(id,name,has_localization,has_function,has_mutant_data)')
+	c.execute('DROP TABLE IF EXISTS {0}'.format(table_name))
+	c.execute('CREATE TABLE {0}(id,name,has_localization)'.format(table_name))
 
-	line_list_list = [[0, d_org[0], 0, 0, 0], [1, d_org[1], 0, 0, 0]]
+	line_list_list = [[0, d_org[0], 1], [1, d_org[1], 1]]
 	for line_list in line_list_list:
-		c.execute("INSERT INTO proteomevis_species VALUES {0}".format(tuple(line_list))) 
+		c.execute("INSERT INTO {0} VALUES {1}".format(table_name, tuple(line_list))) 
 	conn.commit()
 	conn.close()
 
