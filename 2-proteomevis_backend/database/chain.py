@@ -36,20 +36,17 @@ def writeout_sql(d_org, d_index, d_val, zero_list):
 	conn = sqlite3.connect('db.sqlite3')
 	c = conn.cursor()
 	c.execute('DROP TABLE IF EXISTS {0}'.format(table_name))
-	c.execute('CREATE TABLE {0}(id,chain_id,species,pdb,domain,chain,length,abundance,evorate,conden,ppi,dostox)'.format(table_name))
+	c.execute('CREATE TABLE {0}(chain_id,species,pdb,length,abundance,evorate,conden,ppi,dostox)'.format(table_name))
 
-	count=0
 	for o in range(len(d_org)):
 		organism = d_org[o]
 		total = len(d_index[organism])
 		for p in range(total):
-			line_list = [count, p, o]
-			count+=1	
+			line_list = [p, o]
 
 			pdb = d_index[organism][p]
 			pdb_label_list = get_pdb_label(pdb)				
-			for pdb_label in pdb_label_list:
-				line_list.append(pdb_label)
+			line_list.append(pdb)
 
 			for pp in range(len(d_val[organism])):
 				try:
