@@ -27,7 +27,7 @@ def read_in_index():
 
 def get_pdb_label(pdb):
 	pdb1 = pdb
-	pdb2 = pdb[:pdb.index('.')].upper()
+	pdb2 = pdb[:pdb.index('.')]
 	pdb3 = pdb[pdb.index('.')+1:]
 	return [pdb1, pdb2, pdb3]
 

@@ -1,3 +1,4 @@
+.DS_Store
 *.pyc
 *.pdb
 *.tar
@@ -10,6 +11,7 @@ raw_*
 old_*
 extra.txt
 analysis/
+
 #extra files in property_proteome/
 Sopko_2006/
 Sina_2003_original.txt

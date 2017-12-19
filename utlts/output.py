@@ -56,7 +56,7 @@ def get_next_dirname(CWD, PATH):
 		dirname_list.remove(current_dirname)
 		if PATH=='../':
 			print "Make sure all scripts in directory are run before moving on"
-		print "\nMake sure all other directories {0} are updated before moving on".format(tuple(dirname_list))
+		print "\nMake sure all other directories {0} are updated before moving on".format(tuple(dirname_list))		#better way: check if files modified after seq2struc.txt using time.ctime(os.path.getmtime(file)))	#also, this way, can catch users starting at 1- or 2- without first doing 0-
 	return next_dirname
 
 def print_next_step(PATH='../../'):

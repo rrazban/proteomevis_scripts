@@ -23,6 +23,12 @@
    2016/05/25: fixed a bug on PDB file reading
 ===============================================================================
 
+2017/10 modified by RMR for high throughput running
+to install, first download TM-align dependencies from
+http://zhanglab.ccmb.med.umich.edu/TM-align/
+keep present TMalign.h and TMalign.cpp for RMR modifications 
+
+
 =========================
  How to install TM-align
 =========================

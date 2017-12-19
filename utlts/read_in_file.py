@@ -33,7 +33,7 @@ def duplicate_check(filename, value, d):
 		continue_bool = True
 	return continue_bool
 
-def read_in(want_x, want_y, filename='', strip='', organism=''):	#maybe just pass organism here for default cases
+def read_in(want_x, want_y, filename='', strip='', organism=''):
 	filename, delineator = set_up_read_in(filename, organism)
 
 	d = {}

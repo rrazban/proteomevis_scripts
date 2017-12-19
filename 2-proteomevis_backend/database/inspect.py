@@ -7,8 +7,6 @@ import collections
 import urllib, urllib2
 import sqlite3
 
-from chain import get_pdb_label
-
 CWD = os.getcwd()
 UTLTS_DIR = CWD[:CWD.index('proteomevis_scripts')]+'/proteomevis_scripts/utlts'
 sys.path.append(UTLTS_DIR)
@@ -50,19 +48,15 @@ def writeout_sql(d_org, d_translate, d_index, d_val, args):
 	conn = sqlite3.connect('db.sqlite3')
 	c = conn.cursor()
 	c.execute('DROP TABLE IF EXISTS {0}'.format(table_name))	#have drop if present line
-	c.execute('CREATE TABLE {0}(id,pdb,uniprot,genes,location,function1,function2,species)'.format(table_name)) 
+	c.execute('CREATE TABLE {0}(chain_id,pdb,uniprot,genes,location,function1,function2,species)'.format(table_name)) 
 
-	count=0
 	for o in range(len(d_org)):
 		organism = d_org[o]
 		total = len(d_index[organism])
 		for p in range(total):
-			line_list = [count]
-			count+=1	
+			line_list = [p]
 
 			pdb = d_index[organism][p]
-	#		pdb_label_list = get_pdb_label(pdb)				
-	#		line_list.append(pdb_label_list[1])
 			line_list.append(pdb)
 
 			line_list.append(d_translate[organism][pdb])
