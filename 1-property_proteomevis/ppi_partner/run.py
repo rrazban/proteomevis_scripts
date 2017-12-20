@@ -47,23 +47,20 @@ def get_ppi_degree(ppis):
 		num_ppi = len(ppis)
 	return num_ppi
 
-def get_physical_ppi(partner_bool=True):	#have this imported from ppi/ to make sure it matches
+def get_physical_ppi(partner_bool=True):
 	if partner_bool:
-		d_ref = read_in('oln', 'uniprot')
+		d_ref = read_in('uniprot', 'oln')
+		d_ref2 = read_in('uniprot', 'pdb')
 	else:
-		d_ref = read_in('Gene names  (ordered locus )', 'Entry', 'proteome')
+		d_ref = read_in('Entry', 'Gene names  (ordered locus )', 'proteome')
 	taxonomy = taxid()[organism]
-	db = 'intact'				#ensembl not supported for ecoli for mint and biogrid
+	db = 'intact'		#oln not supported for ecoli for mint and biogrid
 	score_crit = None
 
 	d = {}
 	error_list = []
 	s = PSICQUIC(verbose=False)
-
-	if partner_bool:
-		d_ref2 = read_in('oln', 'pdb')
-
-	for oln, uniprot in d_ref.iteritems():
+	for uniprot, oln in d_ref.iteritems():
 		try:
 			ppis = s.query(db, "{0} AND taxid:{1} AND affinity".format(uniprot, taxonomy))
 		except:
@@ -76,7 +73,7 @@ def get_physical_ppi(partner_bool=True):	#have this imported from ppi/ to make s
 			ppis = get_score(ppis, score_crit)	
 		
 		if partner_bool:
-			d.update(get_ppi_partner(uniprot, d_ref2[oln], ppis, d_ref))
+			d.update(get_ppi_partner(uniprot, d_ref2[uniprot], ppis, d_ref2))
 		else:
 			d[oln] = get_ppi_degree(ppis)
 
