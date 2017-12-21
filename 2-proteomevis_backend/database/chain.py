@@ -31,12 +31,12 @@ def get_pdb_label(pdb):
 	pdb3 = pdb[pdb.index('.')+1:]
 	return [pdb1, pdb2, pdb3]
 
-def writeout_sql(d_org, d_index, d_val, zero_list):
+def writeout_sql(d_org, d_index, d_val, protein_property_list, log_zero_list):
 	table_name = 'proteomevis_chain'
 	conn = sqlite3.connect('db.sqlite3')
 	c = conn.cursor()
 	c.execute('DROP TABLE IF EXISTS {0}'.format(table_name))
-	c.execute('CREATE TABLE {0}(chain_id,species,pdb,length,abundance,evorate,conden,ppi,dostox)'.format(table_name))
+	c.execute('CREATE TABLE {0}(chain_id,species,pdb,{1})'.format(table_name, ','.join(protein_property_list)))
 
 	for o in range(len(d_org)):
 		organism = d_org[o]
@@ -48,22 +48,24 @@ def writeout_sql(d_org, d_index, d_val, zero_list):
 			pdb_label_list = get_pdb_label(pdb)				
 			line_list.append(pdb)
 
-			for pp in range(len(d_val[organism])):
+			for pp, protein_property in enumerate(protein_property_list):
+#			for pp in range(len(d_val[organism])):
 				try:
 					val = float(d_val[organism][pp][pdb])
 				except:
 					line_list.append('')	#no value
 					continue
-				if pp==len(d_val[organism])-1:
-					line_list.append(val)	#dosage tolerance case
+
+				if protein_property=='dosage_tolerance':
+					line_list.append(val)
 				elif val!=0:
 					line_list.append(np.log10(val))
 				else:
-					line_list.append(zero_list[pp])
+					line_list.append(log_zero_list[pp])
 					
-			c.execute("INSERT INTO {0} VALUES {1}".format(table_name, tuple(line_list))) #i am unable to pass NULL through python list
+			c.execute("INSERT INTO {0} VALUES {1}".format(table_name, tuple(line_list)))
 
-	for column in ['abundance', 'dostox', 'evorate']:
+	for column in protein_property_list: #unable to pass NULL through python list
 		c.execute("UPDATE {0} SET {1}=null where {1}=''".format(table_name, column))	
 
 	conn.commit()
@@ -71,7 +73,7 @@ def writeout_sql(d_org, d_index, d_val, zero_list):
 
 
 if __name__ == "__main__":
-	help_message(help_msg, bool_org_dir = False)	#add verbose option
+	help_message(help_msg, bool_org_dir = False)
 	d_org = int2organism() 
 	d_index = initialize_dict('dict')
 	d_val = initialize_dict('list') 
@@ -81,8 +83,8 @@ if __name__ == "__main__":
 		pre_d_i = collections.OrderedDict(sorted(pre_d_i.items()))
 		d_index[organism] = {i:pdb for i,pdb in enumerate(pre_d_i)}
 
-		protein_property_list = ['length_pdb', 'abundance', 'evorate', 'contact_density', 'PPI', 'dosage_tolerance']	#add length/contact density
-		zero_list = [-1, -1, -4, 1, -1]	#dont log dosage tolerance 	#already logged for yeast, ecoli is discrete
+		protein_property_list = ['length', 'abundance', 'evolutionary_rate', 'contact_density', 'PPI_degree', 'dosage_tolerance']	#add length/contact density
+		log_zero_list = [-1, -1, -4, 1, -1]	#dont log dosage tolerance 	#already logged for yeast, ecoli is discrete
 		d_ref = read_in('oln', 'pdb', organism=organism)
 		for protein_property in protein_property_list:
 			x_input = database(organism, protein_property)
@@ -91,5 +93,5 @@ if __name__ == "__main__":
 			d_subset = {pdb: d[oln] for oln,pdb in d_ref.iteritems() if oln in d}
 			d_val[organism].append(d_subset)
 
-	writeout_sql(d_org, d_index, d_val, zero_list)
+	writeout_sql(d_org, d_index, d_val, protein_property_list, log_zero_list)
 	print_next_step('../')	

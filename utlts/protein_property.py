@@ -11,12 +11,9 @@ def database(organism, option, bool_more=False):
 	d_db = {}
 
 	if option in ['tm', 'sid']:
-		d_db[option] = [['pdb1', 'pdb2'], option.upper(), "{0}/tm.sid/{1}/PDB.txt".format(DIR_pv, organism)]	#only for hist.py cuz when checks if in PV, its empty (cuz pdb1+','+pdb2)
+		d_db[option] = [['pdb1', 'pdb2'], option.upper(), "{0}/tm_and_sid/{1}/PDB.txt".format(DIR_pv, organism)]
 
-	elif option=='length_proteome':	#merge with length_pdb to just be length
-		d_db[option] = ['Gene names  (ordered locus )', 'Length', 'proteome', '', organism]
-
-	elif option=='length_pdb':
+	elif option=='length':
 		d_db[option] = ['oln', 'length', '', '', organism] 
 
 	elif option in ["contact_density", "con_den"]:
@@ -30,7 +27,7 @@ def database(organism, option, bool_more=False):
 
 	elif "ppi" in option.lower():
 		filename = 'intact'
-		d_db[option] = ['oln', 'ppi', '{0}/ppi/{1}/{2}.txt'.format(DIR_proteome, organism, filename)]	
+		d_db[option] = ['oln', 'ppi', '{0}/PPI_degree/{1}/{2}.txt'.format(DIR_proteome, organism, filename)]	
 
 	elif "dos" in option.lower():
 		if organism=='ecoli':
@@ -39,8 +36,6 @@ def database(organism, option, bool_more=False):
 			d_db[option] = ['Probe ID', 'Log2 Ratio (20Gen)', '{0}/dosage_tolerance/yeast/Douglas_2012.txt'.format(DIR_proteome), ('r', ":")]
 		else: pass
 
-	elif option.lower() == 'evorate_wall':	#have additional options called from function
-		d_db[option] = ["ORF", "dN", "{0}/evolutionary_rate/{1}/Wall_2005.txt".format(DIR_proteome, organism)]
 	elif "rate" in option.lower():
 		d_db[option] = ["oln", "evorate", "{0}/evolutionary_rate/{1}/Zhang_2015.txt".format(DIR_proteome, organism)]
 
