@@ -293,7 +293,7 @@ int main(int argc, char *argv[])
 		else if ( !strcmp(argv[i],"--extra") || !strcmp(argv[i],"--EXTRA")) 
 		{
 			extra_opt = true; 
-			if (!strcmp(argv[i],"-E")){
+			if (!strcmp(argv[i],"--EXTRA")){
 				extra_ecoli = true;	
 			} 
 		}
