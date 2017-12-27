@@ -1,14 +1,18 @@
 #!/usr/bin/python
 
-#make figure in Edge Filtering panel for all organisms
+help_msg = 'make figure in Edge Filtering panel for all organisms'
 
 import sys, os
 import matplotlib.pyplot as plt
 
-sys.path.append('../utlts/')
+CWD = os.getcwd()
+UTLTS_DIR = CWD[:CWD.index('proteomevis_scripts')]+'/proteomevis_scripts/utlts'
+sys.path.append(UTLTS_DIR)
+from parse_user_input import help_message
 from read_in_file import read_in
 from parse_data import organism_list, int2organism
 from protein_property import database
+from output import print_next_step
 
 
 def merge(d1, d2, data_ppi):
@@ -26,7 +30,7 @@ def merge(d1, d2, data_ppi):
 
 def read_in_ppi_partners():	
 	data = []
-	with open("../1-property_proteomevis/ppi_partner/{0}/ppi_partners.txt".format(organism), "r") as rfile:
+	with open("../../1-property_proteomevis/ppi_partner/{0}/ppi_partners.txt".format(organism), "r") as rfile:
 		label_list = next(rfile).split('\t')
 		label_list = [x.rstrip() for x in label_list]
 		for line in rfile:
@@ -51,6 +55,7 @@ def plotout(data_list, color, d_label):
 
 
 if __name__ == "__main__":
+	help_message(help_msg, bool_org_dir = False)
 	d_org = int2organism() 
 	d_label = {org:i for i,org in d_org.iteritems()} 
 	protein_property_list = ['sid', 'tm']
@@ -64,3 +69,4 @@ if __name__ == "__main__":
 		data_tup, color = merge(predata_list[0], predata_list[1], data_ppi)
 		data_list = zip(*data_tup)
 		plotout(data_list, color, d_label)
+	print_next_step('../')	

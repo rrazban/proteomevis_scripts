@@ -22,7 +22,7 @@ def pnghack(filepath, width=2000, height=2000):
     cmd.mplay()  # cmd.mpng needs the animation to 'run'
 
 def get_image(pdb, path, organism):
-	pdb_file = '../0-identify_structure/2-get_pdb_chain/{0}/{1}.pdb'.format(organism, pdb)
+	pdb_file = '../../0-identify_structure/2-get_pdb_chain/{0}/{1}.pdb'.format(organism, pdb)
 	cmd.load(pdb_file, pdb)
 	cmd.show_as('cartoon')
 	cmd.disable("all")

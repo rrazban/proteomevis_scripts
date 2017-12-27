@@ -71,7 +71,7 @@ def check(d_ref, d):
 if __name__ == "__main__":
 	d_ref = reference() 
 	rewrite(d_ref, organism, organism in organism_list)
-	database_update_needed("PDB")
+	database_update_needed("PDB")	#not clear, cuz of message to move on
 
 	raw_d = read_in(*database(organism, 'tm'))
 
@@ -81,8 +81,8 @@ if __name__ == "__main__":
 	if check(d_ref, d):
 		print "\nTo obtain missing pairs:"
 		print '1) ../pre_run_extra.py to generate extra.txt' 
-		print '2) ../run -e'
-		print '2a) if in yeast_ecoli directory, also ../run -E'
+		print '2) ../run --extra'
+		print '2a) if in yeast_ecoli directory, also ../run --EXTRA'
 		print '3) manually copy output.txt contents and paste at the end of PDB.txt'
 	else:
-		print 'PDB file looks good!'
+		print 'All pairs are present!'

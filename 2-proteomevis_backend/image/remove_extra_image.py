@@ -18,6 +18,7 @@ def get_file():
 	f = []
 	for (dirpath, dirnames, filenames) in os.walk("pdb_image/"):
 		f.extend(filenames)
+	f.remove('.gitkeep')
 	return f
 
 def update_file_list(file_list, d):

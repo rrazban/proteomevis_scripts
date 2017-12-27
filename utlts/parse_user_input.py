@@ -24,7 +24,7 @@ def help_message(message, bool_add_verbose=False, bool_org_dir=True, custom_usag
                     action="store_true")
 
 	if bool_org_dir:
-		if organism not in organism_list:
+		if organism not in organism_list and organism!='yeast_ecoli':
 			print 'Make sure to run in valid organism directory'
 			parser.print_help()			
 			sys.exit()

@@ -46,7 +46,7 @@ def writeout(label_list, d_output, filename='output', date_bool=False):
 			wfile.write("\n")
 
 def get_next_dirname(CWD, PATH):
-	if organism in organism_list:
+	if organism in organism_list or organism=='yeast_ecoli':
 		CWD = os.path.dirname(CWD)
 	current_dirname = os.path.basename(CWD)
 	dirname_list = os.listdir(PATH)

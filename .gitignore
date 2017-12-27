@@ -11,6 +11,7 @@ raw_*
 old_*
 extra.txt
 analysis/
+output.txt
 
 #extra files in property_proteome/
 Sopko_2006/

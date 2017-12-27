@@ -14,7 +14,7 @@ from output import writeout
 
 
 if __name__ == "__main__":
-	help_message(help_msg)
+	help_message(help_msg)	#need to adjust help message to allow yeast_ecoli case
 	if organism=='yeast_ecoli':	#dependent on yeast/extra.txt being present
 		d = read_in('uniprot', 'pdb', organism='ecoli')
 		d_old = read_in('uniprot', 'pdb', filename='../ecoli/extra.txt')
