@@ -2,9 +2,11 @@
 
 help_msg = 'calculate contact density from PDB structure file'
 
-import os, sys
-from Bio.PDB import NeighborSearch, PDBParser, Atom, Residue
+import os, sys, glob
+from Bio.PDB import NeighborSearch, PDBParser, Atom, Residue, Polypeptide
 from Bio import PDB
+import numpy as np
+
 
 CWD = os.getcwd()
 UTLTS_DIR = CWD[:CWD.index('proteomevis_scripts')]+'/proteomevis_scripts/utlts'
@@ -16,62 +18,92 @@ from protein_property import database
 from output import writeout, print_next_step
 
 
-def get_contacts(d_ref, method):
-	d_output = {}
-	for oln, name in d_ref.iteritems():
-		structure = PDBParser().get_structure('X', "../../../0-identify_structure/2-get_pdb_chain/{0}/{1}.pdb".format(organism, name))
+class Protein(object):
+	def __init__(self, pdb, contact_defn):
+		self.pdb = pdb 
+		self.contact_defn = contact_defn
 
-		atom_list = []
-		for residue in structure.get_residues():
-			if not PDB.is_aa(residue): continue
-			
-			if method==0:
-				atom_list.extend(residue.get_atoms())
-			elif method==1:	
-				if 'CB' in residue:
-					atom_list.append(residue['CB'])
-				elif Residue.Residue.get_resname(residue)=='GLY':	#glycine case	#can use is_aa to check	
-					if 'CA' in residue:
-						atom_list.append(residue['CA'])
-					else: pass
-			else:
-				print 'method index not supported'
-				sys.exit()
-		if len(atom_list)==0: continue
-		ns = NeighborSearch(atom_list)
+		pdbs_dir = '../../../0-identify_structure/2-get_pdb_chain'
+		self.structure = PDBParser().get_structure('X', "{0}/{1}/{2}.pdb".format(pdbs_dir, organism, pdb))
+		self.residues = []	#only consider actual residues (the standard 20)
+		self.atoms = []
 
-		radius_list = [4.5, 7.5]
-		contact_list = ns.search_all(radius = radius_list[method], level = 'R')	#residues are returned
-		contact_list_copy = contact_list[:]
-		for contact in contact_list:
-			if abs(contact[0].id[1]-contact[1].id[1]) in [1, 0]:
-				contact_list_copy.remove(contact)
-		d_output[oln] = len(contact_list_copy)
-		if len(set(contact_list_copy))!=len(contact_list_copy): print "uh oh"	#seems to be nicely taken care of py NeighborSearch, doesnt output same contact pairs
-	return d_output
+		self.parse_structure()
 
-def get_contact_density(d_contact, d_len):
-	d = {}
-	for oln, contact in d_contact.iteritems():
-		d[oln] = contact/float(d_len[oln]) 
-	return d
+	def parse_structure(self):
+		for residue in self.structure.get_residues():
+			if PDB.is_aa(residue, standard=True):	
+				res = residue.id[1]
+				if res not in self.residues:	#dont doublecount mutated residues
+					self.residues.append(res)
+					self.atoms.extend(atoms_method(self.contact_defn, residue))
 
+	def get_residues(self):
+		return self.residues
+	
+	def get_max_residue(self):
+		return max(self.residues)+1
+
+def atoms_method(contact_defn, residue):
+	if contact_defn=='Bloom':
+		atoms = residue.get_atoms()
+	elif contact_defn=='Shakh':
+		if 'CB' in residue:
+			atoms = [residue['CB']]
+		elif Residue.Residue.get_resname(residue)=='GLY':	#glycine case
+			if 'CA' in residue:
+				atoms = [residue['CA']]
+		else:
+			print 'method index not supported'
+			sys.exit()
+	return atoms
+
+class ProteinContact(Protein):
+	def __init__(self, pdb, contact_defn):
+		super(ProteinContact, self).__init__(pdb, contact_defn)
+
+		self.residues_max = self.get_max_residue() 
+
+	def contact_pairs(self, radius = ''):	#define radius here in case want to change but keep
+		if not radius:
+			d_radii = {"Bloom": 4.5, "Shakh": 7.5}	#in Angstroms
+			radius = d_radii[self.contact_defn]
+		ns = NeighborSearch(self.atoms)
+		self.contact_pairs_list = ns.search_all(radius, level = 'R')
+
+	def contact_matrix(self, radius = ''):
+		self.contact_pairs(radius)
+		M = np.zeros((self.residues_max, self.residues_max), dtype=int)	#in case radius changed
+
+		for contact in self.contact_pairs_list:
+			res1 = contact[0].id[1]
+			res2 = contact[1].id[1]
+			if not abs(res1 - res2) in [1, 0]:	#no nearest neighbors
+				M[res1][res2] = 1
+		return M + M.T
+	
 
 if __name__ == "__main__":
 	help_message(help_msg)
 	extra = ''
+	method = false_or_true("Calculate contact density like Shakh2006 [default Zhou2008]?")
 	if false_or_true("Relax selection criterion 2"):
 		extra += 'pre_output'
 
-	d_ref = read_in('oln', 'pdb', filename = extra)
-	d_len = read_in('oln', 'length')
+	contact_defn = ['Bloom', 'Shakh'][method]
+	d_input = read_in('oln', 'pdb', filename = extra)
+	d_output = {}
+	for oln, pdb in d_input.iteritems():
+		protein_contact = ProteinContact(pdb, contact_defn)
+		residues = protein_contact.get_residues()
+		contact_density = protein_contact.contact_matrix().sum() / float(len(residues))
+		d_output[oln] = contact_density
 
-	method = false_or_true("Calculate contact density like Shakh2006 [default Zhou2008]")
-	d_contact = get_contacts(d_ref, method)
-
-	d_cd = get_contact_density(d_contact, d_len)
 	filename = 'PDB'
 	if method:
 		filename+='_shakh'
-	writeout(['oln', 'contact_density'], d_cd, filename = '{0}{1}'.format(filename, extra))
+	writeout(['oln', 'contact_density'], d_output, filename = '{0}{1}'.format(filename, extra))
 	print_next_step()
+
+
+
