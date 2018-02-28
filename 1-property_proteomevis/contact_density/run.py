@@ -25,14 +25,15 @@ class Protein(object):
 
 		pdbs_dir = '../../../0-identify_structure/2-get_pdb_chain'
 		self.structure = PDBParser().get_structure('X', "{0}/{1}/{2}.pdb".format(pdbs_dir, organism, pdb))
-		self.residues = []	#only consider actual residues (the standard 20)
+		self.residues = []	#only consider actual residues
 		self.atoms = []
 
 		self.parse_structure()
 
 	def parse_structure(self):
 		for residue in self.structure.get_residues():
-			if PDB.is_aa(residue, standard=True):	
+		#	if PDB.is_aa(residue, standard=True):	 # only the standard 20
+			if PDB.is_aa(residue):
 				res = residue.id[1]
 				if res not in self.residues:	#dont doublecount mutated residues
 					self.residues.append(res)
