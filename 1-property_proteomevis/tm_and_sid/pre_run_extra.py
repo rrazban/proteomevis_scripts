@@ -18,11 +18,18 @@ if __name__ == "__main__":
 	if organism=='yeast_ecoli':	#dependent on yeast/extra.txt being present
 		d = read_in('uniprot', 'pdb', organism='ecoli')
 		d_old = read_in('uniprot', 'pdb', filename='../ecoli/extra.txt')
+		flag = 'EXTRA'
 	else:
 		d = read_in('uniprot', 'pdb')
 		d_old = read_in('uniprot', 'pdb', filename = '../../../0-identify_structure/3-length_check/{0}/{1}'.format(organism, 'old_seq2struc.txt'))
+		flag = 'extra'
 	pdb_list = set(d.items()) - set(d_old.items())
 	d_output = dict(x for x in pdb_list)
 	writeout(['uniprot', 'pdb'], d_output, filename='extra')
-	print 'proceed to enter ../run --extra'
 
+	if organism=='yeast_ecoli':
+		print '1) proceed to enter ../run --extra'
+		print '2) after 1) completes, change output.txt to output1.txt'
+		print '3) proceed to enter ../run --EXTRA'
+	else:		
+		print 'proceed to enter ../run --extra'
