@@ -35,7 +35,7 @@ def writeout_sql(d_org, d_index, d_ppi, d_val):
 	conn = sqlite3.connect('db.sqlite3')
 	c = conn.cursor()
 	c.execute('DROP TABLE IF EXISTS {0}'.format(table_name))
-	c.execute('CREATE TABLE {0}(id,species,sourceID,targetID,tm,sid,ppi)'.format(table_name))
+	c.execute('CREATE TABLE {0}(id,species,sourceID,targetID,tm,sid,align_length,ppi)'.format(table_name))
 
 	count=0
 	for o in range(len(d_org)):
@@ -54,7 +54,7 @@ def writeout_sql(d_org, d_index, d_ppi, d_val):
 				pdb_pair = pdb1 +','+ pdb2
 				if pdb_pair not in d_val[organism][0]:
 					pdb_pair = pdb2 +','+ pdb1
-				line_list = [count, o, p1, p2, float(d_val[organism][0][pdb_pair]), float(d_val[organism][1][pdb_pair]), ppi_bool]
+				line_list = [count, o, p1, p2, float(d_val[organism][0][pdb_pair]), float(d_val[organism][1][pdb_pair]), int(d_val[organism][2][pdb_pair]), ppi_bool]
 				c.execute("INSERT INTO {0} VALUES {1}".format(table_name, tuple(line_list))) 
 				count+=1
 	conn.commit()
@@ -72,7 +72,7 @@ if __name__ == "__main__":
 		pre_d_i = collections.OrderedDict(sorted(pre_d_i.items()))
 		d_index[organism] = {i:pdb for i,pdb in enumerate(pre_d_i)}
 
-		for x in ['tm', 'sid']:
+		for x in ['tm', 'sid', 'nal']:
 			d_val[organism].append(read_in(*database(organism, x)))
 	d_ppi = read_in_ppi_partners()
 	writeout_sql(d_org, d_index, d_ppi, d_val)
