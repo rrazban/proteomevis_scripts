@@ -482,7 +482,7 @@ int main(int argc, char *argv[])
 	vector<string> ypdb_chain_list = get_pdb_chain_list(yread_pdb);
 
 	ofstream outfile("output.txt");
-	outfile << "pdb1\tpdb2\tTM\tSID\tTM1\tTM2\tsid\tnal\n";
+	outfile << "pdb1\tpdb2\tTM\tSID\tTM1\tTM2\tsid\tnal\talign1\talign2\n";
 	for( int a = 0; a < xpdb_chain_list.size(); a = a + 1 ) {
 		strcpy(xname, pre_xname.c_str());
 		strcat (xname, xpdb_chain_list[a].c_str());
@@ -960,9 +960,14 @@ int main(int argc, char *argv[])
 		TM_0=TM5;
 	}
 
-	int seq_id = output_results(xname, yname, xlen, ylen, t0, u0, TM1, TM2, rmsd0, d0_out, m1, m2, n_ali8, n_ali, TM_0, Lnorm_0, d0_0, fname_matrix);	//this is a hack. no longer need full output fxn
+    int ali_len=xlen+ylen; //maximum length of alignment
+      char *seqM, *seqxA, *seqyA;
+      seqM=new char[ali_len];
+      seqxA=new char[ali_len];
+      seqyA=new char[ali_len];
+	int seq_id = output_results(xname, yname, xlen, ylen, t0, u0, TM1, TM2, rmsd0, d0_out, m1, m2, n_ali8, n_ali, TM_0, Lnorm_0, d0_0, fname_matrix, seqM, seqxA, seqyA);	//this is a hack. no longer need full output fxn
 	outfile << xpdb_chain_list[a] << "\t" << ypdb_chain_list[b] << "\t"; 
-	outfile << std::setprecision(4) << TM3 << "\t" << (float)seq_id/(float)n_ali8 << "\t" << TM1 << "\t" << TM2 << "\t" << seq_id << "\t" << n_ali8 << "\n";
+	outfile << std::setprecision(4) << TM3 << "\t" << (float)seq_id/(float)n_ali8 << "\t" << TM1 << "\t" << TM2 << "\t" << seq_id << "\t" << n_ali8 << "\t" << seqxA << "\t" << seqy << "\n";
 
 
     //*********************************************************************************//

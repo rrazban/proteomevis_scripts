@@ -2009,17 +2009,20 @@ int output_results(char *xname,
 					 double TM_0,
 					 double Lnorm_0,
 					 double d0_0,
-					 char* matrix_name
+					 char* matrix_name,
+					 char *seqM,
+					 char *seqxA,
+					 char *seqyA
 					 )
 {
     double seq_id;          
     int i, j, k;
     double d;
-    int ali_len=x_len+y_len; //maximum length of alignment
-	char *seqM, *seqxA, *seqyA;
-	seqM=new char[ali_len];
-	seqxA=new char[ali_len];
-	seqyA=new char[ali_len];
+//    int ali_len=x_len+y_len; //maximum length of alignment
+//	char *seqM, *seqxA, *seqyA;
+//	seqM=new char[ali_len];
+//	seqxA=new char[ali_len];
+//	seqyA=new char[ali_len];
 	
 
 	do_rotation(xa, xt, x_len, t, u);
@@ -2066,7 +2069,6 @@ int output_results(char *xname,
 		j_old=m2[k]+1;
 	}
 
-	return seq_id;	//hack, early return statement cuz RMR only interested in seq_id
 
 	//tail
 	for(i=i_old; i<x_len; i++)
@@ -2085,19 +2087,12 @@ int output_results(char *xname,
 		seqM[kk]=' ';
 		kk++;
 	}
- 
-    seqxA[kk]='\0';
-    seqyA[kk]='\0';
-    seqM[kk]='\0';
-	
-
-
-
+	seqxA[kk]='\0';
+	seqyA[kk]='\0';
+	seqM[kk]='\0';
+	return seq_id;	//hack, early return statement cuz RMR only interested in seq_id
  
 
-
-
-	
 	cout <<endl;	
 	cout << " *****************************************************************************" << endl
 		 << " * TM-align (Version "<< version <<"): A protein structural alignment algorithm     *" << endl
