@@ -81,6 +81,7 @@ def get_best_pdb_chain(d_uniprot_info):
 				g_resolution+=1
 			info = new_info_list[min_resolution_list[0]]	#arbitrarily choose first item in list
 		else:
+			resolution_list = get_resolution(info_list)
 			info = info_list[max_coverage_list[0]]
 
 		pdb_basename = info[u'pdb_id']

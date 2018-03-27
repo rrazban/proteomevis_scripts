@@ -68,7 +68,6 @@ if __name__ == "__main__":
 	untar()	
 	d_input = read_in('pdb', 'uniprot', filename='pre_seq2struc')
 	d = get_pdb_pdb_chain(d_input)
-
 	io = PDBIO()
 	for pdb, chain_list in d.iteritems():
 		if os.path.exists("{0}/{1}.pdb".format(DIR, pdb)):

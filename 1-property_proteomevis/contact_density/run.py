@@ -54,9 +54,13 @@ def atoms_method(contact_defn, residue):
 		elif Residue.Residue.get_resname(residue)=='GLY':	#glycine case
 			if 'CA' in residue:
 				atoms = [residue['CA']]
+			else:
+				atoms = []
 		else:
-			print 'method index not supported'
-			sys.exit()
+			atoms = []
+	else:
+		print 'method index not supported'
+		sys.exit()
 	return atoms
 
 class ProteinContact(Protein):

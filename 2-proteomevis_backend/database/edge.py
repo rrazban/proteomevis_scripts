@@ -72,7 +72,7 @@ if __name__ == "__main__":
 		pre_d_i = collections.OrderedDict(sorted(pre_d_i.items()))
 		d_index[organism] = {i:pdb for i,pdb in enumerate(pre_d_i)}
 
-		for x in ['tm', 'sid', 'nal']:
+		for x in ['tm', 'sid', 'nal']:	#, 'align1', 'align2']:	sequence alignments takes up 700MB! makes downloading edges impossible
 			d_val[organism].append(read_in(*database(organism, x)))
 	d_ppi = read_in_ppi_partners()
 	writeout_sql(d_org, d_index, d_ppi, d_val)

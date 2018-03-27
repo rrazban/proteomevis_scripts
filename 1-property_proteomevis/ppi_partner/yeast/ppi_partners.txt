@@ -78,7 +78,7 @@ protein	protein partners
 2aj4.A	2cg9.A	4qyx.A
 2al1.A	4v81.D	4v81.H	4qyx.A	4xnh.B	3jc6.B	5wtx.A	2p4q.A
 2ax5.A	3c7n.A
-2axq.A	3jct.m	2j6a.A	2wpv.A
+2axq.A	6c6l.A	3jct.m	2j6a.A	2wpv.A
 2b5e.A	3jc6.B
 2b9h.A	4gmx.C
 2bcg.Y	2cg9.A	2bcg.G
@@ -98,7 +98,7 @@ protein	protein partners
 2ibz.F	4c9g.A	4c9g.A	4c9g.A
 2ibz.G	4c9g.A
 2ip1.A	2cg9.A
-2iw3.A	3mhs.A	3mhs.A	3mhs.A	4v81.H	2cir.A	5mp9.J	3jc6.B	2zxt.A	2p4q.A
+2iw3.A	3mhs.A	3mhs.A	3mhs.A	4v81.H	6c6l.A	2cir.A	5mp9.J	3jc6.B	2zxt.A	2p4q.A
 2jss.A	2xau.A	4kud.B	3jc6.E	1vdn.A
 2jyn.A	3c7n.A
 2l6j.A	3c7n.A	2cg9.A
@@ -115,7 +115,7 @@ protein	protein partners
 2uv8.A	2jss.A	3c7n.A	3c7n.A	2cir.A
 2uv8.G	3mhs.A	3c7n.A	5mpd.X	6bd9.A	2cir.A
 2vgn.A	3c7n.A
-2vk8.A	4v81.H	3c7n.A	1nkq.A	5jea.G	2p4q.A
+2vk8.A	4v81.H	3c7n.A	6c6l.A	1nkq.A	5jea.G	2p4q.A
 2vso.A	3mhs.A	2cg9.A	5ams.A	4gmx.C	3jc6.B	2p4q.A
 2wpv.A	3c7n.A
 2xau.A	4gmx.C	4v81.H	5m52.A	1m38.A	6bk8.A	4v88.AT	3j6b.C	3kyh.C	3jct.v
@@ -130,7 +130,7 @@ protein	protein partners
 3afo.A	2cg9.A
 3b46.A	3c7n.A
 3blx.A	3blx.B	3blx.B	3blx.B
-3c7n.A	5y58.B	1yaa.A	1piw.A	4xnh.B	5nzr.F	1of8.A	4in3.B	1a3w.A	3iay.A	4ww7.B	1lkj.A	4obx.A	3vu9.B	5msm.B	5lkb.A	4a8j.C	2al1.A	1p6o.A	1nkq.A	1yat.A	2aj4.A	1z45.A	3v2u.C	4pvc.A	3c1r.A	4kud.B	1qsm.A	2jss.A	6bd9.A	1d1q.A	3qv0.A	4gwp.C	1g8f.A	1m45.A	3htk.C	3j6b.R	3j6b.W	3j6b.F	5mrc.QQ	3jct.W	1i4w.A	5wlc.LH	6elz.l	2p6e.A	2o1p.A	3w15.A	1cpy.A	4r17.C	1vlu.A	5gan.F	2xau.A	5gan.J	3w3z.A	1sxj.D	1dzf.A	6eu3.O	4v8y.BM	4v88.Bc	5mpd.N	2mr3.A	4v6i.Bv	5m1j.a2	4v88.Ab	5jea.A	2zfn.A	6f0e.A	1m2o.A	3mhs.C	6bk8.g	1f1g.A	5wlc.LU	2exu.A	5ams.A	4gwp.D	5suq.A	3rm5.A	5ubp.B	5ojs.T	2vdu.B	5l6h.A	3o2u.A	5wlc.LT	4m5d.A	2zih.A	2zd7.A	3cq0.A	1odf.A	3o12.A	3pt1.A	2cir.A	5mrc.LL	4n5c.A	4v81.D	2l9q.A	4je5.A	5wlc.SU	5udb.D	5mp4.A	4buj.B	1afw.A	2qb7.A	6bk8.A	5mp4.A	4r17.D	3jct.v	3jbs.A	5mpd.Z	5mpd.S	3jck.D	6eu3.A	5mp9.M	4buj.B	5d80.A	3gdm.A	2iw3.A	2xq0.A	5csk.A	1pgu.A	5jm0.A	4ijr.A	4ab7.A	4je5.A	4x33.B	5m52.A	6eoj.A	1asy.A	3gx8.A	3ig5.A	4arz.A	1bob.A	4psw.B	5gm6.G	3vld.A	1q14.A	5jh9.A	1v59.A	1hr6.A	3quw.A	3j6b.J	3j6b.5	3j6b.U	3j6b.1	3eyx.A	1vlp.A	5udb.E	4m8z.A	1b54.A	1ap8.A	2al1.A	3jck.H	1n8p.A	1jk0.A	1f60.A	4r17.C	6em3.x	2p4q.A
+3c7n.A	5y58.B	1yaa.A	1piw.A	4xnh.B	5nzr.F	1of8.A	4in3.B	1a3w.A	3iay.A	4ww7.B	1lkj.A	4obx.A	3vu9.B	5msm.B	5lkb.A	4a8j.C	2al1.A	1p6o.A	1nkq.A	1yat.A	2aj4.A	1z45.A	3v2u.C	4pvc.A	3c1r.A	4kud.B	1qsm.A	2jss.A	6bd9.A	1d1q.A	3qv0.A	4gwp.C	1g8f.A	1m45.A	3htk.C	3j6b.R	3j6b.W	3j6b.F	5mrc.QQ	3jct.W	1i4w.A	5wlc.LH	6elz.l	2p6e.A	2o1p.A	3w15.A	1cpy.A	4r17.C	1vlu.A	5gan.F	2xau.A	5gan.J	3w3z.A	1sxj.D	1dzf.A	6eu3.O	4v8y.BM	4v88.Bc	5mpd.N	2mr3.A	4v6i.Bv	4v4b.AH	5m1j.a2	4v88.Ab	5jea.A	2zfn.A	6f0e.A	1m2o.A	3mhs.C	6bk8.g	1f1g.A	5wlc.LU	2exu.A	5ams.A	4gwp.D	5suq.A	3rm5.A	5ubp.B	5ojs.T	2vdu.B	5l6h.A	3o2u.A	5wlc.LT	4m5d.A	2zih.A	2zd7.A	3cq0.A	1odf.A	3o12.A	3pt1.A	2cir.A	5mrc.LL	4n5c.A	4v81.D	2l9q.A	4je5.A	5wlc.SU	5udb.D	5mp4.A	4buj.B	1afw.A	2qb7.A	6bk8.A	5mp4.A	4r17.D	3jct.v	3jbs.A	5mpd.Z	5mpd.S	3jck.D	6eu3.A	5mp9.M	4buj.B	5d80.A	3gdm.A	2iw3.A	2xq0.A	5csk.A	1pgu.A	5jm0.A	4ijr.A	4ab7.A	4je5.A	4x33.B	5m52.A	6eoj.A	1asy.A	3gx8.A	3ig5.A	4arz.A	1bob.A	4psw.B	5gm6.G	3vld.A	1q14.A	5jh9.A	1v59.A	1hr6.A	3quw.A	3j6b.J	3j6b.5	3j6b.U	3j6b.1	3eyx.A	1vlp.A	5udb.E	4m8z.A	1b54.A	1ap8.A	2al1.A	3jck.H	1n8p.A	1jk0.A	1f60.A	4r17.C	6em3.x	2p4q.A
 3cph.A	2zxt.A
 3csk.A	3c7n.A
 3ctg.A	3c7n.A
@@ -288,8 +288,8 @@ protein	protein partners
 4r17.F	3nzj.K	4r17.C	3nzj.2	4r17.G	3w3z.A	2p4q.A
 4r17.G	2cg9.A	3jck.B	3nzj.K	4r17.C	3nzj.2	4r17.F	5l6h.A	3w3z.A	1ryp.B	2p4q.A
 4r17.I	3nzj.K	4r17.C	3nzj.2	4r17.F	4r17.G	1ryp.B	2p4q.A
-4rnd.B	5vox.Q	4efa.E
-4u3j.A	1sxj.B	1m2v.B	4c92.F	3ig5.A	2xok.G	3cue.D	5w0t.A	5n6n.C	6elz.l	5yfp.B	3qv0.A	3jct.b	5l6h.A	5yfp.E	6bd9.A	3j6b.D	4c2m.A	4gmx.C	3cue.D	3blx.B	3w3z.A	4g6h.A	4i6m.A	4c9q.A	6ezn.A	4v88.AA	2zxt.A
+4rnd.B	6c6l.A	6c6l.B	4efa.E
+4u3j.A	6c6l.A	1sxj.B	1m2v.B	4c92.F	3ig5.A	2xok.G	3cue.D	5w0t.A	5n6n.C	6elz.l	5yfp.B	3qv0.A	3jct.b	5l6h.A	5yfp.E	6bd9.A	3j6b.D	4c2m.A	4gmx.C	3cue.D	3blx.B	3w3z.A	4g6h.A	4i6m.A	4c9q.A	6ezn.A	4v88.AA	2zxt.A
 4u3j.B	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mp6.A	3mhs.B	4c2m.B	3k8p.D	5mc6.h	4v81.G	4kud.B	4jr7.A	1sxj.B	3jc6.E	6elz.l	5csk.A	3jct.b	1wa5.C	5l6h.A	6bd9.A	3j6b.D	4gmx.C	3blx.B	3w3z.A	4g6h.A	4i6m.A	5owu.A	2vgn.A	3jct.m	5wlc.LH	2zxt.A
 4u3m.C0	2xau.A
 4u4r.C0	4kud.B	3jct.v
@@ -297,17 +297,18 @@ protein	protein partners
 4u4r.L9	4gmx.C	3jct.y
 4u4r.N0	3jct.v
 4u4r.N4	4gmx.C	4v88.AA
+4v4b.AH	4gmx.C	1ap8.A	4xnh.B	5jea.E	5ll6.h	3b54.A	3jct.v
 4v6i.Bv	3mhs.A	3mhs.A	3mp6.A	3mhs.B	3mhs.B
-4v7r.AL	4gmx.C
+4v7r.AJ	4gmx.C	3jct.v
 4v7r.BA	3jct.v
 4v7r.Bg	3jct.w	3jct.v
 4v81.A	4kud.B	4c92.F	5mpd.Z	5d80.A	2cg9.A
-4v81.B	3sbt.B	1pgu.A	1a3w.A	5u1t.A	1bob.A	4kud.B	4qu4.A	6elz.l	4r62.A	4v88.Bc	4eqv.A	5ojs.T	4v81.D	3pym.A	1f60.A	4v81.G
+4v81.B	3sbt.B	1pgu.A	1a3w.A	5u1t.A	1bob.A	4kud.B	4qu4.A	6elz.l	4r62.A	4v88.Bc	4v4b.AH	4eqv.A	5ojs.T	4v81.D	3pym.A	1f60.A	4v81.G
 4v81.C	3mhs.A	3mhs.A	3mhs.A	5mpd.Z	5mp9.I	2cg9.A	3c7n.A	2al1.A	6bk8.A	4v88.AH	3pym.A	1f60.A
 4v81.D	2y9m.A	6bk8.A	4v88.BU	5mpd.Z	3f3f.A	3pym.A	3gdm.A	4v81.G
 4v81.E	3mhs.A	1n0u.A	1f60.A	5csk.A
 4v81.F	3mhs.A	4ab7.A	2xok.D	4gmx.C	5owu.A	5wlc.SU	5uz5.D	4v88.Bk	5mpd.N	5wlc.LU	2exu.A	5l6h.A	4v81.D	2al1.A	2vk8.A	2qlt.A	3pym.A	1f60.A	4efa.E	4v81.G
-4v81.G	3mhs.A	3mhs.A	1fi4.A	1plq.A
+4v81.G	3mhs.A	3mhs.A	1fi4.A	5v7m.A
 4v81.H	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	4qu4.A	5mp9.J	3mv2.B	5mc6.h	2i5k.A	4m5d.A	3c7n.A	1a3w.A	3j6b.R	3jct.b	3jct.m	5glg.A	1qpg.A	4r17.E	3jct.t	3jct.v	3gdm.A	5mpd.X
 4v88.AA	4xnh.A	4kud.B	2o1p.A	4xnh.B	4c92.F	3vld.A	4c2m.I	1sxj.D	3jck.C	1wa5.C	6bd9.A	6eu3.A	4in3.B	4qu4.A	2dlc.X	5wlc.SM	4i6m.A	2xau.A	5wlc.LH	2p4q.A
 4v88.AB	4gmx.C	3c7n.A	3vld.A	2qfy.A	1sxj.D	6bk8.d
@@ -347,11 +348,11 @@ protein	protein partners
 4v88.Bk	3c7n.A	4kud.B	3vld.A	3jct.v
 4v88.Bl	3jct.v
 4v88.Bp	3jct.w	3jct.v
+4v8t.A	4gmx.C	3jct.v
 4v8t.J	4gmx.C	3jct.v
-4v8t.Q	3jct.v
 4v8t.R	4gmx.C	3jct.v
 4v8y.BM	3jct.v
-4w6z.A	4myc.A	3mhs.A	3mhs.A	3mp6.A	3mhs.B	3mhs.A	3k8p.D	2ibz.F	4wjw.B	3k8p.D	3fhn.A	4in3.B	1cg7.A	5c77.A	2i9h.A	2hsy.A	2zxt.A	3jc6.B	5wtx.A	2p4q.A
+4w6z.A	4myc.A	3mhs.A	3mhs.A	3mp6.A	3mhs.B	3mhs.A	3k8p.D	6c6l.A	2ibz.F	4wjw.B	3k8p.D	3fhn.A	4in3.B	1cg7.A	5c77.A	2i9h.A	2hsy.A	2zxt.A	3jc6.B	5wtx.A	2p4q.A
 4wju.A	2xau.A	3jct.r	3jct.4	3jct.m
 4wjw.B	5nzr.F	5nzr.F
 4ww7.A	4ww7.B
@@ -366,8 +367,8 @@ protein	protein partners
 4zac.A	3c7n.A
 4zxf.A	2cg9.A
 5csk.A	3mhs.A	3mhs.A	3mhs.A	4v81.B
-5d80.A	3mhs.A	3mhs.A	3mhs.A	5mpd.X	1q7g.A	1u7l.A	4in3.B	4efa.E	4rnd.B	2cir.A	5d80.D
-5d80.D	4v81.C	3c7n.A	3j6b.d	5wlc.LT	5mc6.h	4kud.B	4kud.B	4jr7.A	1jk0.A	2woj.A	5eqj.B	1sxj.B	5mp9.H	3c7n.A	5mpd.X	3ig5.A	1m2o.A	3cue.D	1asy.A	5jh0.A	1f60.A	5jea.F	5n6n.C	4gwp.D	3jc6.E	6elz.l	5yfp.B	5csk.A	3qv0.A	5udb.8	3jct.b	5mrc.44	4c2m.C	6ezm.A	6eu3.B	1wa5.C	5l6h.A	5wlc.LS	1u7l.A	6bd9.A	3j6b.K	5i9e.A	6eu3.A	2wpv.A	1hr6.B	4n0h.A	6fai.k	4in3.B	4efa.E	1cg7.A	5jea.A	1twf.B	4c2m.A	4arz.B	3mv2.B	5ll6.h	1a6r.A	4gmx.C	3b54.A	3cue.D	3blx.B	3jct.4	6emk.B	3w3z.A	1wpx.B	5jh9.A	5mrc.PP	4zac.A	4rnd.B	5mrc.YY	4i6m.A	5mrc.66	2vgn.A	6ezn.A	3jct.m	2xau.A	4v88.AA	5wlc.LH
+5d80.A	3mhs.A	3mhs.A	3mhs.A	6c6l.A	5mpd.X	1q7g.A	1u7l.A	4in3.B	4efa.E	4rnd.B	2cir.A	5d80.D
+5d80.D	4v81.C	3c7n.A	3j6b.d	5wlc.LT	5mc6.h	6c6l.A	4kud.B	4kud.B	4jr7.A	1jk0.A	2woj.A	5eqj.B	1sxj.B	5mp9.H	3c7n.A	5mpd.X	3ig5.A	1m2o.A	3cue.D	1asy.A	5jh0.A	1f60.A	5jea.F	5n6n.C	4gwp.D	3jc6.E	6elz.l	5yfp.B	5csk.A	3qv0.A	5udb.8	3jct.b	5mrc.44	4c2m.C	6ezm.A	6eu3.B	1wa5.C	5l6h.A	5wlc.LS	1u7l.A	6bd9.A	3j6b.K	5i9e.A	6eu3.A	2wpv.A	1hr6.B	4n0h.A	6fai.k	4in3.B	4efa.E	1cg7.A	5jea.A	1twf.B	4c2m.A	4arz.B	3mv2.B	5ll6.h	1a6r.A	4gmx.C	3b54.A	3cue.D	3blx.B	3jct.4	6emk.B	3w3z.A	1wpx.B	5jh9.A	5mrc.PP	4zac.A	4rnd.B	5mrc.YY	4i6m.A	5mrc.66	2vgn.A	6ezn.A	3jct.m	2xau.A	4v88.AA	5wlc.LH
 5dfz.C	3c7n.A
 5dge.p1	3mhs.A	3mhs.A	3mhs.B
 5flz.C	3c7n.A
@@ -450,7 +451,7 @@ protein	protein partners
 5udb.E	4v81.G
 5uz5.D	4gmx.C	3c7n.A
 5uz5.E	4gmx.C	5uz5.D	4c92.C	5m52.A
-5vox.Q	4rnd.B	5d80.D
+5v4v.A	2l9q.A
 5wlc.LH	4gmx.C	4m5d.A	5wlc.SU	5wlc.SM	5wlc.SU	4m5d.A	3jct.v
 5wlc.LS	4v81.E	3c7n.A	5wlc.LT	4m5d.A	5wlc.LZ
 5wlc.LT	4gmx.C	4v81.B	4v81.E	4m5d.A	5wlc.LS	5wlc.LS	4m5d.A	5wlc.LS
@@ -477,6 +478,8 @@ protein	protein partners
 6bk8.I	2xau.A	5m52.A	6bk8.A
 6bk8.a	2xau.A	4c92.F	6bk8.d	6bk8.B	5gan.F
 6bk8.g	2xau.A	4v81.B	4c92.F	4c92.C	6bk8.d	5m52.A	6bk8.A
+6c6l.A	4rnd.B
+6c6l.B	6c6l.A	4rnd.B	5d80.D	6c6l.A
 6elz.l	3jct.v	3jct.w	3jct.v
 6em3.x	2xau.A	4gmx.C	3jct.y	6en7.A	3jct.v
 6emk.A	1vdn.A	3c7n.A	3jc6.B	2zxt.A	6emk.B	1yat.A	6emk.B	6emk.B
