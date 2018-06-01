@@ -1,4 +1,4 @@
-oln	evorate
+oln	evolutionary_rate
 YBR177C	0.1508
 YIL140W	0.1824
 YOR011W	0.0911
