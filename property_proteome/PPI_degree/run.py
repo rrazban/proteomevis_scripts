@@ -19,7 +19,7 @@ from output import writeout
 if __name__ == "__main__":
 	help_message(help_msg)
 
-	sys.path.append('../../../1-property_proteomevis/ppi_partner/')
+	sys.path.append('../../../1-property_proteomevis/ppi_partner/')	#why not just do normal import?
 	module = imp.load_source("run", "../../../1-property_proteomevis/ppi_partner/run.py")
 	d_ppi, error_list, filename = module.get_physical_ppi(partner_bool=False)
 

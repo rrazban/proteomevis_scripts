@@ -13,7 +13,7 @@ CWD = os.getcwd()
 UTLTS_DIR = CWD[:CWD.index('proteomevis_scripts')]+'/proteomevis_scripts/utlts'
 sys.path.append(UTLTS_DIR)
 from parse_user_input import help_message
-from read_in_file import read_in
+from read_in_file import read_in 
 from output import writeout, database_update_needed
 
 
@@ -34,9 +34,9 @@ def post_request(data, full_url):
 		data = ",".join(data)
 	return make_request(full_url, data.encode())
 
-def get_all_info(total_batch, uniprot_list):
+def get_all_info(total_batch, uniprot_list):	#in class
 	full_url = "https://www.ebi.ac.uk/pdbe/api/mappings/best_structures"
-	increment = 1000	#1000 limit set by PDBe	#in current setup, if no structures in range, program fails
+	increment = 200	#1000 limit set by PDBe	#in current setup, if no structures in range, program fails
 	d = {}
 
 	for i in range(total_batch/increment):
@@ -45,17 +45,11 @@ def get_all_info(total_batch, uniprot_list):
 		d.update(d_output)
 	return d
 
-def get_resolution(new_info_list):
-	data = []
-	for info in new_info_list:
-		data.append(info[u'resolution'])
-	return data
-
-def get_coverage(info_list):
+def get_data(info_list, which):
 	data = []
 	for info in info_list:
-		coverage = info[u'coverage']	#make sure matches with gene
-		data.append(coverage)
+		datum = info[which]	#make sure matches with gene
+		data.append(datum)
 	return data
 
 def update_info_list(info_list, index_list):
@@ -64,38 +58,62 @@ def update_info_list(info_list, index_list):
 		data.append(info_list[index])
 	return data
 
-def get_best_pdb_chain(d_uniprot_info):
-	g_coverage=0	#g=degeneracy
-	g_resolution=0
-	d = {}
 
-	for uniprot, info_list in d_uniprot_info.iteritems():
-		coverage_list = get_coverage(info_list)
-		max_coverage_list = [i for i, coverage in enumerate(coverage_list) if coverage == max(coverage_list)]	#account for ties
-		if len(max_coverage_list)>1:
-			g_coverage+=1
-			new_info_list = update_info_list(info_list, max_coverage_list)
-			resolution_list = get_resolution(new_info_list)
-			min_resolution_list = [i for i, resolution in enumerate(resolution_list) if resolution == min(resolution_list)]
-			if len(min_resolution_list) > 1:
-				g_resolution+=1
-			info = new_info_list[min_resolution_list[0]]	#arbitrarily choose first item in list
-		else:
-			resolution_list = get_resolution(info_list)
-			info = info_list[max_coverage_list[0]]
+class UniProt2PDB():
+	def __init__(self, uniprots):
+		self.uniprots = uniprots
+		self.d_input = {}	#get_all_info
+		self.d_output = {}
+		self.num_coverage = 0
+		self.num_resolution = 0
+		self.d_resolution = {}
 
-		pdb_basename = info[u'pdb_id']
-		pdb_chain_id = info[u'chain_id']
-		pdb_chain = "{0}.{1}".format(pdb_basename, pdb_chain_id)
-		d[uniprot.encode('utf-8')] = pdb_chain
-	return d, g_coverage, g_resolution 
+	def get_all_info(self):
+		full_url = "https://www.ebi.ac.uk/pdbe/api/mappings/best_structures"
+		increment = 100	#1000 limit set by PDBe	#in current setup, if no structures in range, program fails	#have this adjust?
+	
+		for i in range(len(self.uniprots)/increment):
+			output = post_request(self.uniprots[i*increment:(i+1)*increment], full_url)
+			d_output = json.loads(output)
+			self.d_input.update(d_output)
 
-def print_verbose(proteome_size, pre_seq2struc_size, g_coverage, g_resolution):
-	print "Proteome size: {0}".format(proteome_size)
-	print "# proteins in proteome with structure: {0} ({1:.2f})".format(pre_seq2struc_size, pre_seq2struc_size/float(proteome_size))
-	print "\tdegeneracy of those with the same max coverage: {0} ({1:.2f})".format(g_coverage, g_coverage/float(pre_seq2struc_size))
-	print "\t\tdegeneracy of those also with the same max resolution: {0} ({1:.2f})".format(g_resolution, g_resolution/float(pre_seq2struc_size))
+	def get_best_pdb_chain(self):
+		for uniprot, info_list in self.d_input.iteritems():
+			coverage_list = get_data(info_list, 'coverage')
+			max_coverage_list = [i for i, coverage in enumerate(coverage_list) if coverage == max(coverage_list)]	#account for ties
+			if len(max_coverage_list) > 1:
+				self.num_coverage += 1
+				new_info_list = update_info_list(info_list, max_coverage_list)
+				resolution_list = get_data(new_info_list, 'resolution')
+				min_resolution_list = [i for i, resolution in enumerate(resolution_list) if resolution == min(resolution_list)]
+				min_resolution = resolution_list[min_resolution_list[0]]
+				if len(min_resolution_list) > 1:
+					self.num_resolution += 1
+				info = new_info_list[min_resolution_list[0]]	#arbitrarily choose first item in list
+			else:
+				min_resolution = get_data(info_list, 'resolution')[0]
+				info = info_list[max_coverage_list[0]]
 
+			pdb_basename = info['pdb_id']
+			pdb_chain_id = info['chain_id']
+			pdb_chain = "{0}.{1}".format(pdb_basename, pdb_chain_id)
+			self.d_output[uniprot.encode('utf-8')] = pdb_chain
+			self.d_resolution[uniprot.encode('utf-8')] = min_resolution 
+
+	def print_verbose(self):
+		proteome_size = len(self.uniprots)
+		pre_seq2struc_size = len(self.d_output)
+		print "Proteome size: {0}".format(proteome_size)
+		print "# proteins in proteome with structure: {0} ({1:.2f})".format(pre_seq2struc_size, pre_seq2struc_size/float(proteome_size))
+		print "\tdegeneracy of those with the same max coverage: {0} ({1:.2f})".format(self.num_coverage, self.num_coverage/float(pre_seq2struc_size))
+		print "\t\tdegeneracy of those also with the same max resolution: {0} ({1:.2f})".format(self.num_resolution, self.num_resolution/float(pre_seq2struc_size))
+
+	def run(self, verbose=''):
+		self.get_all_info()
+		self.get_best_pdb_chain()
+		if verbose:
+			self.print_verbose()
+		return self.d_output
 
 def prepare_writeout(d_uniprot_pdb, d_proteome):
 	d_output = {}
@@ -106,16 +124,11 @@ def prepare_writeout(d_uniprot_pdb, d_proteome):
 
 if __name__ == '__main__':
 	args = help_message(help_msg, bool_add_verbose=True)
-	d_proteome = read_in('Entry', 'Gene names  (ordered locus )', filename='proteome')	
-	
-	proteome_size = len(d_proteome)
-	d_uniprot_info = get_all_info(proteome_size, d_proteome.keys())
-	d_uniprot_pdb, g_coverage, g_resolution = get_best_pdb_chain(d_uniprot_info)
-	pre_seq2struc_size = len(d_uniprot_pdb)
+	d_proteome = read_in('Entry', 'Gene names  (ordered locus )', filename = 'proteome')
+	uniprot2pdb = UniProt2PDB(d_proteome.keys())
+	d_uniprot_pdb = uniprot2pdb.run(args.verbose)
 
-	if args.verbose:
-		print_verbose(proteome_size, pre_seq2struc_size, g_coverage, g_resolution)
 	d_output = prepare_writeout(d_uniprot_pdb, d_proteome)
-	filename='pre_seq2struc'
-	writeout(['uniprot', 'pdb', 'oln'], d_output, filename=filename, date_bool=True)
-	database_update_needed(filename=filename)
+	filename = 'pre_seq2struc'
+	writeout(['uniprot', 'pdb', 'oln'], d_output, filename = "new_{0}".format(filename))
+	database_update_needed(filename)

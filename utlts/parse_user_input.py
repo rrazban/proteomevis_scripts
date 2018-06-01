@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import sys, os
 import argparse
 
@@ -8,7 +7,7 @@ from parse_data import organism, organism_list
 def run_message(bool_add_verbose, bool_org_dir, custom_usage):
 	if bool_org_dir:
 		usage = '../run.py [-h]'
-	elif custom_usage:
+	elif custom_usage:	#why not make into bool?
 		usage = 'PYMOLPATH/pymol/pymol.exe -qc get_image.py'
 	else:
 		usage = '%(prog)s [-h]'
@@ -52,8 +51,9 @@ def which_organism(yeast_ecoli_bool=False):
 		organism = 'yeast'
 	elif pre_organism in ['ecoli', '1', 'e']:
 		organism = 'ecoli'
-	elif pre_organism in ['yeast_ecoli', '2', 'ye']:
-		organism = 'yeast_ecoli'
+	elif pre_organism in ['protherm', '2', 'pro']:
+	#	organism = 'yeast_ecoli'
+		organism = 'protherm'
 	else:
 		print "sorry, {0} organism not supported".format(pre_organism)
 		sys.exit()	

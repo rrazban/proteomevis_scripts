@@ -5,8 +5,9 @@ from collections import defaultdict
 sys.path.append('../../../utlts/')
 from read_in_file import read_in
 from parse_data import organism, organism_list
-from protein_property import database
-from output import today, database_update_needed
+#from protein_property import database
+from properties import database
+from output import database_update_needed, print_next_step
 
 
 def rewrite(d_ref, organism, one_organism_bool):
@@ -16,7 +17,7 @@ def rewrite(d_ref, organism, one_organism_bool):
 		d_ref1 = d_ref['yeast']
 		d_ref2 = d_ref['ecoli']
 
-	with open('PDB_{0}.txt'.format(today), 'w') as wfile:
+	with open('new_PDB.txt', 'w') as wfile:
 		with open('PDB.txt', 'r') as rfile:
 			labels = next(rfile)
 			label_list = labels.split()
@@ -43,19 +44,13 @@ def find_duplicates(d):
 
 def reference():
 	d_ref={}
-	for organism in organism_list:
+	for organism in organism_list[:2]:	#dont pick up protherm or yeast_ecoli
 		d_ref[organism] = read_in('pdb', 'uniprot', organism=organism)
 	return d_ref
 
 def check(d_ref, d):
 	need_extra_pairs_bool = False
-	if organism in organism_list:
-		num = len(d_ref[organism])-1
-		for pdb,pdb_list in d[organism].iteritems():
-			if len(pdb_list)!=num:
-				print "{0} has {1} pairs. Should be {2}".format(pdb, len(pdb_list), num)
-				need_extra_pairs_bool = True 
-	else:
+	if organism=='yeast_ecoli':	#or just simply has _ (signifies combination of intersection of two organism proteomes
 		for pdb,pdb_list in d[organism].iteritems():
 			if pdb in d_ref['yeast']:
 				num = len(d_ref['ecoli'])	
@@ -65,15 +60,22 @@ def check(d_ref, d):
 			if len(pdb_list)!=num:
 				print "{0} has {1} pairs. Should be {2}".format(pdb, len(pdb_list), num)
 				need_extra_pairs_bool = True 
+	else:
+		num = len(d_ref[organism])-1
+		for pdb,pdb_list in d[organism].iteritems():
+			if len(pdb_list)!=num:
+				print "{0} has {1} pairs. Should be {2}".format(pdb, len(pdb_list), num)
+				need_extra_pairs_bool = True 
+
 	return need_extra_pairs_bool
 
 
 if __name__ == "__main__":
 	d_ref = reference() 
 	rewrite(d_ref, organism, organism in organism_list)
-	database_update_needed("PDB")	#not clear, cuz of message to move on
+	database_update_needed("PDB", bool_print_next_step = False)
 
-	raw_d = read_in(*database(organism, 'tm'))
+	raw_d = read_in(*database(organism, 'TM'))
 
 	d = {}
 	d[organism] = parse(raw_d)
@@ -82,7 +84,9 @@ if __name__ == "__main__":
 		print "\nTo obtain missing pairs:"
 		print '1) ../pre_run_extra.py to generate extra.txt' 
 		print '2) ../run --extra'
-		print '2a) if in yeast_ecoli directory, also ../run --EXTRA'
+		if organism=='yeast_ecoli':
+			print '2a) also ../run --EXTRA'
 		print '3) manually copy output.txt contents and paste at the end of PDB.txt'
 	else:
 		print 'All pairs are present!'
+		print_next_step()

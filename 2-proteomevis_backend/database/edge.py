@@ -5,7 +5,6 @@ help_msg = 'generate edges data'
 import sys, os
 import numpy as np
 import collections
-import sqlite3
 
 CWD = os.getcwd()
 UTLTS_DIR = CWD[:CWD.index('proteomevis_scripts')]+'/proteomevis_scripts/utlts'
@@ -13,7 +12,8 @@ sys.path.append(UTLTS_DIR)
 from parse_user_input import help_message
 from read_in_file import read_in
 from parse_data import initialize_dict, organism_list, int2organism
-from protein_property import database
+from properties import database
+from write_sqlite3 import SQLite3
 from output import print_next_step
 
 
@@ -30,13 +30,8 @@ def read_in_ppi_partners():
 				d[organism][protein] = ppi
 	return d	
 
-def writeout_sql(d_org, d_index, d_ppi, d_val):
-	table_name = 'proteomevis_edge'
-	conn = sqlite3.connect('db.sqlite3')
-	c = conn.cursor()
-	c.execute('DROP TABLE IF EXISTS {0}'.format(table_name))
-	c.execute('CREATE TABLE {0}(id,species,sourceID,targetID,tm,sid,align_length,ppi)'.format(table_name))
-
+def prepare_sql(d_org, d_index, d_ppi, d_val):
+	line_list = []
 	count=0
 	for o in range(len(d_org)):
 		organism = d_org[o]
@@ -54,11 +49,10 @@ def writeout_sql(d_org, d_index, d_ppi, d_val):
 				pdb_pair = pdb1 +','+ pdb2
 				if pdb_pair not in d_val[organism][0]:
 					pdb_pair = pdb2 +','+ pdb1
-				line_list = [count, o, p1, p2, float(d_val[organism][0][pdb_pair]), float(d_val[organism][1][pdb_pair]), int(d_val[organism][2][pdb_pair]), ppi_bool]
-				c.execute("INSERT INTO {0} VALUES {1}".format(table_name, tuple(line_list))) 
+				line = [count, o, p1, p2, float(d_val[organism][0][pdb_pair]), float(d_val[organism][1][pdb_pair]), int(d_val[organism][2][pdb_pair]), ppi_bool]
+				line_list.append(line)
 				count+=1
-	conn.commit()
-	conn.close()
+	return line_list
 
 
 if __name__ == "__main__":
@@ -72,8 +66,13 @@ if __name__ == "__main__":
 		pre_d_i = collections.OrderedDict(sorted(pre_d_i.items()))
 		d_index[organism] = {i:pdb for i,pdb in enumerate(pre_d_i)}
 
-		for x in ['tm', 'sid', 'nal']:	#, 'align1', 'align2']:	sequence alignments takes up 700MB! makes downloading edges impossible
+		for x in ['TM', 'SID', 'nal']:	#, 'align1', 'align2']:	sequence alignments takes up 700MB! makes downloading edges impossible
 			d_val[organism].append(read_in(*database(organism, x)))
 	d_ppi = read_in_ppi_partners()
-	writeout_sql(d_org, d_index, d_ppi, d_val)
+	line_list = prepare_sql(d_org, d_index, d_ppi, d_val)
+
+	columns = ['id','species','sourceID','targetID','tm','sid','align_length','ppi']
+	write_sqlite = SQLite3('proteomevis_edge', columns, line_list)
+	write_sqlite.run()
+
 	print_next_step('../')	

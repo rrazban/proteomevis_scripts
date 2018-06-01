@@ -28,6 +28,9 @@
 #include "basic_define.h"
 #include <iomanip>	//for setprecision in double printout
 #include <unistd.h>
+
+#include <boost/algorithm/string.hpp>	//to split string
+
 char version[20];                          //version 
  
  
@@ -183,35 +186,46 @@ vector<string> get_pdb_chain_list(string xread_pdb)
 	ifstream myfile;
 	vector<string> pdb_chain_list;
 	myfile.open(xread_pdb.c_str());
-	string dummyLine;
-	getline(myfile, dummyLine);	//skip first line
+	string firstLine;
+	getline(myfile, firstLine);
 	if( !(myfile.is_open()) )
 	{   
 	std::cout << "Error Opening File";
 	std::exit(0);   
 	}
 
-	std::string firstline;
+	std::vector<std::string> words;
+	boost::split(words, firstLine, boost::is_any_of("\t"), boost::token_compress_on);
 
+	int pdb_i;	//unable to get std:find() to work
+	for( int a = 0; a < words.size(); a = a + 1 ) {
+		if (words[a]=="pdb") {
+			pdb_i = a;
+			break;
+		}
+	}
+
+	std::string line;
 	while( myfile.good() )
 	{
-		std::getline( myfile, firstline);
-		//std::cout<< "\n" << firstline <<"\n";
-
-		std::stringstream ss(firstline);
+		std::getline( myfile, line);
+		std::stringstream ss(line);
 		std::string word;
 		int count=0;
 		while (std::getline(ss,word,'\t'))
 		{
 //			std::cout << "Word: " << word << std::endl;
 //			std::cout << count << std::endl;
-			if (count==1){	//asumme pdb is the 2nd element //todo: have it read first line and find where pdb is
+			if (count==pdb_i){
 				pdb_chain_list.push_back(word);
 				break;	
 			}
 			count++;
 		}
 	}	
+	// remove duplicates from list
+	sort( pdb_chain_list.begin(), pdb_chain_list.end() );
+	pdb_chain_list.erase( unique( pdb_chain_list.begin(), pdb_chain_list.end() ), pdb_chain_list.end() );
 	return pdb_chain_list;
 }
 

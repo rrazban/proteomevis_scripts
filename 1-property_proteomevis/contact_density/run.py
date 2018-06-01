@@ -96,18 +96,24 @@ if __name__ == "__main__":
 		extra += 'pre_output'
 
 	contact_defn = ['Bloom', 'Shakh'][method]
-	d_input = read_in('oln', 'pdb', filename = extra)
+	d_input = read_in('pdb', 'oln', filename = extra)
+	d_input1 = read_in('pdb', 'uniprot', filename = extra)
 	d_output = {}
-	for oln, pdb in d_input.iteritems():
+	for pdb, oln in d_input.iteritems():
 		protein_contact = ProteinContact(pdb, contact_defn)
 		residues = protein_contact.get_residues()
 		contact_density = protein_contact.contact_matrix().sum() / float(len(residues))
-		d_output[oln] = contact_density
+		if organism=='protherm':
+			d_output[d_input1[pdb]] = contact_density
+			x_name = 'uniprot'
+		else:
+			d_output[oln] = contact_density 
+			x_name = 'oln'
 
 	filename = 'PDB'
 	if method:
 		filename+='_shakh'
-	writeout(['oln', 'contact_density'], d_output, filename = '{0}{1}'.format(filename, extra))
+	writeout([x_name, 'contact_density'], d_output, filename = '{0}{1}'.format(filename, extra))
 	print_next_step()
 
 

@@ -1,35 +1,14 @@
-#!/usr/bin/python
 import os, sys
 from collections import OrderedDict
 import subprocess
-import datetime
 import filecmp
 
 from parse_data import organism, organism_list
 
 
-today = datetime.date.today()
-
-def tabular_printout(header, output_list, pre_align='', limit = 100):
-	if not tabular_printout.counter: print header
-	if tabular_printout.counter >= limit: return
-
-	output_list = [str(output) for output in output_list]
-	if output_list[0]=="yeast_ecoli": pre_align=''
-	print "{0}{1}".format(pre_align, "\t".join(output_list))
-	tabular_printout.counter += 1
-tabular_printout.counter = 0
-
-def get_full_filename(filename, date_bool):
-	if date_bool==True:
-		filename+='_{0}.txt'.format(today)
-	else: 
-		filename+='.txt'
-	return filename
-
-def writeout(label_list, d_output, filename='output', date_bool=False):	
+def writeout(label_list, d_output, filename='output'):	
 	d_output = OrderedDict(sorted(d_output.items()))	
-	filename = get_full_filename(filename, date_bool)
+	filename = filename + '.txt' 
 	with open(filename, "w") as wfile:
 		wfile.write("\t".join(label_list))
 		wfile.write("\n")
@@ -74,16 +53,17 @@ def print_next_step(PATH='../../'):
 			print 'Proceed to ../../../{0} to complete update'.format(next_head_dirname[0])
 	else: pass
 		
-def database_update_needed(filename):
-        same_file = filecmp.cmp('{0}.txt'.format(filename), '{0}_{1}.txt'.format(filename, today))
+def database_update_needed(filename, bool_print_next_step=True):
+        same_file = filecmp.cmp('{0}.txt'.format(filename), 'new_{0}.txt'.format(filename))
 	if same_file:
 		print "no update needed"
-		subprocess.call(['rm', '{0}_{1}.txt'.format(filename, today)])
+		subprocess.call(['rm', 'new_{0}.txt'.format(filename)])
 	else:
 		print "updating {0}".format(filename)
 		print "'filename' -> 'old_filename'"
 		subprocess.call(['mv', '{0}.txt'.format(filename), 'old_{0}.txt'.format(filename)])
-		print "'filename-date' -> 'filename'"
-		subprocess.call(['mv', '{0}_{1}.txt'.format(filename, today), '{0}.txt'.format(filename)])
-		print_next_step()
+		subprocess.call(['mv', 'new_{0}.txt'.format(filename), '{0}.txt'.format(filename)])
+		if bool_print_next_step:	#to control TM_SID case	
+			print_next_step()
+
 	return not same_file

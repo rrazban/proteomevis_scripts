@@ -8,7 +8,7 @@ CWD = os.getcwd()
 UTLTS_DIR = CWD[:CWD.index('proteomevis_scripts')]+'/proteomevis_scripts/utlts'
 sys.path.append(UTLTS_DIR)
 from parse_user_input import help_message
-from read_in_file import set_up_read_in, read_in
+from read_in_file import read_in
 from parse_data import organism
 from output import writeout
 

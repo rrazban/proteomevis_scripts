@@ -1,8 +1,7 @@
-#!/usr/bin/python
-import os, sys
+import os, sys	#call module 'organism_setup?'
 
 
-organism_list = ['yeast','ecoli'] #'yeast_ecoli' append when wanted
+organism_list = ['yeast','ecoli']#, 'protherm']#,'yeast_ecoli' append when wanted	#need to figure out a better way
 
 cwd = os.getcwd()
 organism = os.path.basename(cwd)
