@@ -1,4 +1,4 @@
-oln	evorate
+oln	evolutionary_rate
 b3356	0.0597
 b2922	0.1138
 b2519	0.1844

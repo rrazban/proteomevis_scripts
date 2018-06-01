@@ -1,4 +1,4 @@
-oln	ppi
+oln	PPI_degree
 b0001	0
 b0002	12
 b0003	2

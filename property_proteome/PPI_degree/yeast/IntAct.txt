@@ -1,4 +1,4 @@
-oln	ppi
+oln	PPI_degree
 Q0010	0
 Q0017	0
 Q0032	0
