@@ -326,7 +326,7 @@ int main(int argc, char *argv[])
 		pre_xname = dir_pdb + organism + "/" ;
 		pre_yname = pre_xname;
 		if (extra_opt){
-			xread_pdb = "extra.txt";	//have double extra option
+			xread_pdb = "extra.txt";
 		}
 		else {
 			xread_pdb = yread_pdb;	
@@ -347,9 +347,10 @@ int main(int argc, char *argv[])
 			yread_pdb = "extra.txt" ;		
 		}
 		else{}
-			pre_xname = dir_pdb + "yeast/";	
-			pre_yname = dir_pdb + "ecoli/";
-		}
+
+		pre_xname = dir_pdb + "yeast/";	
+		pre_yname = dir_pdb + "ecoli/";
+	}
 	else {
 		cout << "Make sure to run in valid organism directory" << endl;
 		print_help(argv[0]);    			
@@ -501,13 +502,6 @@ int main(int argc, char *argv[])
 		strcpy(xname, pre_xname.c_str());
 		strcat (xname, xpdb_chain_list[a].c_str());
 		strcat (xname, ".pdb");
-//	int b;
-//	if (xread_pdb == yread_pdb){
-//		b = a+1;
-//	}
-//	else{
-//		b = 0;
-//	}
 
 	for( int b = 0; b < ypdb_chain_list.size(); b = b + 1 ) {	
 		strcpy(yname, pre_yname.c_str());
@@ -521,16 +515,15 @@ int main(int argc, char *argv[])
 			if (pos_x_in_y <= b){
 				continue;
 			}
-		}	//avoid double counting //very general, no longer need do start iterator at different point
+		}
 
-		//	cout << endl << endl << ypdb_chain_list[b] << endl << endl << endl;	find which structure giving trouble
+//		cout << xname << " " << yname << endl;//	find which structure giving trouble
 
     /*********************************************************************************/
 	/*                                load data                                      */ 
     /*********************************************************************************/
 
     load_PDB_allocate_memory(xname, yname);
-
 
 
     
@@ -983,8 +976,7 @@ int main(int argc, char *argv[])
 	outfile << xpdb_chain_list[a] << "\t" << ypdb_chain_list[b] << "\t"; 
 	outfile << std::setprecision(4) << TM3 << "\t" << (float)seq_id/(float)n_ali8 << "\t" << TM1 << "\t" << TM2 << "\t" << seq_id << "\t" << n_ali8 << "\t" << seqxA << "\t" << seqy << "\n";
 
-
-    //*********************************************************************************//
+	    //*********************************************************************************//
     //                            Done! Free memory                                    //
     //*********************************************************************************//           
 	free_memory();
@@ -993,10 +985,11 @@ int main(int argc, char *argv[])
     delete [] invmap;
 	delete [] m1;
 	delete [] m2;
-}
-}
-	
 
+
+
+}
+}
 	outfile.close();
 
 
