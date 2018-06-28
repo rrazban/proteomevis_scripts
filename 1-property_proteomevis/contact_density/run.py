@@ -14,7 +14,6 @@ sys.path.append(UTLTS_DIR)
 from parse_user_input import help_message, false_or_true
 from read_in_file import read_in
 from parse_data import organism
-from protein_property import database
 from output import writeout, print_next_step
 
 
