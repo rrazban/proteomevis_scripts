@@ -16,6 +16,9 @@ def dosage_tolerance(organism):
 		return ["ensembl", "dt", '{0}/dosage_tolerance/ecoli/Kitagawa_2005.txt'.format(proteome_DIR)]
 	elif organism=='yeast':
 		return ['Probe ID', 'Log2 Ratio (20Gen)', '{0}/dosage_tolerance/yeast/Douglas_2012.txt'.format(proteome_DIR), ('r', ":")]
+
+def pdb_length(organism):
+	return ['oln', 'pdb_length', '', '', organism]
 	
 def dNdS(option, organism):
 	if organism=='yeast':
@@ -30,7 +33,7 @@ def TM_align(option, organism):
 	return [['pdb1', 'pdb2'], option, "{0}/tm_and_sid/{1}/PDB.txt".format(proteomevis_DIR, organism)]
 
 def database(organism, option):					#make into class
-	special_cases = ['abundance', 'dosage_tolerance']	#or make a dict such that strip value in place
+	special_cases = ['abundance', 'dosage_tolerance', 'pdb_length']	#or make a dict such that strip value in place
 	#extra special cases = ['dN', 'dS', 'dN/dS']
 	if option in special_cases:
 		return globals()[option](organism)
