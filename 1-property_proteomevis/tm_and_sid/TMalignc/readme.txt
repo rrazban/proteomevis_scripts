@@ -26,7 +26,7 @@
 2017/10 modified by RMR for high throughput running
 to install, first download TM-align dependencies from
 http://zhanglab.ccmb.med.umich.edu/TM-align/
-keep present TMalign.h and TMalign.cpp for RMR modifications 
+keep present TMalign.h ,TMalign.cpp, basic_fun.h for RMR modifications 
 
 
 =========================
