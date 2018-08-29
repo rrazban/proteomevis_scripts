@@ -57,10 +57,12 @@ class PDBChain():
 				if translate[chain] in chain_list:
 					want_i = chain_list.index(translate[chain])
 					self.chain_list.remove(chain)
+					self.io.set_structure(pre_chain_list[want_i])
+					self.io.save(self.pdb_file.get_id() + "." + chain + ".pdb")
 			else:
 				want_i = chain_list.index(chain)
-			self.io.set_structure(pre_chain_list[want_i])
-			self.io.save(self.pdb_file.get_id() + "." + chain + ".pdb")
+				self.io.set_structure(pre_chain_list[want_i])
+				self.io.save(self.pdb_file.get_id() + "." + chain + ".pdb")
 
 	def run(self):
 		self.get_pdb_chain()
