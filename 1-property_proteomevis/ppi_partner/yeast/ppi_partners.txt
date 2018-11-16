@@ -1,21 +1,21 @@
 protein	protein partners
-1a1d.A	1twf.B	6eu3.O	4c2m.A	4c2m.I	2ckz.B	4c2m.C	6eu3.A	4c2m.B	1twf.C	1y14.B
-1a3w.A	1cg7.A	2qfy.A	3ig5.A	4crn.X	5l6h.A	6elz.l	5udb.8	6bd9.A	5i9e.A	4c2m.B	5oqj.0	5mc6.h	4xnh.B	3jct.m	5wlc.LH	5mrc.66	4in3.B	4gmx.C	3blx.B	3w3z.A	4zac.A	2cg9.A	2p4q.A
+1a1d.A	1y14.B	4c2m.I	2ckz.B	6eu3.A	1twf.B	6eu3.O	4c2m.A	4c2m.B	1twf.C	4c2m.C
+1a3w.A	3jct.m	5wlc.LH	2qfy.A	3ig5.A	5mrc.66	4gmx.C	3blx.B	3w3z.A	4crn.X	5l6h.A	6elz.l	6bd9.A	5i9e.A	1cg7.A	4xnh.B	4c2m.B	5oqj.0	5mc6.h	5udb.8	4zac.A	4in3.B	2cg9.A	2p4q.A
 1afw.A	2cg9.A
 1ap8.A	2i9h.A	2hsy.A	3c7n.A
 1asy.A	2cg9.A	2p4q.A
-1bob.A	4kud.B	4kud.B	4psw.B	3vld.A	4kud.B
+1bob.A	4psw.B	4kud.B	4kud.B	3vld.A	4kud.B
 1cfy.A	3c7n.A
 1cpy.A	4w6z.A	1wpx.B	4v81.B
-1dzf.A	3mhs.A	4gmx.C	1twf.B	6eu3.O	4c2m.A	1twf.I	4c2m.I	2ckz.B	4c2m.C	6eu3.B	6eu3.A	4c2m.B	1twf.C	1y14.B
+1dzf.A	4gmx.C	1y14.B	1twf.I	4c2m.I	2ckz.B	6eu3.A	1twf.B	6eu3.O	4c2m.A	4c2m.B	1twf.C	4c2m.C	6eu3.B	3mhs.A
 1edz.A	2cg9.A
 1ek0.A	4qyx.A
 1f1g.A	1jk9.B
 1f5m.A	3c7n.A
-1f60.A	4myc.A	1cg7.A	5csm.A	1twf.B	3j6b.D	3j6b.C	5yfp.C	6bx3.B	6eu3.O	4v81.G	2e8v.A	5flz.C	2i5k.A	3ig5.A	1q7g.A	2xok.G	1m2o.A	3cue.D	5ams.A	5wlc.SU	5jh0.A	5n6n.C	4gwp.D	4g6h.A	5mrc.YY	3kyh.C	5wlc.SM	4i6m.A	1ym5.A	1asy.A	5zwn.g	1yfq.A	4wjw.B	1wa5.C	4crn.X	5zwm.3	5l6h.A	3k8p.D	1m38.A	1jk9.B	3jc6.E	6elz.l	5yfp.B	3jct.y	5csk.A	3qv0.A	5udb.8	3jct.b	5mrc.44	6f07.A	3j6b.M	6ezm.A	6eu3.B	5yfp.E	6em3.x	6bd9.A	3j6b.K	5i9e.A	6eu3.A	4wju.A	4v88.AT	3wee.A	1ap8.A	3j6b.d	3k8p.D	5oqj.0	5zwn.T	3j6b.J	4xnh.B	4m5d.A	1sxj.B	1m2v.B	3c7n.A	2ibz.F	1v59.A	1vlu.A	1yat.A	3jct.m	2xau.A	4v88.AA	5wlc.LH	4c9q.A	1mr3.F	1sq9.A	3jct.w	4in3.B	1vdn.A	4buj.B	5owu.A	1xly.A	3mv2.B	1a6r.A	4gwp.E	4gmx.C	3cue.D	3blx.B	6emk.B	3w3z.A	1wpx.B	4zac.A	4v81.D	4v81.A	4v81.H	3c7n.A	4qyx.A	2p4q.A
+1f60.A	4myc.A	4g6h.A	5mrc.YY	3kyh.C	5wlc.SM	4i6m.A	1ym5.A	6gej.T	1vlu.A	1yat.A	3jct.m	2xau.A	4v88.AA	5wlc.LH	4v81.G	2e8v.A	5flz.C	2i5k.A	5ams.A	5wlc.SU	5jh0.A	5n6n.C	4gwp.D	3ig5.A	1q7g.A	2xok.G	1m2o.A	3cue.D	4c9q.A	1mr3.F	1sq9.A	3mv2.B	1a6r.A	4gwp.E	4gmx.C	3cue.D	3blx.B	6emk.B	3w3z.A	6gej.U	1asy.A	5zwn.g	1yfq.A	4wjw.B	1wa5.C	4crn.X	5zwm.3	5l6h.A	1jk9.B	3jc6.E	6elz.l	5yfp.B	3jct.y	5csk.A	3k8p.D	1m38.A	5yfp.E	6em3.x	6bd9.A	3j6b.K	5i9e.A	6eu3.A	4wju.A	4v88.AT	3wee.A	1cg7.A	5csm.A	1twf.B	3j6b.D	3j6b.C	5yfp.C	6bx3.B	6eu3.O	3j6b.J	4xnh.B	4m5d.A	1sxj.B	1m2v.B	3c7n.A	2ibz.F	1v59.A	1ap8.A	3j6b.d	3k8p.D	5oqj.0	5zwn.T	3qv0.A	5udb.8	3jct.b	5mrc.44	6f07.A	3j6b.M	6ezm.A	6eu3.B	1wpx.B	4zac.A	3jct.w	4in3.B	1vdn.A	4v81.D	4v81.A	4v81.H	3c7n.A	4qyx.A	4buj.B	5owu.A	1xly.A	2p4q.A
 1f89.A	2cg9.A
-1fi4.A	4v81.C	3c7n.A
-1g0u.1	4r17.C	4r17.F	3nzj.2	3nzj.K	1ryp.B	4r17.G	4v81.D	2p4q.A
+1fi4.A	3c7n.A	4v81.C
+1g0u.1	4r17.C	1ryp.B	4r17.F	3nzj.2	3nzj.K	4r17.G	4v81.D	2p4q.A
 1g0u.L	4r17.C	4r17.F	3nzj.2	3jck.B	3nzj.K	3c7n.A	2p4q.A
 1gpu.A	4v81.E	3c7n.A
 1h4p.A	3c7n.A
@@ -31,95 +31,95 @@ protein	protein partners
 1m0w.A	2cg9.A
 1m2o.A	4gmx.C	1m2v.B	4v81.B
 1m2v.B	4gmx.C	1m2o.A
-1m38.A	3jc6.B	4v81.F	3c7n.A	2cg9.A
+1m38.A	2cg9.A	4v81.F	3c7n.A	3jc6.B
 1m45.A	1vdn.A
-1m94.A	3c7n.A	4v81.F
+1m94.A	4v81.F	3c7n.A
 1moz.A	3c7n.A
 1mqs.A	3c7n.A
 1mr3.F	3c7n.A
-1n0u.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3j6b.C	4kud.B	4arz.A	5ams.A	1f60.A	6elz.l	1nkq.A	6bd9.A	1hr6.B	3jct.m	2vgn.A	5mp9.J	6emk.B	3jc6.B	3mhs.A	3c7n.A	4v81.C	3c7n.A	2p4q.A
+1n0u.A	3jct.m	4kud.B	4arz.A	5ams.A	1f60.A	6emk.B	6elz.l	1nkq.A	6bd9.A	1hr6.B	3j6b.C	6gej.U	3mhs.A	3mhs.A	3mhs.A	3mhs.A	4v81.C	3c7n.A	3mhs.A	2vgn.A	3jc6.B	5mp9.J	3c7n.A	2p4q.A
 1nyn.A	3c7n.A
 1pgu.A	3c7n.A
 1q14.A	4gmx.C
-1qpg.A	4myc.A	3jck.C	6emk.B	4v81.C	4v81.D	4v81.B	3c7n.A	2cg9.A	2p4q.A
+1qpg.A	4myc.A	6emk.B	3jck.C	4v81.D	4v81.B	3c7n.A	2cg9.A	4v81.C	2p4q.A
 1qqe.A	1mqs.A
 1rsg.A	3c7n.A
-1ryp.B	4r17.G	3w3z.A	2p4q.A
+1ryp.B	3w3z.A	4r17.G	2p4q.A
 1ryp.K	3jck.H	4r17.C	4r17.F	3nzj.2	3jck.B	5mp9.J	2p4q.A
 1sq9.A	4gmx.C	5mc6.h	4buj.B	4buj.B
 1sxj.B	4gmx.C	1sxj.E	1sxj.D	2l9q.A
-1sxj.C	4gmx.C	1sxj.E	1sxj.D	1sxj.B
+1sxj.C	4gmx.C	1sxj.E	1sxj.B	1sxj.D
 1sxj.D	4gmx.C	4v81.H
 1sxj.E	4gmx.C	1sxj.B
 1tte.A	4v81.G
-1twf.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	1twf.B	4gwp.D	1twf.I	1y14.B	2exu.A	5sva.n	4v81.B	3c7n.A
-1twf.B	3mhs.A	3mhs.A	4gmx.C	1twf.I	6bd9.A	1twf.C	1y14.B	2exu.A	5sva.n
-1twf.C	4gmx.C	1twf.B	1twf.I	1y14.B
+1twf.A	4gwp.D	1y14.B	1twf.I	1twf.B	3mhs.A	3mhs.A	3mhs.A	3mhs.A	4v81.B	2exu.A	5sva.n	3c7n.A
+1twf.B	4gmx.C	1y14.B	1twf.I	6bd9.A	1twf.C	3mhs.A	3mhs.A	2exu.A	5sva.n
+1twf.C	4gmx.C	1y14.B	1twf.I	1twf.B
 1twf.I	4gmx.C	1twf.C
-1twf.J	4c2m.A	4c2m.I	2ckz.B	4c2m.C	1twf.C
-1twf.K	1twf.B	1twf.C	1y14.B
+1twf.J	4c2m.I	2ckz.B	4c2m.A	1twf.C	4c2m.C
+1twf.K	1y14.B	1twf.B	1twf.C
 1u5t.A	3c7n.A
-1u7l.A	4efa.E	5d80.D
+1u7l.A	5d80.D	4efa.E
 1v59.A	2cg9.A
 1vdn.A	3jc6.B
 1vlu.A	4qyx.A
 1wpx.B	4v81.D
-1x3z.A	3c7n.A	1g6q.1
+1x3z.A	1g6q.1	3c7n.A
 1xb4.A	3c7n.A
 1xly.A	3c7n.A
 1xtz.A	3c7n.A
-1y14.B	4gmx.C	1twf.B	1twf.I	1twf.C
+1y14.B	4gmx.C	1twf.I	1twf.B	1twf.C
 1y2y.A	3jct.v
-1yag.A	1cg7.A	4v81.G	5jh0.A	4i6m.A	3j6b.M	2yn2.A	4v88.AA	1vdn.A	4kud.B	2jss.A	3c7n.A	2p4q.A	2cg9.A	4v81.A	5oqj.4
+1yag.A	4i6m.A	6gej.T	4v88.AA	4v81.G	5jh0.A	1cg7.A	2yn2.A	3j6b.M	1vdn.A	4kud.B	2jss.A	3c7n.A	2cg9.A	6gej.T	2p4q.A	5oqj.4	4v81.A
 1yat.A	2p4q.A
-1yke.B	4gwp.D	4gwp.D	3c7n.A
+1yke.B	4gwp.D	3c7n.A	4gwp.D
 1zvf.A	3c7n.A
 2agk.A	2cg9.A
-2aj4.A	2cg9.A	4qyx.A
-2al1.A	4xnh.B	3jc6.B	5wtx.A	4v81.D	4v81.H	4qyx.A	2p4q.A
+2aj4.A	4qyx.A	2cg9.A
+2al1.A	4xnh.B	4v81.D	4v81.H	4qyx.A	3jc6.B	5wtx.A	2p4q.A
 2ax5.A	3c7n.A
 2axq.A	2j6a.A	2wpv.A	6c6l.A	3jct.m
 2b5e.A	3jc6.B
 2b9h.A	4gmx.C
 2bcg.Y	2bcg.G	2cg9.A
 2bpo.A	5mp9.I	3c7n.A
-2cg9.A	3jc6.B	3mp6.A	3mp6.A	3mhs.A	3c7n.A	3c7n.A	2e8v.A	1hr6.B	1vlu.A	3jc6.B	3jck.B	3jap.j	2l6j.A	2wpv.A	1f60.A	5d80.A	6emk.A	3mgu.A	2dlc.X	4m5d.A	1b54.A	3q8g.A	3j6b.D	4n5c.A	4k6n.A	4i5t.A	6b8h.O	1cca.A	1ap8.A	2al1.A	4lxj.A	2uv8.A	3ig5.A	4f4j.A	1bob.A	5zwm.1	3blx.B	5mrc.KK	5mrc.OO	4qu4.A	1vlp.A	5zyn.B	4m8z.A	3v8e.A	6bk8.A	4k25.A	2ucz.A	4clq.A	1sxj.D	1sxj.C	2qlt.A	1twf.B	4v88.Bj	5mpd.X	5yfp.D	5a07.A	6ezn.F	3pym.A	2bpo.A	4b2z.A	5wlc.LU	3c7n.A	4buj.B	2p4q.A
+2cg9.A	6gej.T	5d80.A	6emk.A	3mgu.A	2dlc.X	4m5d.A	1b54.A	3q8g.A	3j6b.D	4n5c.A	3c7n.A	3c7n.A	4k6n.A	4i5t.A	6b8h.O	1cca.A	1ap8.A	2al1.A	4lxj.A	2uv8.A	3ig5.A	4f4j.A	1bob.A	5zwm.1	3blx.B	5mrc.KK	5mrc.OO	4qu4.A	1vlp.A	5zyn.B	4m8z.A	3v8e.A	6bk8.A	4k25.A	2ucz.A	4clq.A	1sxj.D	1sxj.C	2qlt.A	1twf.B	4v88.Bj	5mpd.X	5yfp.D	1f60.A	3jck.B	3jap.j	2l6j.A	2wpv.A	3mp6.A	3mp6.A	3mhs.A	3jc6.B	2e8v.A	1hr6.B	1vlu.A	3jc6.B	5a07.A	6ezn.F	3pym.A	2bpo.A	4b2z.A	5wlc.LU	3c7n.A	4buj.B	2p4q.A
 2cir.A	5mtz.A
-2ckz.B	6eu3.O	6eu3.B	6eu3.A
-2cnq.A	3c7n.A	4v81.C	1g6q.1	2cg9.A
+2ckz.B	6eu3.A	6eu3.O	6eu3.B
+2cnq.A	1g6q.1	4v81.C	3c7n.A	2cg9.A
 2dlc.X	3c7n.A
 2dyo.A	4gmx.C	3c7n.A
-2dzn.A	2p4q.A	3vld.A	3vld.A	3vl1.A
+2dzn.A	3vld.A	3vld.A	3vl1.A	2p4q.A
 2exu.A	4gmx.C	1y14.B
 2ga8.A	3c7n.A
 2gjd.A	3c7n.A
-2hzm.A	4gwp.D	4gwp.D	4gwp.E
+2hzm.A	4gwp.D	4gwp.E	4gwp.D
 2i9h.A	2iw3.A
 2ibz.F	4c9g.A	4c9g.A	4c9g.A
 2ibz.G	4c9g.A
 2ip1.A	2cg9.A
-2iw3.A	3mhs.A	3mhs.A	2cir.A	6c6l.A	5mp9.J	3jc6.B	2zxt.A	3mhs.A	4v81.H	2p4q.A
+2iw3.A	2cir.A	6c6l.A	3mhs.A	3mhs.A	4v81.H	3mhs.A	3jc6.B	2zxt.A	5mp9.J	2p4q.A
 2jss.A	2xau.A	3jc6.E	1vdn.A	4kud.B
 2jyn.A	3c7n.A
 2l5a.A	2cg9.A
-2l6j.A	2cg9.A	3c7n.A
+2l6j.A	6gej.U	2cg9.A	3c7n.A
 2l9q.A	4f4j.A	5mrc.EE	5mp9.J
 2m9v.A	1ryp.B
-2mr3.A	3jck.H	2dzn.A	5mpd.X	4r17.C	3jck.D	3vld.A	3jck.C	3jck.D	3jck.B	5mpd.Z	5mp9.H	5mpd.Z	3jck.B	2p4q.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	3vl1.A	3vld.A
+2mr3.A	3jck.D	3jck.H	2dzn.A	4r17.C	5mpd.X	5mpd.Z	3vld.A	3jck.D	3jck.B	5mpd.Z	5mp9.H	3jck.C	3vl1.A	3vld.A	3jck.B	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	2p4q.A
 2o1p.A	4gmx.C	6eoj.A	6eoj.D	6eoj.D	6eoj.A	4v81.F
 2oaj.A	4c2m.C
 2oq2.A	2i9h.A	2hsy.A	3c7n.A
 2p4q.A	3jc6.B
-2pm7.B	1m2o.A	4xmm.B	5m52.A	1m2v.B	6ezn.A
+2pm7.B	6ezn.A	1m2o.A	4xmm.B	5m52.A	1m2v.B
 2qlt.A	3c7n.A	3c7n.A
 2ucz.A	4myc.A
-2uv8.A	2cir.A	2jss.A	3c7n.A	3c7n.A
-2uv8.G	3mhs.A	5mpd.X	2cir.A	6bd9.A	3c7n.A
+2uv8.A	2cir.A	3c7n.A	3c7n.A	2jss.A
+2uv8.G	2cir.A	5mpd.X	6bd9.A	3mhs.A	3c7n.A
 2vgn.A	3c7n.A
-2vk8.A	5jea.G	1nkq.A	6c6l.A	4v81.H	3c7n.A	2p4q.A
-2vso.A	5ams.A	4gmx.C	3jc6.B	3mhs.A	2cg9.A	2p4q.A
+2vk8.A	1nkq.A	5jea.G	6c6l.A	4v81.H	3c7n.A	2p4q.A
+2vso.A	5ams.A	4gmx.C	6gej.U	2cg9.A	3mhs.A	3jc6.B	2p4q.A
 2wpv.A	3c7n.A	2woj.A	2woj.A	2woj.A
-2xau.A	4gmx.C	3j6b.C	3kyh.C	5m52.A	1m38.A	6bk8.A	4v88.AT	4v81.H	3jct.v
+2xau.A	4gmx.C	3kyh.C	5m52.A	1m38.A	6bk8.A	4v88.AT	3j6b.C	4v81.H	3jct.v
 2xok.A	6b8h.O
 2xok.D	6b8h.O	4in3.B	2zxt.A	2cg9.A
 2xok.G	6b8h.O	2zxt.A
@@ -127,98 +127,99 @@ protein	protein partners
 2zd7.A	2zfn.A
 2zfn.A	2zd7.A	2zd7.A
 2zwa.A	2cg9.A
-2zxt.A	4e0i.A	3c7n.A	4e0i.A
+2zxt.A	3c7n.A	4e0i.A	4e0i.A
 3afo.A	2cg9.A
 3b46.A	3c7n.A
 3blx.A	3blx.B	3blx.B	3blx.B
-3c7n.A	5y58.B	3jck.H	1n8p.A	1f60.A	4r17.C	6em3.x	1b54.A	1ap8.A	2al1.A	1jk0.A	1yaa.A	1piw.A	4xnh.B	5nzr.F	1of8.A	4in3.B	1a3w.A	3iay.A	4ww7.B	1lkj.A	4obx.A	3vu9.B	5msm.B	5lkb.A	4a8j.C	2al1.A	5xyj.A	1p6o.A	1nkq.A	1yat.A	2aj4.A	1z45.A	3v2u.C	4pvc.A	3c1r.A	4kud.B	1qsm.A	5zwm.4	2jss.A	6bd9.A	1d1q.A	3qv0.A	4gwp.C	1g8f.A	1m45.A	3htk.C	3j6b.R	3j6b.W	3j6b.F	5mrc.QQ	3jct.W	1i4w.A	5wlc.SU	5zr1.D	5mp4.A	4buj.B	5wlc.LH	6elz.l	2p6e.A	2o1p.A	3w15.A	1cpy.A	4r17.C	1vlu.A	5zwm.L	2xau.A	5zwm.N	3w3z.A	1sxj.D	1dzf.A	6eu3.O	4v8y.BM	4v88.Bc	5mpd.N	2mr3.A	4v6i.Bv	4v4b.AH	5m1j.a2	4v88.Ab	5jea.A	2zfn.A	6f0e.A	1m2o.A	3mhs.C	5zwn.d	1f1g.A	5wlc.LU	2exu.A	5ams.A	4gwp.D	5suq.A	3rm5.A	5ubp.B	5ojs.T	2vdu.B	5l6h.A	3o2u.A	5wlc.LT	4m5d.A	2zih.A	2zd7.A	3cq0.A	1odf.A	3o12.A	3pt1.A	2cir.A	5mrc.LL	4n5c.A	4v81.D	2l9q.A	4je5.A	5csk.A	1pgu.A	5jm0.A	4ijr.A	4ab7.A	4je5.A	4x33.B	5m52.A	6eoj.A	1asy.A	3gx8.A	3ig5.A	4arz.A	1bob.A	4psw.B	5zwm.1	3vld.A	1q14.A	5jh9.A	1v59.A	1hr6.A	3quw.A	3j6b.J	3j6b.5	3j6b.U	3j6b.1	3eyx.A	1vlp.A	5zr1.E	4m8z.A	1afw.A	2qb7.A	6bk8.A	5mp4.A	4r17.D	5oqj.0	3jct.v	3jbs.A	5mpd.Z	5mpd.S	3jck.D	6eu3.A	5mp9.M	2l5a.A	4buj.B	5d80.A	3gdm.A	2iw3.A	2xq0.A	2p4q.A
+3c7n.A	5y58.B	3jck.H	1n8p.A	1f60.A	4r17.C	5ykj.A	6em3.x	1jk0.A	1b54.A	1ap8.A	2al1.A	5wlc.SU	5zr1.D	5mp4.A	4buj.B	3eyx.A	1vlp.A	5zr1.E	4m8z.A	6agb.D	1afw.A	2qb7.A	6bk8.A	5mp4.A	4r17.D	5oqj.0	3jct.v	3jbs.A	5mpd.Z	5mpd.S	3jck.D	6eu3.A	5mp9.M	2l5a.A	4buj.B	5d80.A	3gdm.A	2iw3.A	2xq0.A	5csk.A	1pgu.A	5jm0.A	4ijr.A	4ab7.A	4je5.A	4x33.B	5m52.A	6eoj.A	1asy.A	3gx8.A	3ig5.A	4arz.A	1bob.A	4psw.B	5zwm.1	3vld.A	1q14.A	5jh9.A	1v59.A	1hr6.A	3quw.A	3j6b.J	3j6b.5	3j6b.U	3j6b.1	4je5.A	1yaa.A	1piw.A	4xnh.B	5nzr.F	1of8.A	6gej.R	4in3.B	1a3w.A	3iay.A	4ww7.B	1lkj.A	4obx.A	3vu9.B	5msm.B	5lkb.A	4a8j.C	2al1.A	5xyj.A	1p6o.A	1nkq.A	1yat.A	2aj4.A	1z45.A	3v2u.C	4pvc.A	3c1r.A	4kud.B	1qsm.A	5zwm.4	2jss.A	6bd9.A	1d1q.A	3qv0.A	4gwp.C	1g8f.A	1m45.A	3htk.C	3j6b.R	3j6b.W	3j6b.F	5mrc.QQ	3jct.W	1i4w.A	5wlc.LH	6elz.l	2p6e.A	2o1p.A	3w15.A	6agb.H	1cpy.A	4r17.C	1vlu.A	5zwm.L	2xau.A	5zwm.N	3w3z.A	1sxj.D	1dzf.A	6eu3.O	4v8y.BM	4v88.Bc	5mpd.N	2mr3.A	4v6i.Bv	5m1j.a2	4v88.Ab	5jea.A	2zfn.A	6gej.T	6f0e.A	1m2o.A	3mhs.C	5zwn.d	1f1g.A	5wlc.LU	2exu.A	5ams.A	4gwp.D	5suq.A	3rm5.A	5ubp.B	5ojs.T	2vdu.B	5l6h.A	3o2u.A	5wlc.LT	4m5d.A	2zih.A	2zd7.A	3cq0.A	1odf.A	3o12.A	3pt1.A	2cir.A	5mrc.LL	4n5c.A	4v81.D	2l9q.A	2p4q.A
 3cph.A	2zxt.A
 3csk.A	3c7n.A
 3ctg.A	3c7n.A
-3cue.C	3cue.D	3cue.D	3cue.D	3pr6.A
+3cue.C	3cue.D	3cue.D	3pr6.A	3cue.D
 3cue.D	3pr6.A
-3cx5.A	3cx5.B	3cx5.B	2ibz.F	4c9g.A	4c9g.A	4c9g.A	4c9g.A	4c9g.A	4c9g.A
+3cx5.A	3cx5.B	2ibz.F	3cx5.B	4c9g.A	4c9g.A	4c9g.A	4c9g.A	4c9g.A	4c9g.A
 3cx5.B	2ibz.F	4c9g.A	4c9g.A	4c9g.A	4c9g.A	4c9g.A	4c9g.A
 3cx5.C	4c9g.A
 3cx5.D	4c9g.A	4c9g.A	4c9g.A	4c9g.A	4c9g.A
 3cx5.E	4c9g.A	4c9g.A	4c9g.A	4c9g.A
 3eph.A	2cg9.A
-3f3f.A	4xmm.B	5m52.A	4xmn.E	6ezn.A	2pm7.B
+3f3f.A	6ezn.A	4xmm.B	5m52.A	4xmn.E	2pm7.B
 3fem.A	1ym5.A
 3fhn.A	3k8p.D	3k8p.D	3k8p.D
 3fky.A	2p4q.A
-3frx.A	4gmx.C	4c92.C	2dlc.X	4wjw.B	6eu3.A	5oqj.0	4xnh.A	4xnh.B	4m5d.A	3c7n.A	2xau.A	1sq9.A	4buj.B	3mp6.A	3c7n.A
-3fwb.A	3mhs.A	1vdn.A	3mhs.B	3mhs.B	3mhs.B
+3frx.A	4gmx.C	2dlc.X	2xau.A	4c92.C	1sq9.A	4wjw.B	6eu3.A	4xnh.B	4m5d.A	3c7n.A	5oqj.0	4xnh.A	6gej.U	3c7n.A	3mp6.A	4buj.B
+3fwb.A	3mhs.A	3mhs.B	3mhs.B	3mhs.B	1vdn.A
 3gdm.A	2cg9.A	2l9q.A
 3gx8.A	3c7n.A
+3iab.A	6agb.D
 3itj.A	2i9h.A	2hsy.A
-3j6b.1	3j6b.D	3j6b.C	3j6b.2	5zwm.L	3j6b.M	3j6b.K	3j6b.d	3j6b.J
-3j6b.2	3j6b.C	5zwm.L	3j6b.M	3j6b.K	3j6b.d	3j6b.J
-3j6b.3	3j6b.D	3j6b.M	3j6b.J
+3j6b.1	3j6b.2	5zwm.L	3j6b.K	3j6b.D	3j6b.C	3j6b.J	3j6b.d	3j6b.M
+3j6b.2	5zwm.L	3j6b.K	3j6b.C	3j6b.J	3j6b.d	3j6b.M
+3j6b.3	3j6b.D	3j6b.J	3j6b.M
 3j6b.4	3j6b.K	3j6b.d	3c7n.A
-3j6b.5	3j6b.D	5zwm.L	3j6b.M	3j6b.K	3j6b.d	3j6b.J	4v81.H	2cg9.A
-3j6b.7	3j6b.C	3j6b.M	3j6b.d	3j6b.J
-3j6b.8	3j6b.D	3j6b.C	3j6b.M	3j6b.d	5wtx.A	3mhs.B
-3j6b.9	3j6b.C	3j6b.M	3j6b.d
+3j6b.5	5zwm.L	3j6b.K	3j6b.D	3j6b.J	3j6b.d	3j6b.M	4v81.H	2cg9.A
+3j6b.7	3j6b.C	3j6b.J	3j6b.d	3j6b.M
+3j6b.8	3j6b.D	3j6b.C	3j6b.d	3j6b.M	3mhs.B	5wtx.A
+3j6b.9	3j6b.C	3j6b.d	3j6b.M
 3j6b.B	3c7n.A	2cg9.A
-3j6b.C	3j6b.D	3j6b.M	3j6b.d	3c7n.A
-3j6b.D	3j6b.C	5zwm.L	3j6b.M	3j6b.K	3j6b.d
-3j6b.E	3j6b.D	3j6b.C	3j6b.2	3j6b.M	3j6b.K	3j6b.d	3j6b.J
+3j6b.C	3j6b.D	3j6b.d	3j6b.M	3c7n.A
+3j6b.D	5zwm.L	3j6b.K	3j6b.C	3j6b.d	3j6b.M
+3j6b.E	3j6b.2	3j6b.K	3j6b.D	3j6b.C	3j6b.J	3j6b.d	3j6b.M
 3j6b.F	3j6b.D	3j6b.C	3j6b.J
-3j6b.H	3j6b.C	3j6b.K	3j6b.d	3j6b.J
+3j6b.H	3j6b.K	3j6b.C	3j6b.J	3j6b.d
 3j6b.I	5zwm.L
 3j6b.J	3j6b.K	2cg9.A
-3j6b.K	3j6b.C	3j6b.M	3j6b.d	3j6b.J
-3j6b.L	3j6b.D	3j6b.C	5zwm.L	3j6b.M	3j6b.K	3j6b.d
-3j6b.M	3j6b.D	3j6b.C	5zwm.L	3j6b.d	3j6b.J
+3j6b.K	3j6b.C	3j6b.J	3j6b.d	3j6b.M
+3j6b.L	5zwm.L	3j6b.K	3j6b.D	3j6b.C	3j6b.d	3j6b.M
+3j6b.M	5zwm.L	3j6b.D	3j6b.C	3j6b.J	3j6b.d
 3j6b.N	3j6b.d
 3j6b.P	3j6b.D	3j6b.C
 3j6b.Q	4qyx.A
-3j6b.R	3j6b.D	3j6b.C	5zwm.L	3j6b.M	3j6b.K	3j6b.d	3j6b.J
+3j6b.R	5zwm.L	3j6b.K	3j6b.D	3j6b.C	3j6b.J	3j6b.d	3j6b.M
 3j6b.U	3j6b.d
 3j6b.W	4v81.H
 3j6b.X	3j6b.C	3j6b.J
-3j6b.a	3j6b.D	3j6b.C	3j6b.M	3j6b.K	3j6b.d
+3j6b.a	3j6b.K	3j6b.D	3j6b.C	3j6b.d	3j6b.M
 3j6b.b	3j6b.C
-3j6b.d	3j6b.D	3j6b.C	3j6b.M	3k8p.D	3j6b.J
+3j6b.d	3j6b.D	3j6b.C	3j6b.J	3k8p.D	3j6b.M
 3jap.j	4gmx.C	2xok.G	3c7n.A
-3jbs.A	4gmx.C	5zwn.g	1mr3.F	3jct.v
+3jbs.A	4gmx.C	1mr3.F	5zwn.g	3jct.v
 3jc6.A	3jc6.B
 3jc6.C	3jc6.B
-3jck.B	2mr3.A	4r17.C	3jck.D	3jck.C	3jck.D	5mpd.Z	5mp9.H	3c7n.A	2p4q.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	3vl1.A	3vld.A
-3jck.C	2mr3.A	3jck.H	4r17.C	3jck.D	3vld.A	3jck.G	3jck.D	5mpd.Z	5mp9.H	4v81.A	3jck.B	2p4q.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	3vl1.A	3vld.A
-3jck.D	2mr3.A	3jck.H	4r17.C	3jck.C	3jck.B	5mpd.Z	5mp9.H	3c7n.A	2cg9.A	3jck.B	2p4q.A	3vld.A	2dzn.A	3vl1.A	2dzn.A	3vl1.A	3vld.A
-3jck.G	2mr3.A	3jck.H	3jck.D	3jck.C	3jck.D	3jck.B	5mpd.Z	5mp9.H	5mpd.Z	3c7n.A	3jck.B	2p4q.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D
-3jck.H	2mr3.A	5mpd.X	3jck.D	3vld.A	3jck.C	3jck.G	3jck.D	3jck.B	5mpd.Z	5mp9.H	5mpd.Z	3c7n.A	3jck.B	2p4q.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	3vl1.A	3vld.A
-3jct.4	2xau.A	4gmx.C	3jct.v	3jct.v	6elz.l	3jct.r	3jct.m	3jct.w	3jct.v
-3jct.W	2xau.A	4gmx.C	3jct.y	3jct.r	3jct.m	3jct.w	3jct.4	3jct.v
-3jct.b	2xau.A	6en7.A	3jct.4	3jct.4	3jct.4	4gmx.C	3jct.v	5ams.A	3jct.v	6elz.l	3jct.y	3jct.r	3jct.m	3jct.w	3mhs.B	6en7.A	3jct.v
-3jct.m	2xau.A	3jct.4	4gmx.C	3jct.v	3jct.y	3jct.r	3jct.b	4m7d.B	3jct.w	3jct.4	4v81.A	3c7n.A	2cg9.A	3jct.v	3jct.v
+3jck.B	3jck.D	4r17.C	3jck.D	2mr3.A	5mpd.Z	5mp9.H	3jck.C	3c7n.A	3vl1.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	2p4q.A
+3jck.C	3jck.D	3jck.H	4r17.C	3vld.A	3jck.G	3jck.D	2mr3.A	5mpd.Z	5mp9.H	4v81.A	3vl1.A	3vld.A	3jck.B	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	2p4q.A
+3jck.D	3jck.H	4r17.C	2mr3.A	3jck.B	5mpd.Z	5mp9.H	3jck.C	3c7n.A	2cg9.A	3vl1.A	3vld.A	3jck.B	3vld.A	2dzn.A	3vl1.A	2dzn.A	2p4q.A
+3jck.G	3jck.D	3jck.H	5mpd.Z	3jck.D	2mr3.A	3jck.B	5mpd.Z	5mp9.H	3jck.C	3c7n.A	3jck.B	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2p4q.A
+3jck.H	3jck.D	5mpd.X	5mpd.Z	3vld.A	3jck.G	3jck.D	2mr3.A	3jck.B	5mpd.Z	5mp9.H	3jck.C	3c7n.A	3vl1.A	3vld.A	3jck.B	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	2p4q.A
+3jct.4	2xau.A	4gmx.C	3jct.v	3jct.m	3jct.v	6elz.l	3jct.r	3jct.w	3jct.v
+3jct.W	2xau.A	4gmx.C	3jct.m	3jct.4	3jct.y	3jct.r	3jct.w	3jct.v
+3jct.b	2xau.A	6en7.A	3jct.4	3jct.4	3jct.4	4gmx.C	3jct.v	3jct.m	5ams.A	3jct.v	6elz.l	3jct.y	3jct.r	3jct.w	3mhs.B	6en7.A	3jct.v
+3jct.m	2xau.A	3jct.4	4gmx.C	3jct.v	4m7d.B	3jct.4	3jct.y	3jct.r	3jct.b	3jct.w	2cg9.A	4v81.A	3c7n.A	3jct.v	3jct.v
 3jct.r	2xau.A	3jct.4	4gmx.C	3jct.v	3jct.y	6en7.A	3jct.4	3jct.v	3jct.v
-3jct.t	4gmx.C	3jct.v	3jct.v	3jct.y	3jct.r	3jct.4	3jct.v
-3jct.v	4gmx.C	3jct.y	3jct.m	2cg9.A
+3jct.t	4gmx.C	3jct.v	3jct.v	3jct.4	3jct.y	3jct.r	3jct.v
+3jct.v	4gmx.C	3jct.m	3jct.y	2cg9.A
 3jct.w	3jct.v
-3jct.y	6en7.A	3jct.4	4gmx.C	6en7.A	3jct.v	3jct.r	3jct.4	2cg9.A	6en7.A	3jct.4	3jct.v
+3jct.y	6en7.A	3jct.4	4gmx.C	3jct.v	3jct.4	6en7.A	3jct.r	2cg9.A	6en7.A	3jct.4	3jct.v
 3k8p.D	3fhn.A
 3kzv.A	5jea.I	3c7n.A
-3m62.A	3c7n.A	2cg9.A
+3m62.A	2cg9.A	3c7n.A
 3mhs.A	3mp6.A	3mp6.A	3mp6.A	3mhs.B	3mhs.B	3mhs.B	3mhs.C	3c7n.A	3mhs.C
 3mhs.B	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mp6.A	3mp6.A	3mp6.A	3mhs.C	3mhs.A	3mhs.C	3mhs.A
-3mhs.C	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mp6.A	3mp6.A	3mp6.A	3mhs.B	3mhs.B	3mhs.B	3mhs.A	4v81.G	2cg9.A	3mhs.A
+3mhs.C	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	2cg9.A	4v81.G	3mp6.A	3mp6.A	3mp6.A	3mhs.B	3mhs.B	3mhs.B	3mhs.A	3mhs.A
 3mp6.A	3mhs.A	3mhs.A	3mhs.B	3mhs.B	3mhs.B	3mhs.C	3mhs.A
-3mv2.B	6ezn.G	4v81.B	3c7n.A	2cg9.A
+3mv2.B	2cg9.A	4v81.B	6ezn.G	3c7n.A
 3nb0.A	3c7n.A
 3nzj.2	4r17.F	3jck.B	4r17.G	2p4q.A
 3nzj.H	2p4q.A
-3nzj.K	4r17.C	4r17.F	3nzj.2	3jck.B	4r17.G	3uo3.A	2cg9.A	2p4q.A
+3nzj.K	4r17.C	4r17.F	3nzj.2	3jck.B	4r17.G	2cg9.A	3uo3.A	2p4q.A
 3oii.A	5wlc.SU	4m5d.A	5wlc.SU	4m5d.A
 3opb.A	4gmx.C
 3pr6.A	3c7n.A
-3pym.A	4myc.A	3k8p.D	1nkq.A	5mrc.44	3fhn.A	3k8p.D	5owu.A	2i9h.A	2hsy.A	3c7n.A	2cg9.A	4v81.H	4v81.E
+3pym.A	4myc.A	1nkq.A	3k8p.D	3fhn.A	3k8p.D	5mrc.44	4v81.H	4v81.E	2cg9.A	5owu.A	2i9h.A	2hsy.A	3c7n.A
 3qwb.A	4gmx.C
 3rku.A	4qyx.A
-3rn4.A	1vdn.A	3mp6.A
-3sbc.A	3mhs.A	3c7n.A	2i9h.A	2hsy.A	2p4q.A
+3rn4.A	3mp6.A	1vdn.A
+3sbc.A	3c7n.A	3mhs.A	2i9h.A	2hsy.A	2p4q.A
 3sbt.B	4gmx.C	6bk8.A	6bk8.B	3c7n.A
 3spw.A	3c7n.A
 3t4n.C	4gmx.C	3c7n.A
@@ -230,115 +231,113 @@ protein	protein partners
 3w3z.A	4kud.B	4kud.B	5owu.A
 3wee.A	2xau.A	4gmx.C	1cg7.A	4kud.B	2jss.A	4i6m.A	4i6m.A
 3zia.I	3c7n.A
-3zwl.B	3mhs.A	4gmx.C	6ezn.A
+3zwl.B	4gmx.C	6ezn.A	3mhs.A
 4a8j.C	4gmx.C
 4a9a.A	4gmx.C	2cg9.A
 4ab7.A	4v81.E
 4arz.B	2cg9.A
-4b2z.A	5wtx.A	3mhs.B
-4buj.B	5jea.A	5jea.F	4v88.AT	5mc6.h	1sq9.A	5jea.E	4v81.H	2cg9.A	1sq9.A	5mc6.h
-4by7.D	4gmx.C	1twf.B	1twf.I	1twf.C	1y14.B
-4c2m.A	2xau.A	2xau.A	4c2m.I	4c2m.C	4c2m.B	3mp6.A	2cg9.A
-4c2m.B	2xau.A	4c2m.A	4kud.B	4crn.X	4c2m.I	3jct.y	4c2m.C	6bd9.A	3b54.A	3c7n.A	2cg9.A
-4c2m.C	3mhs.A	3mhs.A	1cg7.A	6eu3.O	4c2m.A	4kud.B	4c2m.I	2ckz.B	6eu3.B	6eu3.A	4c2m.B	3mp6.A	4v81.A	2cg9.A
+4b2z.A	3mhs.B	5wtx.A
+4buj.B	5jea.F	1sq9.A	4v88.AT	5jea.A	5mc6.h	5jea.E	4v81.H	2cg9.A	1sq9.A	5mc6.h
+4by7.D	4gmx.C	1y14.B	1twf.I	1twf.B	1twf.C
+4c2m.A	2xau.A	2xau.A	4c2m.I	4c2m.B	4c2m.C	2cg9.A	3mp6.A
+4c2m.B	2xau.A	4kud.B	3b54.A	6gej.U	4crn.X	4c2m.I	3jct.y	6bd9.A	4c2m.A	4c2m.C	2cg9.A	3c7n.A
+4c2m.C	4kud.B	6gej.U	4c2m.I	2ckz.B	6eu3.A	1cg7.A	6eu3.O	4c2m.A	4c2m.B	6eu3.B	3mhs.A	3mhs.A	2cg9.A	4v81.A	3mp6.A
 4c2m.I	4c2m.A	4c2m.C
-4c92.F	5zwm.L	6bk8.A	4m7d.B	4c92.E
+4c92.F	5zwm.L	4m7d.B	6bk8.A	4c92.E
 4c9g.A	2zxt.A
 4clc.A	2wpv.A
 4clq.A	4gmx.C	3c7n.A	3jct.v
-4crn.X	1vdn.A	3mhs.A	3c7n.A	2cg9.A
+4crn.X	2cg9.A	3mhs.A	1vdn.A	3c7n.A
 4ds1.A	3c7n.A
 4efa.E	1u7l.A	4rnd.B	2cg9.A	4v81.D	3c7n.A
 4efa.G	5d80.D	4rnd.B
 4eqv.A	3c7n.A
 4f4j.A	4v81.H
-4ff7.A	3jc6.B	4v81.C	3c7n.A
+4ff7.A	3c7n.A	4v81.C	3jc6.B
 4fol.A	3c7n.A
-4gmx.C	4v81.B	2cg9.A
+4gmx.C	2cg9.A	4v81.B
 4gsl.A	2kq7.A
-4gwp.A	4gwp.D	4gwp.D	4gwp.E
+4gwp.A	4gwp.D	4gwp.E	4gwp.D
 4gwp.C	4gwp.D	4gwp.D
 4gwp.D	4gwp.E
-4gwp.E	4gwp.D	1twf.B	4gwp.D	3c7n.A	2cg9.A
+4gwp.E	4gwp.D	1twf.B	2cg9.A	4gwp.D	3c7n.A
 4h86.A	2i9h.A	2hsy.A	3c7n.A
 4i5t.A	4v81.H
 4i6m.A	4gmx.C	3wee.A	2jss.A
-4ifd.H	5jea.G	5jea.A	5jea.D	1hr6.B	5jea.J	5jea.I	5jea.B	5jea.E	3c7n.A	2cg9.A	4v81.C	5jea.I
+4ifd.H	5jea.D	1hr6.B	5jea.G	5jea.A	5jea.B	5jea.J	5jea.I	5jea.E	4v81.C	3c7n.A	2cg9.A	5jea.I
 4ijr.A	2cg9.A
 4in3.B	4wjw.B	5nzr.F	5nzr.F
-4j5t.A	3c7n.A	2cg9.A
+4j5t.A	2cg9.A	3c7n.A
 4jr7.A	4gmx.C	3t4n.C	4m5d.A	4kud.B	2cg9.A
-4k25.A	3c7n.A	4v81.H
+4k25.A	4v81.H	3c7n.A
 4krd.A	2cg9.A
-4kud.B	2xau.A	1m2o.A	5jh0.A	4psw.B	3kyh.C	4i6m.A	1ym5.A	3vld.A	3j6b.d	5jea.E	1vdn.A	3b54.A	3jc6.E	1vdn.A	2jss.A	2jss.A	2zd7.A
-4m5d.A	2xau.A	5jea.A	5wlc.SU	5wlc.LS	5jea.D	4xnh.B	5mrc.EE	5wlc.SU	3jct.v
-4m7d.B	4c92.C	5zwm.L	5m52.A	6bk8.A	4c92.F	4c92.E	3c7n.A
+4kud.B	2xau.A	3kyh.C	4i6m.A	1ym5.A	5jh0.A	4psw.B	1m2o.A	3b54.A	6gej.U	3vld.A	3j6b.d	5jea.E	1vdn.A	3jc6.E	1vdn.A	2jss.A	2jss.A	2zd7.A
+4m5d.A	2xau.A	5wlc.SU	5wlc.LS	5jea.D	5jea.A	4xnh.B	5mrc.EE	5wlc.SU	3jct.v
+4m7d.B	5zwm.L	4c92.C	5m52.A	6bk8.A	4c92.F	4c92.E	3c7n.A
 4mm2.A	3c7n.A
 4msx.A	4v81.A
 4myc.A	2cg9.A
-4n5c.A	2jss.A	4v81.A	4qyx.A
-4nut.A	2xau.A	5wtx.A	3jc6.B	3mp6.A	3jct.v
+4n5c.A	4v81.A	2jss.A	4qyx.A
+4nut.A	2xau.A	3mp6.A	5wtx.A	3jc6.B	3jct.v
 4oe6.A	3c7n.A
-4psw.B	4kud.B	3vld.A	1bob.A	4kud.B
-4qu4.A	3c7n.A	4v81.C	1g6q.1	1g6q.1
-4qyx.A	3c7n.A	2l9q.A	5x6o.C	3jct.m	3pym.A	5kci.A
-4r17.B	4r17.C	4r17.F	5l6h.A	3nzj.K	1ryp.B	4r17.G	2p4q.A
-4r17.C	4r17.F	3nzj.2	3nzj.K	1ryp.B	4r17.G	3w3z.A	2p4q.A	1ryp.K
+4psw.B	4kud.B	1bob.A	3vld.A	4kud.B
+4qu4.A	1g6q.1	1g6q.1	4v81.C	3c7n.A
+4qyx.A	2l9q.A	5x6o.C	3jct.m	3pym.A	5kci.A	3c7n.A
+4r17.B	4r17.C	1ryp.B	4r17.F	5l6h.A	3nzj.K	4r17.G	2p4q.A
+4r17.C	1ryp.B	3w3z.A	4r17.F	3nzj.2	3nzj.K	4r17.G	1ryp.K	2p4q.A
 4r17.D	4r17.C	2p4q.A
-4r17.E	2mr3.A	3jck.H	4r17.C	4r17.F	3nzj.2	3jck.B	3nzj.K	1ryp.B	4r17.G	3w3z.A	3mhs.B	2p4q.A
-4r17.F	4r17.C	3nzj.2	3nzj.K	4r17.G	3w3z.A	2p4q.A
-4r17.G	4r17.C	4r17.F	5l6h.A	3nzj.2	3jck.B	3nzj.K	1ryp.B	3w3z.A	2cg9.A	2p4q.A
-4r17.I	4r17.C	4r17.F	3nzj.2	3nzj.K	1ryp.B	4r17.G	2p4q.A
-4rnd.B	4efa.E	6c6l.B	6c6l.A
-4u3j.A	3j6b.D	4c2m.A	3ig5.A	2xok.G	3cue.D	5w0t.A	5n6n.C	4g6h.A	4i6m.A	5l6h.A	6elz.l	5yfp.B	3qv0.A	3jct.b	5yfp.E	6bd9.A	5oqj.0	6c6l.A	1sxj.B	1m2v.B	4c92.F	6ezn.A	4v88.AA	4c9q.A	4gmx.C	3cue.D	3blx.B	3w3z.A	2zxt.A
-4u3j.B	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3j6b.D	4v81.G	4kud.B	4jr7.A	4g6h.A	4i6m.A	1wa5.C	5l6h.A	3jc6.E	6elz.l	5csk.A	3jct.b	6bd9.A	4c2m.B	3k8p.D	5oqj.0	5mc6.h	1sxj.B	3jct.m	5wlc.LH	5owu.A	2vgn.A	4gmx.C	3blx.B	3w3z.A	2zxt.A	3mp6.A	3mhs.B
+4r17.E	3jck.H	4r17.C	1ryp.B	3w3z.A	4r17.F	3nzj.2	2mr3.A	3jck.B	3nzj.K	4r17.G	3mhs.B	2p4q.A
+4r17.F	4r17.C	3w3z.A	3nzj.2	3nzj.K	4r17.G	2p4q.A
+4r17.G	4r17.C	1ryp.B	3w3z.A	4r17.F	5l6h.A	3nzj.2	3jck.B	3nzj.K	2cg9.A	2p4q.A
+4r17.I	4r17.C	1ryp.B	4r17.F	3nzj.2	3nzj.K	4r17.G	2p4q.A
+4rnd.B	6c6l.B	4efa.E	6c6l.A
+4u3j.A	4g6h.A	4i6m.A	6ezn.A	4v88.AA	5w0t.A	5n6n.C	3ig5.A	2xok.G	3cue.D	4c9q.A	4gmx.C	3cue.D	3blx.B	3w3z.A	6gej.U	5l6h.A	6elz.l	5yfp.B	5yfp.E	6bd9.A	3j6b.D	4c2m.A	1sxj.B	1m2v.B	4c92.F	5oqj.0	6c6l.A	3qv0.A	3jct.b	2zxt.A
+4u3j.B	4g6h.A	4i6m.A	3jct.m	5wlc.LH	4v81.G	4kud.B	4jr7.A	4gmx.C	3blx.B	3w3z.A	6gej.U	1wa5.C	5l6h.A	3jc6.E	6elz.l	5csk.A	6bd9.A	3j6b.D	1sxj.B	4c2m.B	3k8p.D	5oqj.0	5mc6.h	3jct.b	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mp6.A	3mhs.B	5owu.A	2vgn.A	2zxt.A
 4u3m.C0	2xau.A
 4u4r.C0	4kud.B	3jct.v
-4u4r.C7	2p4q.A	6eoj.A	1m2o.A	4xnh.B	4m5d.A	5eqj.B	5mrc.EE	6fai.k	5ll6.h	5wlc.SU	4m5d.A	3jct.v
+4u4r.C7	6eoj.A	1m2o.A	5ll6.h	2p4q.A	4xnh.B	4m5d.A	5eqj.B	5mrc.EE	6fai.k	5wlc.SU	4m5d.A	3jct.v
 4u4r.L9	4gmx.C	3jct.y
 4u4r.N0	3jct.v
 4u4r.N4	4gmx.C	4v88.AA
-4v4b.AH	4gmx.C	3jct.v	1ap8.A	4xnh.B	5jea.E	5ll6.h	3b54.A
 4v6i.Bv	3mhs.A	3mhs.A	3mp6.A	3mhs.B	3mhs.B
-4v7r.AL	4gmx.C
-4v7r.BA	3jct.v
+4v7r.AJ	4gmx.C	3jct.v
 4v81.A	4kud.B	4c92.F	5mpd.Z	5d80.A	2cg9.A
-4v81.B	4v81.G	3sbt.B	1pgu.A	1a3w.A	5u1t.A	1bob.A	4kud.B	4qu4.A	6elz.l	4r62.A	4v88.Bc	4v4b.AH	4eqv.A	5ojs.T	4v81.D	3pym.A	1f60.A
-4v81.C	3mhs.A	3mhs.A	3mhs.A	5mpd.Z	5mp9.I	2cg9.A	3c7n.A	2al1.A	6bk8.A	4v88.AH	3pym.A	1f60.A
+4v81.B	4v81.G	3pym.A	1f60.A	3sbt.B	1pgu.A	1a3w.A	5u1t.A	1bob.A	4kud.B	4qu4.A	6elz.l	4r62.A	4v88.Bc	4eqv.A	5ojs.T	4v81.D
+4v81.C	3mhs.A	3mhs.A	2al1.A	6bk8.A	4v88.AH	3pym.A	1f60.A	5mpd.Z	5mp9.I	2cg9.A	3mhs.A	3c7n.A
 4v81.D	4v81.G	2y9m.A	6bk8.A	4v88.BU	5mpd.Z	3f3f.A	3pym.A	3gdm.A
-4v81.E	3mhs.A	5csk.A	1n0u.A	1f60.A
-4v81.F	3mhs.A	4v81.G	4ab7.A	2xok.D	4gmx.C	5owu.A	5wlc.SU	5zwn.T	4v88.Bk	5mpd.N	5wlc.LU	2exu.A	5l6h.A	4v81.D	2al1.A	2vk8.A	2qlt.A	3pym.A	1f60.A	4efa.E
-4v81.G	3mhs.A	3mhs.A	1fi4.A	5v7m.A
-4v81.H	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	5mpd.X	4qu4.A	5mp9.J	3mv2.B	5mc6.h	2i5k.A	4m5d.A	3c7n.A	1a3w.A	3j6b.R	3jct.b	3jct.m	5zyn.B	1qpg.A	4r17.E	3jct.t	3jct.v	3gdm.A
-4v88.AA	4kud.B	2dlc.X	5wlc.SM	4i6m.A	1wa5.C	3vld.A	4c2m.I	1sxj.D	3jck.C	6bd9.A	6eu3.A	4c92.F	4xnh.A	2o1p.A	4xnh.B	2xau.A	5wlc.LH	4in3.B	4qu4.A	2p4q.A
-4v88.AB	4gmx.C	2qfy.A	5zwn.g	3vld.A	5oqj.4	1sxj.D	3c7n.A
+4v81.E	5csk.A	3mhs.A	1f60.A	1n0u.A
+4v81.F	4v81.G	3mhs.A	2al1.A	2vk8.A	2qlt.A	3pym.A	1f60.A	4efa.E	4ab7.A	2xok.D	4gmx.C	5owu.A	5wlc.SU	5zwn.T	4v88.Bk	5mpd.N	5wlc.LU	2exu.A	5l6h.A	4v81.D
+4v81.G	3mhs.A	1fi4.A	5v7m.A	6agb.I	3mhs.A
+4v81.H	5mpd.X	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	1a3w.A	3j6b.R	3jct.b	3jct.m	5zyn.B	1qpg.A	4r17.E	3jct.t	3jct.v	3gdm.A	4qu4.A	5mp9.J	3mv2.B	5mc6.h	2i5k.A	4m5d.A	3c7n.A
+4v88.AA	2dlc.X	5wlc.SM	4i6m.A	2xau.A	5wlc.LH	4kud.B	4qu4.A	6gej.U	1wa5.C	3vld.A	4c2m.I	6bd9.A	6eu3.A	2o1p.A	4xnh.B	4c92.F	4xnh.A	1sxj.D	3jck.C	4in3.B	2p4q.A
+4v88.AB	4gmx.C	2qfy.A	6gej.U	5zwn.g	3vld.A	5oqj.4	1sxj.D	3c7n.A
 4v88.AC	2p4q.A
-4v88.AF	4gmx.C	2i5k.A	4kud.B	1f60.A	6bd9.A	4m5d.A	2xau.A	6fai.k	4buj.B	4m5d.A	3jct.v
-4v88.AH	4gmx.C	2p4q.A	5wlc.SU	5zwn.g	4crn.X	4m5d.A	5eqj.B	2xau.A	6fai.k	5ll6.h	5wlc.SU	4m5d.A
-4v88.AJ	4gmx.C	4kud.B	5wlc.SU	2xau.A	5wlc.SU	4m5d.A	3mhs.B	2cg9.A	4qyx.A
+4v88.AF	4gmx.C	2xau.A	2i5k.A	4kud.B	1f60.A	6bd9.A	4m5d.A	6fai.k	4buj.B	4m5d.A	3jct.v
+4v88.AH	4gmx.C	2xau.A	5wlc.SU	5ll6.h	5zwn.g	4crn.X	2p4q.A	4m5d.A	5eqj.B	6fai.k	5wlc.SU	4m5d.A
+4v88.AJ	4gmx.C	2xau.A	4kud.B	5wlc.SU	2cg9.A	3mhs.B	4qyx.A	5wlc.SU	4m5d.A
 4v88.AM	3jct.v
-4v88.AN	4gmx.C	5wlc.SU	2dlc.X	4v88.AT	4m5d.A	2xau.A	6fai.k	4buj.B	3b54.A	3jct.4	5wlc.SU	4m5d.A
+4v88.AN	4gmx.C	2dlc.X	2xau.A	5wlc.SU	3b54.A	3jct.4	4v88.AT	4m5d.A	6fai.k	4buj.B	5wlc.SU	4m5d.A
 4v88.AO	3jck.B
 4v88.AP	4gmx.C
 4v88.AS	3jct.v
 4v88.AT	3jct.v
 4v88.AU	4gmx.C	3jct.v
-4v88.AW	4gwp.D	4m5d.A	2xau.A	6fai.k	4buj.B	4m5d.A
+4v88.AW	2xau.A	4gwp.D	4m5d.A	6fai.k	4buj.B	4m5d.A
 4v88.AX	3jct.v
 4v88.Ab	3jct.v	2p4q.A
 4v88.Ac	3jct.v
 4v88.Af	3mhs.A	3mhs.A	3mp6.A	3mhs.B	3mhs.B	3jct.v
 4v88.BJ	3jct.4	3jct.b	3jct.v
 4v88.BM	3mhs.B	3mhs.B	3jct.v
-4v88.BO	4gmx.C	4kud.B	1m38.A	3jct.y	3jck.B	3c7n.A	3jct.v
-4v88.BP	4gmx.C	6eoj.A	1sxj.D	1mr3.F	3jct.v	3jct.v	3jct.v	3jct.v
+4v88.BO	4gmx.C	4kud.B	3jct.y	1m38.A	3jck.B	3c7n.A	3jct.v
+4v88.BP	4gmx.C	6eoj.A	1mr3.F	1sxj.D	3jct.v	3jct.v	3jct.v	3jct.v
 4v88.BT	3jct.4
 4v88.BU	4v81.F	4v81.H	4v81.E	4qyx.A	2l9q.A	3jct.v
 4v88.BV	3jct.v
-4v88.BX	3jct.4	3jct.v	4gwp.D	3jct.v	4crn.X	3jck.B	6bx3.B	4buj.B	3jct.v	3jct.v
+4v88.BX	3jct.4	3jct.v	6bx3.B	4gwp.D	3jct.v	4crn.X	3jck.B	4buj.B	3jct.v	3jct.v
 4v88.BZ	3jct.v
 4v88.Ba	3jct.w	4buj.B
-4v88.Bc	3mhs.A	4kud.B	4gwp.D	1m38.A	4c2m.I	6eu3.A	1hr6.B	4xnh.B	4m5d.A	3jct.w	4buj.B	3b54.A	3jct.4	4m5d.A	3mhs.B	3mhs.B	3jct.v
+4v88.Bc	4kud.B	4gwp.D	3b54.A	3jct.4	6gej.U	4c2m.I	1m38.A	6eu3.A	1hr6.B	4xnh.B	4m5d.A	3jct.w	3mhs.A	3mhs.B	3mhs.B	4buj.B	4m5d.A	3jct.v
 4v88.Bd	3jct.v
 4v88.Be	4gmx.C	3jct.v
 4v88.Bf	3jck.B	3jct.v
@@ -348,12 +347,13 @@ protein	protein partners
 4v88.Bk	4kud.B	3vld.A	3c7n.A	3jct.v
 4v88.Bl	3jct.v
 4v88.Bp	3jct.w	3jct.v
+4v8t.A	4gmx.C	3jct.v
 4v8t.J	4gmx.C	3jct.v
 4v8t.Q	3jct.v
 4v8t.R	4gmx.C	3jct.v
 4v8y.BM	3jct.v
-4w6z.A	4myc.A	3mhs.A	3mhs.A	1cg7.A	4wjw.B	3k8p.D	3fhn.A	3k8p.D	6c6l.A	2ibz.F	5c77.A	4in3.B	2i9h.A	2hsy.A	2zxt.A	3jc6.B	5wtx.A	3mp6.A	3mhs.B	3mhs.A	2p4q.A
-4wju.A	2xau.A	3jct.r	3jct.m	3jct.4
+4w6z.A	4myc.A	5c77.A	4wjw.B	3k8p.D	3fhn.A	1cg7.A	2ibz.F	3k8p.D	6c6l.A	4in3.B	3mhs.A	3mhs.A	3mp6.A	3mhs.B	3mhs.A	2zxt.A	3jc6.B	5wtx.A	2i9h.A	2hsy.A	2p4q.A
+4wju.A	2xau.A	3jct.m	3jct.4	3jct.r
 4wjw.B	5nzr.F	5nzr.F
 4ww7.A	4ww7.B
 4ww7.B	4ww7.A	4ww7.A	4ww7.A	4ww7.A
@@ -361,83 +361,84 @@ protein	protein partners
 4xmm.B	4xmn.E	2pm7.B	5wtx.A	5owu.A
 4xmm.D	4xmm.B	2pm7.B
 4xmn.E	4xmm.B	2pm7.B
-4xnh.A	4gmx.C	4xnh.B	4v81.B	4v81.H	3c7n.A	2cg9.A	4xnh.B	4xnh.B
+4xnh.A	4gmx.C	4xnh.B	2cg9.A	4v81.B	4v81.H	3c7n.A	4xnh.B	4xnh.B
 4xnh.B	4gmx.C	4xnh.A	4xnh.A	4xnh.A
 4xnh.C	4gmx.C	3c7n.A	4xnh.A	4xnh.B
 4zac.A	3c7n.A
 4zxf.A	2cg9.A
-5csk.A	3mhs.A	3mhs.A	3mhs.A	4v81.B
-5d80.A	3mhs.A	3mhs.A	4efa.E	5mpd.X	1q7g.A	2cir.A	1u7l.A	5oqj.0	6c6l.A	5d80.D	4in3.B	4rnd.B	3mhs.A
-5d80.D	4efa.E	1cg7.A	5jea.A	1twf.B	4c2m.A	4kud.B	4kud.B	4jr7.A	5mpd.X	3ig5.A	1m2o.A	3cue.D	5jh0.A	1f60.A	5jea.F	5n6n.C	4gwp.D	5mrc.YY	4i6m.A	1asy.A	1wa5.C	5l6h.A	5wlc.LS	1u7l.A	3jc6.E	6elz.l	5yfp.B	5csk.A	3qv0.A	5udb.8	3jct.b	5mrc.44	4c2m.C	6ezm.A	6eu3.B	6bd9.A	3j6b.K	5i9e.A	6eu3.A	2wpv.A	1hr6.B	3j6b.d	5wlc.LT	5mc6.h	6c6l.A	1jk0.A	2woj.A	5eqj.B	1sxj.B	5mp9.H	3c7n.A	6ezn.A	3jct.m	2xau.A	4v88.AA	5wlc.LH	5mrc.66	4n0h.A	6fai.k	4in3.B	2vgn.A	4arz.B	3mv2.B	5ll6.h	1a6r.A	4gmx.C	3b54.A	3cue.D	3blx.B	3jct.4	6emk.B	3w3z.A	1wpx.B	5jh9.A	5mrc.PP	4zac.A	4rnd.B	4v81.C	3c7n.A
+5csk.A	3mhs.A	3mhs.A	4v81.B	3mhs.A
+5d80.A	2cir.A	5d80.D	5mpd.X	1q7g.A	1u7l.A	4efa.E	5oqj.0	6c6l.A	4rnd.B	4in3.B	3mhs.A	3mhs.A	3mhs.A
+5d80.D	5mrc.YY	4i6m.A	6ezn.A	3jct.m	2xau.A	4v88.AA	5wlc.LH	4kud.B	4kud.B	4jr7.A	5jh0.A	1f60.A	5jea.F	5n6n.C	4gwp.D	5mpd.X	3ig5.A	1m2o.A	3cue.D	5mrc.66	4arz.B	3mv2.B	5ll6.h	1a6r.A	4gmx.C	3b54.A	3cue.D	3blx.B	3jct.4	6emk.B	3w3z.A	6gej.U	1asy.A	1wa5.C	5l6h.A	5wlc.LS	1u7l.A	3jc6.E	6elz.l	5yfp.B	5csk.A	6bd9.A	3j6b.K	5i9e.A	6eu3.A	2wpv.A	1hr6.B	4efa.E	1cg7.A	5jea.A	1twf.B	4c2m.A	1jk0.A	2woj.A	5eqj.B	1sxj.B	5mp9.H	3c7n.A	3j6b.d	5wlc.LT	5mc6.h	6c6l.A	3qv0.A	5udb.8	3jct.b	5mrc.44	4c2m.C	6ezm.A	6eu3.B	1wpx.B	5jh9.A	5mrc.PP	4zac.A	4rnd.B	4n0h.A	6fai.k	4in3.B	4v81.C	2vgn.A	3c7n.A
 5dfz.C	3c7n.A
 5dge.p1	3mhs.A	3mhs.A	3mhs.B
+5fl8.I	3jct.v
 5flz.C	3c7n.A
-5i9e.A	4kud.B	2jss.A	2jss.A	3c7n.A
-5jea.A	5jea.G	5jea.F	5jea.D	4ifd.H	5jea.B	5jea.E	5jea.B	5jea.I	5jea.I
-5jea.B	5jea.G	5jea.A	5jea.F	5jea.D	5jea.J	4ifd.H	5jea.I	5jea.E	5jea.I	5jea.I
-5jea.D	5jea.G	5jea.A	5jea.J	4ifd.H	5jea.B	5jea.E	3c7n.A	5jea.I	5jea.I
-5jea.E	5jea.G	5jea.A	5jea.F	5jea.D	5jea.J	4ifd.H	5jea.I	5jea.B	5jea.I	5jea.I
-5jea.F	5jea.G	5jea.A	5jea.D	5jea.J	4ifd.H	5jea.I	5jea.B	5jea.E	5jea.I	5jea.I
-5jea.G	5jea.A	5jea.D	5jea.J	4ifd.H	5jea.B	5jea.E	5jea.I	5jea.I
-5jea.I	5jea.A	5jea.F	5jea.D	5jea.J	4ifd.H	5jea.B	5jea.E
-5jea.J	5jea.G	5jea.A	5jea.F	5jea.D	1hr6.B	4ifd.H	5jea.I	5jea.B	4m5d.A	5yfp.D	5jea.E	4kud.B	4v81.F	5jea.B	5jea.I	5jea.I
+5i9e.A	4kud.B	2jss.A	2jss.A	3c7n.A	6gej.T
+5jea.A	5jea.F	5jea.D	5jea.G	5jea.B	4ifd.H	5jea.E	5jea.I	5jea.I	5jea.B
+5jea.B	5jea.F	5jea.D	5jea.G	5jea.A	5jea.J	4ifd.H	5jea.I	5jea.E	5jea.I	5jea.I
+5jea.D	5jea.G	5jea.A	5jea.B	5jea.J	4ifd.H	5jea.E	3c7n.A	5jea.I	5jea.I
+5jea.E	5jea.F	5jea.D	5jea.G	5jea.A	5jea.B	5jea.J	4ifd.H	5jea.I	5jea.I	5jea.I
+5jea.F	5jea.D	5jea.G	5jea.A	5jea.B	5jea.J	4ifd.H	5jea.I	5jea.E	5jea.I	5jea.I
+5jea.G	5jea.D	5jea.A	5jea.B	5jea.J	4ifd.H	5jea.E	5jea.I	5jea.I
+5jea.I	5jea.F	5jea.D	5jea.A	5jea.B	5jea.J	4ifd.H	5jea.E
+5jea.J	5jea.F	5yfp.D	5jea.D	1hr6.B	5jea.G	5jea.A	5jea.B	4m5d.A	4ifd.H	5jea.I	5jea.E	4v81.F	4kud.B	5jea.I	5jea.I	5jea.B
 5jh0.A	1cg7.A
 5jh9.A	4gmx.C
 5jhe.A	3c7n.A	2cg9.A
 5jm0.A	4c2m.C
 5kc2.B	3c7n.A	5dfz.C
-5l6h.A	4v81.H	2cg9.A
+5l6h.A	2cg9.A	4v81.H
 5m1j.a2	4gmx.C	4v81.H
 5m1j.p5	3jct.w	3jct.v
-5m52.A	2xau.A	5zwn.b	4c92.C	5zwm.K	5zwm.L	5zwn.g	6bk8.A	4c92.F	2xau.A	4m7d.B	6bk8.B	4c92.E	2cg9.A
-5mc6.h	5jea.A	2xok.G	5jea.F	1sq9.A	4buj.B	3c7n.A	2cg9.A	4qyx.A	1sq9.A
-5mp9.H	2mr3.A	3jck.H	2dzn.A	5mpd.X	4r17.C	5wlc.SM	1asy.A	3nzj.2	3jck.C	3jck.G	6bd9.A	5oqj.0	3jck.B	5mpd.Z	4v88.AA	4arz.B	4gmx.C	3w3z.A	2p4q.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	3vl1.A	3vld.A	3vld.A
-5mp9.I	3mhs.A	2mr3.A	3jck.H	5mpd.X	3vld.A	3jck.C	3jck.G	3jck.B	5mpd.Z	5mp9.H	5mpd.Z	3mhs.B	2p4q.A	5mp9.H	5mp9.H	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	3vl1.A	3vld.A	3vld.A
-5mp9.J	2mr3.A	3jck.H	2dzn.A	5mpd.X	5ams.A	3jck.D	3vld.A	3jck.C	3jck.G	3jck.D	5oqj.0	3jck.B	5mpd.Z	5mp9.H	5mpd.Z	4gmx.C	3c7n.A	2cg9.A	2p4q.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	2dzn.A	2dzn.A	3vl1.A	3vl1.A	3vl1.A	3vld.A
-5mp9.K	2mr3.A	3jck.H	2dzn.A	5mpd.X	4r17.C	3vld.A	3jck.C	3jck.G	6bd9.A	5oqj.0	3jck.B	5mpd.Z	5mp9.H	5mpd.Z	3w3z.A	3mhs.B	2p4q.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	2dzn.A	3vl1.A	3vl1.A	3vl1.A	3vld.A
-5mp9.L	2mr3.A	3jck.H	5mpd.X	3jck.C	3jck.B	5mpd.Z	5mp9.H	5mpd.Z	2p4q.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	3vl1.A	3vld.A
-5mp9.M	3mhs.A	2mr3.A	3jck.H	2dzn.A	5mpd.X	3vld.A	3jck.C	3jck.B	5mpd.Z	5mp9.H	3jct.4	3w3z.A	3mp6.A	3mhs.A	2cg9.A	2l9q.A	5mp9.L	2p4q.A	3vld.A	3vld.A	5mp9.L	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	3vl1.A	3vld.A
-5mpd.N	3mhs.A	2mr3.A	3jck.H	2dzn.A	5mpd.X	4r17.C	5wlc.SM	3jck.D	3vld.A	3nzj.2	3jck.C	3jck.G	6bd9.A	3jck.D	3jck.B	5mpd.Z	5mp9.H	3jct.m	4r17.G	4arz.B	3mhs.A	4v81.C	2p4q.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	3vl1.A	3vl1.A	3vld.A
-5mpd.S	2mr3.A	3jck.H	2dzn.A	5mpd.X	4r17.C	5wlc.SM	3jck.D	4r17.F	3vld.A	3nzj.2	3jck.C	3jck.G	3jck.D	3jck.B	5mpd.Z	5mp9.H	3c7n.A	4v81.B	2cg9.A	2p4q.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	5mpd.Z	3jck.D	2dzn.A	3vl1.A	3vld.A
-5mpd.X	2mr3.A	3jck.D	3jck.C	3jck.B	5mpd.Z	2p4q.A	3vld.A	3vld.A	2dzn.A	3vl1.A	2dzn.A	3vl1.A	3vl1.A	3vld.A
-5mpd.Z	3mhs.A	3mhs.A	2mr3.A	3jck.H	2dzn.A	5mpd.X	1f60.A	4r17.C	5wlc.SM	3jck.D	3vld.A	3nzj.2	3jck.C	3jck.G	6bd9.A	3jck.D	5oqj.0	3jck.B	5mp9.H	3jct.m	4arz.B	3mhs.A	4v81.E	2cg9.A	2cg9.A	2p4q.A	5mp9.H	5mp9.H	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	2dzn.A	3vl1.A	3vld.A	3vld.A
+5m52.A	2xau.A	5zwm.L	2xau.A	5zwm.K	5zwn.b	4c92.C	4m7d.B	5zwn.g	6bk8.A	4c92.F	4c92.E	6bk8.B	2cg9.A
+5mc6.h	5jea.F	2xok.G	1sq9.A	5jea.A	2cg9.A	4qyx.A	4buj.B	1sq9.A	3c7n.A
+5mp9.H	5wlc.SM	4v88.AA	3jck.H	2dzn.A	4r17.C	5mpd.X	4arz.B	4gmx.C	3w3z.A	1asy.A	3nzj.2	3jck.G	6bd9.A	2mr3.A	3jck.B	5mpd.Z	5oqj.0	3jck.C	3vl1.A	3vld.A	3vld.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	2p4q.A
+5mp9.I	3jck.H	5mpd.X	5mpd.Z	3vld.A	3jck.G	2mr3.A	3jck.B	5mpd.Z	5mp9.H	3jck.C	3mhs.A	3mhs.B	3vl1.A	3vld.A	3vld.A	5mp9.H	5mp9.H	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	3jck.D	2dzn.A	2p4q.A
+5mp9.J	3jck.D	3jck.H	2dzn.A	5ams.A	5mpd.X	5mpd.Z	4gmx.C	6gej.U	3vld.A	3jck.G	3jck.D	2mr3.A	3jck.B	5mpd.Z	5mp9.H	5oqj.0	3jck.C	2cg9.A	3c7n.A	3vl1.A	3vl1.A	3vld.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	2dzn.A	2dzn.A	3vl1.A	2p4q.A
+5mp9.K	3jck.H	2dzn.A	4r17.C	5mpd.X	5mpd.Z	3w3z.A	3vld.A	3jck.G	6bd9.A	2mr3.A	3jck.B	5mpd.Z	5mp9.H	5oqj.0	3jck.C	3mhs.B	3vl1.A	3vl1.A	3vld.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	2dzn.A	3vl1.A	2p4q.A
+5mp9.L	3jck.H	5mpd.X	5mpd.Z	2mr3.A	3jck.B	5mpd.Z	5mp9.H	3jck.C	3vl1.A	3vld.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	2p4q.A
+5mp9.M	3jck.H	2dzn.A	5mpd.X	3jct.4	3w3z.A	3vld.A	2mr3.A	3jck.B	5mpd.Z	5mp9.H	3jck.C	3mhs.A	2cg9.A	3mp6.A	3mhs.A	2l9q.A	3vl1.A	3vld.A	5mp9.L	3vld.A	3vld.A	5mp9.L	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	2p4q.A
+5mpd.N	5wlc.SM	3jck.D	3jct.m	3jck.H	2dzn.A	4r17.C	5mpd.X	4arz.B	6gej.U	3vld.A	3nzj.2	3jck.G	6bd9.A	3jck.D	2mr3.A	3jck.B	5mpd.Z	5mp9.H	3jck.C	4r17.G	3mhs.A	4v81.C	3mhs.A	3vl1.A	3vl1.A	3vld.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	2dzn.A	2p4q.A
+5mpd.S	5wlc.SM	3jck.D	3jck.H	2dzn.A	4r17.C	5mpd.X	4r17.F	3vld.A	3nzj.2	3jck.G	3jck.D	2mr3.A	3jck.B	5mpd.Z	5mp9.H	3jck.C	3c7n.A	4v81.B	2cg9.A	3vl1.A	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	5mpd.Z	5mpd.Z	3jck.D	2dzn.A	2p4q.A
+5mpd.X	3jck.D	5mpd.Z	2mr3.A	3jck.B	3jck.C	3vl1.A	3vld.A	3vld.A	3vld.A	2dzn.A	3vl1.A	2dzn.A	3vl1.A	2p4q.A
+5mpd.Z	5wlc.SM	3jck.D	3jct.m	3jck.H	2dzn.A	1f60.A	4r17.C	5mpd.X	4arz.B	6gej.U	3vld.A	3nzj.2	3jck.G	6bd9.A	3jck.D	2mr3.A	3jck.B	5mp9.H	5oqj.0	3jck.C	3mhs.A	3mhs.A	4v81.E	3mhs.A	2cg9.A	3vld.A	3vld.A	5mp9.H	5mp9.H	3vld.A	3vld.A	2dzn.A	3vl1.A	3jck.D	2dzn.A	3vl1.A	2p4q.A	2cg9.A
 5mrc.22	5mrc.EE
 5mrc.33	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.44	5mrc.PP
-5mrc.44	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.88	5mrc.PP	3c7n.A	2cg9.A
+5mrc.44	5mrc.88	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.PP	2cg9.A	3c7n.A
 5mrc.66	5mrc.LL	5mrc.PP	3c7n.A
-5mrc.88	5mrc.JJ	5mrc.EE	5mrc.PP	3c7n.A	4v81.A
-5mrc.EE	5mrc.LL	3c7n.A	4v81.C	2cg9.A
+5mrc.88	5mrc.JJ	5mrc.EE	5mrc.PP	4v81.A	3c7n.A
+5mrc.EE	5mrc.LL	4v81.C	2cg9.A	3c7n.A
 5mrc.FF	5mrc.LL	5mrc.EE
 5mrc.HH	5mrc.LL	5mrc.PP
-5mrc.II	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.88	5mrc.PP
-5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.88	5mrc.PP
-5mrc.KK	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.88	5mrc.PP
+5mrc.II	5mrc.88	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.PP
+5mrc.JJ	5mrc.88	5mrc.LL	5mrc.EE	5mrc.PP
+5mrc.KK	5mrc.88	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.PP
 5mrc.MM	5mrc.LL
 5mrc.NN	5mrc.LL	2cg9.A
-5mrc.OO	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.88	5mrc.PP	3c7n.A
+5mrc.OO	5mrc.88	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.PP	3c7n.A
 5mrc.PP	5mrc.LL	5mrc.EE
-5mrc.QQ	5mrc.JJ	5mrc.LL	5mrc.88	5mrc.PP
+5mrc.QQ	5mrc.88	5mrc.JJ	5mrc.LL	5mrc.PP
 5mrc.SS	5mrc.LL	5mrc.EE
-5mrc.UU	5mrc.44	5mrc.LL	5mrc.EE	5mrc.44	5mrc.88	5mrc.PP
-5mrc.WW	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.88	5mrc.PP
+5mrc.UU	5mrc.88	5mrc.LL	5mrc.EE	5mrc.44	5mrc.44	5mrc.PP
+5mrc.WW	5mrc.88	5mrc.JJ	5mrc.LL	5mrc.EE	5mrc.PP
 5mrc.XX	5mrc.LL	5mrc.EE
-5mrc.YY	5mrc.LL	5mrc.EE	5mrc.88	5mrc.PP
+5mrc.YY	5mrc.88	5mrc.LL	5mrc.EE	5mrc.PP
 5mrc.ZZ	5mrc.EE
 5msm.A	4gmx.C
-5mtz.A	2cir.A	3c7n.A	2cg9.A
+5mtz.A	2cir.A	2cg9.A	3c7n.A
 5n6n.A	3t4n.C	5n6n.C	3jc6.B	2p4q.A
 5n6n.C	4v81.B
 5nf8.A	2cg9.A
 5nzr.F	2zxt.A
-5ojs.T	3mhs.A	3mhs.A	3mhs.A	1cg7.A	5w0t.A	5i9e.A	5eqj.B	4kud.B	2jss.A	3mp6.A	3mp6.A	3mp6.A	3mhs.B	3mhs.B	3mhs.B	3mhs.C	3mhs.A
+5ojs.T	5w0t.A	5i9e.A	1cg7.A	5eqj.B	3mhs.A	3mhs.A	3mhs.A	3mp6.A	3mp6.A	3mp6.A	3mhs.B	3mhs.B	3mhs.B	3mhs.C	3mhs.A	4kud.B	2jss.A
 5oqj.0	5oqj.5	5oqj.4	5oqj.4
 5oqj.4	5oqj.5
 5oqj.5	5oqj.4	5oqj.4	5oqj.4
 5oqm.k	4gwp.D	4gwp.D
-5owu.A	3w3z.A	5wtx.A	3c7n.A	3c7n.A
-5pgm.A	5mpd.Z	3jc6.B	2cg9.A	4qyx.A
-5suq.A	3mhs.A	4v81.A	2cg9.A
-5sva.n	1twf.B	1twf.I	3wee.A	2jss.A	2jss.A	4v81.B	4v81.C	3c7n.A	4i6m.A
+5owu.A	3w3z.A	6agb.C	3c7n.A	3c7n.A	5wtx.A
+5pgm.A	5mpd.Z	2cg9.A	4qyx.A	3jc6.B
+5suq.A	2cg9.A	4v81.A	3mhs.A
+5sva.n	1twf.I	3wee.A	1twf.B	4v81.B	4v81.C	2jss.A	2jss.A	3c7n.A	4i6m.A
 5t7h.A	4c9g.A	2p4q.A
 5t94.A	3c7n.A
 5tbw.P	4gmx.C	4gwp.D	1m38.A	3jct.v
@@ -445,39 +446,39 @@ protein	protein partners
 5ubp.B	3mhs.B	3mhs.B	3mhs.B
 5v4v.A	2l9q.A
 5vsu.A	4gmx.C	4c92.C
-5wlc.LH	4gmx.C	5wlc.SU	5wlc.SM	4m5d.A	5wlc.SU	4m5d.A	3jct.v
+5wlc.LH	4gmx.C	5wlc.SM	5wlc.SU	4m5d.A	5wlc.SU	4m5d.A	3jct.v
 5wlc.LS	5wlc.LT	4v81.E	3c7n.A	4m5d.A	5wlc.LZ
-5wlc.LT	4gmx.C	5wlc.LS	4m5d.A	5wlc.LS	5wlc.LS	4m5d.A	4v81.B	4v81.E
-5wlc.LU	5wlc.SU	5wlc.SU	4v81.A	3jct.v
-5wlc.LZ	4gmx.C	4m5d.A	5wlc.LH	4m5d.A
+5wlc.LT	4gmx.C	5wlc.LS	5wlc.LS	4m5d.A	4v81.B	4v81.E	5wlc.LS	4m5d.A
+5wlc.LU	5wlc.SU	4v81.A	5wlc.SU	3jct.v
+5wlc.LZ	4gmx.C	5wlc.LH	4m5d.A	4m5d.A
 5wlc.SL	3jct.v
 5wlc.SM	4gmx.C	3jct.v
-5wlc.SU	4gmx.C	4m5d.A	4m5d.A	3c7n.A	3jct.v
+5wlc.SU	4gmx.C	4m5d.A	3c7n.A	4m5d.A	3jct.v
 5wtx.A	4gmx.C
-5x6o.C	3mhs.A	4crn.X	3c7n.A	2cg9.A
+5x6o.C	4crn.X	3mhs.A	2cg9.A	3c7n.A
 5x6o.G	4gmx.C	3c7n.A
 5xox.A	4gmx.C
 5xyj.A	2cg9.A
 5y58.A	5y58.B	1cg7.A	5jh0.A
-5y58.B	5y58.A	5y58.A	5jh0.A	4v81.A	4v81.D
+5y58.B	5y58.A	5y58.A	5jh0.A	4v81.D	4v81.A
 5ydu.A	5wlc.SU	4m5d.A	4m5d.A	3jct.v
-5yfp.B	5yfp.C	5yfp.E	5yfp.G	5yfp.D
-5yfp.C	5yfp.B	5yfp.E	5yfp.D
-5yfp.D	5yfp.C	5yfp.B
-5yfp.E	5yfp.B	5yfp.G	5yfp.D
+5yfp.B	5yfp.D	5yfp.E	5yfp.G	5yfp.C
+5yfp.C	5yfp.D	5yfp.B	5yfp.E
+5yfp.D	5yfp.B	5yfp.C
+5yfp.E	5yfp.D	5yfp.B	5yfp.G
 5yfp.G	5yfp.C
-5zr1.C	2jss.A	3c7n.A
-5zr1.D	5zr1.E	4kud.B	3c7n.A
+5zr1.C	3c7n.A	2jss.A
+5zr1.D	5zr1.E	3c7n.A	4kud.B
 5zr1.E	4v81.G
 5zwm.1	4gmx.C	5zwm.3	4c92.C	5zwn.g	5m52.A	5zwm.3	5zwm.3	5zwm.6
 5zwm.3	4c92.C	5zwn.g	5m52.A	6bk8.A	4c92.F	5zwm.6
 5zwm.4	5zwm.3	5zwm.3	5zwm.6
 5zwm.5	5zwm.3	5zwm.6
 5zwm.6	5zwm.3
-5zwm.E	4c92.C	5zwm.L	5zwn.g	5m52.A	4c92.F	6bk8.B
-5zwm.K	4gmx.C	4c92.C	5zwm.L	5zwn.g	5m52.A	6bk8.A	4c92.F	4m7d.B	6bk8.B	4c92.E
-5zwm.L	4gmx.C	5zwn.b	4c92.C	5zwm.K	5zwn.g	5m52.A	6bk8.A	4c92.F	4m7d.B
-5zwm.N	5zwn.b	4c92.C	5zwm.K	5zwm.L	5zwn.g	5m52.A	6bk8.A	4c92.F	4m7d.B	6bk8.B	4c92.E	4v81.B
+5zwm.E	5zwm.L	4c92.C	5zwn.g	5m52.A	4c92.F	6bk8.B
+5zwm.K	4gmx.C	5zwm.L	4c92.C	4m7d.B	5zwn.g	5m52.A	6bk8.A	4c92.F	4c92.E	6bk8.B
+5zwm.L	4gmx.C	5zwm.K	5zwn.b	4c92.C	4m7d.B	5zwn.g	5m52.A	6bk8.A	4c92.F
+5zwm.N	5zwm.L	5zwm.K	5zwn.b	4c92.C	4m7d.B	5zwn.g	5m52.A	6bk8.A	4c92.F	4c92.E	6bk8.B	4v81.B
 5zwm.X	5m52.A
 5zwm.u	5zwn.b	4c92.C	5zwn.g	5m52.A	6bk8.A
 5zwn.T	4gmx.C	3c7n.A
@@ -485,27 +486,37 @@ protein	protein partners
 5zwn.b	5zwn.g	5m52.A	6bk8.B
 5zwn.c	2xau.A	5zwm.L	5zwn.g	4c92.F	6bk8.B
 5zwn.d	2xau.A	5zwn.b	4c92.C	5zwn.g	5m52.A	6bk8.A	4c92.F	4v81.B
+6agb.B	3iab.A	6agb.C	4v81.D	6agb.D	3c7n.A
+6agb.C	6agb.D	3c7n.A
+6agb.D	3iab.A
+6agb.E	3iab.A	6agb.C	6agb.D
+6agb.H	3iab.A	6agb.C	6agb.D
+6agb.I	6agb.C	2cg9.A	6agb.D	3c7n.A
+6agb.K	6agb.D
 6bd9.A	2zxt.A
-6bk8.A	2xau.A	5zwn.b	4c92.C	5zwm.K	5zwm.L	5zwn.g	5m52.A	4c92.F	2xau.A	4m7d.B	6bk8.B	4c92.E	2l9q.A
-6bk8.B	2xau.A	5zwn.b	4c92.C	5zwm.K	5zwm.L	5zwn.g	5m52.A	6bk8.A	4c92.F	2xau.A	4m7d.B	4c92.E	3c7n.A	2cg9.A
+6bk8.A	2xau.A	5zwm.L	2xau.A	5zwm.K	5zwn.b	4c92.C	4m7d.B	5zwn.g	5m52.A	4c92.F	4c92.E	6bk8.B	2l9q.A
+6bk8.B	2xau.A	5zwm.L	2xau.A	5zwm.K	5zwn.b	4c92.C	4m7d.B	5zwn.g	5m52.A	6bk8.A	4c92.F	4c92.E	3c7n.A	2cg9.A
 6bk8.I	2xau.A	5m52.A	6bk8.A
-6bx3.A	6bx3.B	3c7n.A	6bx3.B	6bx3.B
+6bx3.A	6bx3.B	6bx3.B	6bx3.B	3c7n.A
 6bx3.B	6bx3.A	6bx3.A
 6c6l.A	4rnd.B
-6c6l.B	6c6l.A	5d80.D	4rnd.B	6c6l.A
+6c6l.B	5d80.D	6c6l.A	4rnd.B	6c6l.A
 6elz.l	3jct.v	3jct.w	3jct.v
-6em3.x	2xau.A	4gmx.C	6en7.A	3jct.y	3jct.v
-6emk.A	3jc6.B	2zxt.A	1vdn.A	3c7n.A	6emk.B	6emk.B	1yat.A	6emk.B
-6emk.B	1vdn.A	6emk.A	6emk.A	6emk.A	1yat.A
-6en7.A	4gmx.C	3jct.v	3jct.v	6elz.l	3jct.b	6em3.x	3c7n.A	3jct.v
-6eoj.A	4gmx.C	6eoj.D	6eoj.D	2o1p.A	2o1p.A	4v81.H
-6eoj.D	4gmx.C	6eoj.A	2o1p.A	2o1p.A	2o1p.A	6eoj.A	3c7n.A
-6eu3.A	1cg7.A	6eu3.O	2ckz.B	4c2m.C	6eu3.B	3mp6.A
-6eu3.B	1cg7.A	6eu3.O	2ckz.B	4c2m.C	6eu3.A	2cg9.A
-6eu3.O	1cg7.A	2ckz.B	4c2m.C	6eu3.B	6eu3.A
+6em3.x	2xau.A	4gmx.C	3jct.y	6en7.A	3jct.v
+6emk.A	3c7n.A	1vdn.A	3jc6.B	2zxt.A	1yat.A	6emk.B	6emk.B	6emk.B
+6emk.B	1vdn.A	6emk.A	1yat.A	6emk.A	6emk.A
+6en7.A	4gmx.C	3jct.v	3jct.v	6elz.l	6em3.x	3jct.b	3c7n.A	3jct.v
+6eoj.A	4gmx.C	6eoj.D	2o1p.A	6eoj.D	2o1p.A	4v81.H
+6eoj.D	4gmx.C	6eoj.A	2o1p.A	2o1p.A	6eoj.A	2o1p.A	3c7n.A
+6eu3.A	2ckz.B	1cg7.A	6eu3.O	4c2m.C	6eu3.B	3mp6.A
+6eu3.B	2ckz.B	6eu3.A	1cg7.A	6eu3.O	4c2m.C	2cg9.A
+6eu3.O	2ckz.B	6eu3.A	1cg7.A	4c2m.C	6eu3.B
 6ezn.A	2zxt.A
 6ezn.F	6ezn.G	6ezn.A	6ezn.A
 6ezn.G	6ezn.A	6ezn.H
 6ezn.H	6ezn.G	6ezn.A
 6fai.k	4gmx.C	4v88.AT
 6ft6.LL	5jea.D	5jea.J	4ifd.H	4qyx.A	5jea.I
+6gej.R	2jss.A	2jss.A
+6gej.T	4kud.B	5jh0.A	5w0t.A	4arz.B	3cue.D	3w3z.A	6gej.U	1cg7.A	2woj.A	1vdn.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	3mhs.A	4kud.B	2jss.A	2jss.A	2l6j.A
+6gej.U	6gej.T	4jr7.A	4arz.B	3blx.B	1cg7.A	1vdn.A	3mhs.A	3mhs.A	2cg9.A	3mhs.B	4kud.B	2jss.A	2jss.A	3c7n.A	6gej.T	2l6j.A
