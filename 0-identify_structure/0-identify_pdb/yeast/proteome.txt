@@ -1,6 +1,6 @@
 #Proteome data from UniProt
 #Taxonomy	559292-Saccharomyces cerevisiae (strain ATCC 204508 / S288c)
-#Last modified  February 27, 2018
+#Last modified  November 9, 2018
 Entry	Gene names  (ordered locus )
 A0A023PYF4	YER145C-A
 A0A023PZB3	YER038W-A
