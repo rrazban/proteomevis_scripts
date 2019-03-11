@@ -17,21 +17,6 @@ from properties import database
 from output import writeout, database_update_needed
 
 
-def parse_chain_length(words, i, verbose):
-	if len(words)==1:	#does not capture UniProt peptide case
-		if verbose:
-			print 'No chain found: {0}. Structure is discarded'.format(words)
-		length = '' 
-	elif words[i]=='?' or '<' in words[i]:
-		if verbose:
-			print 'No starting residue for chain: {0}'.format(words)
-		length = int(words[i+1])
-	elif '>' in words[i+1]:
-		length = '' 
-	else:	
-		length = int(words[i+1]) - int(words[i]) + 1
-	return length
-
 def parse_pdb_length(name):
 	pdb = PDBParser().get_structure(name, "../../../0-identify_structure/2-get_pdb_chain/{0}/{1}.pdb".format(organism, name))
 	chain = list(pdb.get_chains())[0]	#only 1 chain present	
@@ -52,7 +37,8 @@ class UniProt2PDB():
 			if oln in self.d_input:	#some have no reported lengths in UniProt
 				pdb = self.d_ref[oln]
 				pdb_length = parse_pdb_length(pdb)
-				if pdb_length/float(self.d_input[oln]) > 0.8:
+				frac = pdb_length/float(self.d_input[oln])
+				if frac > 0.8 and frac < 1.2:	#need upperbound as well
 					self.d_output[self.d_ref2[oln]] = [pdb, oln, pdb_length]
 
 	def run(self):
