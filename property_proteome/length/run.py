@@ -1,8 +1,6 @@
 #!/usr/bin/python
 
 help_msg = 'get uniprot length of entire proteome'
-#name is run_length rather than run because import run module
-
 
 import os, sys
 
@@ -21,14 +19,14 @@ def parse_chain_length(words, i, verbose):	#put this in class
 		if verbose:
 			print 'No chain found: {0}. Structure is discarded'.format(words)
 		length = '' 
-	elif '?' in words[i] or '<' in words[i]:
-		if verbose:
-			print 'No starting residue for chain: {0}'.format(words)
-		length = int(words[i+1])
 	elif '>' in words[i+1]:
 		length = '' 
 	elif '?' in words[i+1]:
 		length = ''
+	elif '?' in words[i] or '<' in words[i]:
+		if verbose:
+			print 'No starting residue for chain: {0}'.format(words)
+		length = int(words[i+1])
 	else:	
 		length = int(words[i+1]) - int(words[i]) + 1
 	return length
@@ -37,10 +35,14 @@ class UniProtLength():
 	def __init__(self, verbose, d_ref):
 		self.verbose = verbose
 		self.d_ref = d_ref
-        	self.d_ref = read_in('Entry', 'Gene names  (ordered locus )', filename = 'proteome')
 
 		uniprotapi = UniProtAPI(['id', 'feature(CHAIN)'])
-		self.labels, self.raw_data = uniprotapi.organism_info()
+		if organism=='new_protherm':
+			print len(d_ref)
+			self.labels, self.raw_data = uniprotapi.uniprot_info(d_ref.keys())
+		else:
+			self.labels, self.raw_data = uniprotapi.organism_info()
+
 		self.d_output = {}
 
 	def run(self):
