@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-help_msg = 'calculate contact density from PDB structure file'
+help_msg = 'calculate contact order from PDB structure file'
 
 import os, sys, glob
 import imp
