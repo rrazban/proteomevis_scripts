@@ -1,5 +1,4 @@
 #!/usr/bin/python
-from __future__ import absolute_import
 
 help_msg = 'obtain ppi degree for proteome'
 
@@ -19,9 +18,8 @@ from output import writeout
 if __name__ == "__main__":
 	help_message(help_msg)
 
-	sys.path.append('../../../1-property_proteomevis/ppi_partner/')	#why not just do normal import?
-	module = imp.load_source("run", "../../../1-property_proteomevis/ppi_partner/run.py")
+	module = imp.load_source("run", "../../../1-property_proteomevis/ppi_partner/run.py") #normal import doesnt work, proly cuz name of module the same as this script 
 	d_ppi, error_list, filename = module.get_physical_ppi(partner_bool=False)
 
-	writeout(['oln','ppi'], d_ppi, filename=filename)	#maybe have module
+	writeout(['oln','PPI_degree'], d_ppi, filename=filename)
 	print "Error list: {0} ({1})".format(error_list, len(error_list))
