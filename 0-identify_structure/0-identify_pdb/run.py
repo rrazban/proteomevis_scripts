@@ -34,17 +34,6 @@ def post_request(data, full_url):
 		data = ",".join(data)
 	return make_request(full_url, data.encode())
 
-def get_all_info(total_batch, uniprot_list):	#in class
-	full_url = "https://www.ebi.ac.uk/pdbe/api/mappings/best_structures"
-	increment = 200	#1000 limit set by PDBe	#in current setup, if no structures in range, program fails
-	d = {}
-
-	for i in range(total_batch/increment):
-		output = post_request(uniprot_list[i*increment:(i+1)*increment], full_url)
-		d_output = json.loads(output)
-		d.update(d_output)
-	return d
-
 def get_data(info_list, which):
 	data = []
 	for info in info_list:
@@ -70,9 +59,9 @@ class UniProt2PDB():
 
 	def get_all_info(self):
 		full_url = "https://www.ebi.ac.uk/pdbe/api/mappings/best_structures"
-		increment = 100	#1000 limit set by PDBe	#in current setup, if no structures in range, program fails	#have this adjust?
-	
-		for i in range(len(self.uniprots)/increment):
+		increment = 500	#1000 limit set by PDBe	#in current setup, if no structures in range, program fails	#have this adjust?
+
+		for i in range(len(self.uniprots)/increment + 1):
 			output = post_request(self.uniprots[i*increment:(i+1)*increment], full_url)
 			d_output = json.loads(output)
 			self.d_input.update(d_output)
