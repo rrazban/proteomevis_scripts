@@ -1,6 +1,6 @@
 #Proteome data from UniProt
 #Taxonomy	83333-Escherichia coli (strain K12)
-#Last modified	March 9, 2019
+#Last modified	November 24, 2019
 Entry	Gene names  (ordered locus )
 A0A385XJ53	b4709
 A0A385XJE6	b4711
@@ -1763,6 +1763,7 @@ P0DSH7	b4799
 P0DSH8	b4800
 P0DSH9	b4801
 P0DSI0	b4802
+P0DTT0	b3871
 P10100	b0633
 P10121	b3464
 P10151	b0076
@@ -2397,7 +2398,6 @@ P32125	b3856
 P32128	b3861
 P32129	b3862
 P32131	b3867
-P32132	b3871
 P32134	b3873
 P32135	b3874
 P32136	b3876
